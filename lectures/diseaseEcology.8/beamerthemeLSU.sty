@@ -1,0 +1,152 @@
+\definecolor{NearBlack}{RGB}{40,40,40}
+\definecolor{Grey}{RGB}{210,210,210}
+\definecolor{LightGrey}{RGB}{240,240,240}
+\definecolor{Black}{RGB}{0,0,0}
+\definecolor{Blue}{RGB}{0,128,255}
+\definecolor{Red}{RGB}{251,108,102}
+\definecolor{Purple}{RGB}{180,177,253}
+\definecolor{Green}{RGB}{100,251,105}
+\definecolor{Violet}{RGB}{128,100,162}
+\definecolor{LightBlue}{RGB}{102,245,251}
+\definecolor{Orange}{RGB}{251,105,100}
+
+
+\definecolor{boss1}{HTML}{98D48C}
+\definecolor{boss1Dark}{HTML}{5A7E54}
+\definecolor{boss2}{HTML}{F1BC8A}
+\definecolor{boss3}{HTML}{A4A2EF}
+\definecolor{boss4}{HTML}{A2E3DC}
+\definecolor{boss5}{HTML}{F57282}
+
+\definecolor{lsu1}{HTML}{FDD023}
+\definecolor{lsu2}{HTML}{461D7C}
+
+
+
+\setbeamercolor{normal text}{fg=white, bg=NearBlack}
+\setbeamercolor{background canvas}{bg=NearBlack}
+\setbeamercolor{title page header}{bg=NearBlack}
+\setbeamercolor{section in toc}{parent={normal text}}
+\setbeamercolor{subsection in toc}{parent={normal text}}
+\setbeamercolor{item}{parent={normal text}, fg=boss2}
+\setbeamercolor{frametitle}{parent={normal text},fg = NearBlack, bg=Grey}
+\setbeamercolor{block title}{parent={normal text}, fg = NearBlack, bg=boss2}
+\setbeamercolor{block body}{parent={normal text}, fg=NearBlack, bg=boss2!50}
+\setbeamercolor{block title example}{parent={normal text}, fg=NearBlack, bg=boss3}
+\setbeamercolor{block body example}{parent={normal text},
+fg = NearBlack,  bg=boss3!50}
+\setbeamercolor{alertblock title example}{parent={normal text},bg=LightBlue}
+\setbeamercolor{alertblock body example}{parent={normal text}, bg=LightBlue!50}
+\setbeamercolor{logo}{parent={normal text}, bg=NearBlack}
+\setbeamercolor{subtitle}{parent={normal text}, bg=boss1Dark}
+\setbeamercolor{colorbox}{parent={normal text}, bg=boss3}
+\setbeamercolor{institute in head/foot}{parent={normal text}}
+\setbeamercolor{headline}{parent={normal text}, bg=NearBlack}
+\setbeamercolor{qed symbol}{parent={normal text}}
+
+
+\setbeamerfont{footline}{size=\normalsize}
+\setbeamerfont{logo}{size=\small}
+\setbeamerfont{institute in head/foot}{size=\small}
+\setbeamerfont{navigation symbols}{size=\small}
+\setbeamerfont{section page}{size=\LARGE}
+%\setbeamerfont{title}{size=\huge}
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamerfont{subtitle}{size=\large}
+\setbeamerfont{author}{size=\Large}
+\setbeamerfont{date}{size=\Large}
+
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{footline}{
+  \leavevmode\hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,left, leftskip=0.4cm]{institute in head/foot}%
+    \usebeamerfont{institute in head/foot}\insertinstitute
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{logo}%
+    \usebeamerfont{logo}\ifnum\thepage>1\relax\metro@logo\fi
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right, rightskip=0.4cm]{navigation symbols}%
+    \usebeamerfont{navigation symbols}\metro@navigation
+  \end{beamercolorbox}}%
+%  \vskip0pt % what's that for?
+}
+
+
+
+%\setbeamertemplate{title page}{%
+
+%\begin{beamercolorbox}[wd=11cm, dp=0.4cm, ht=1.75cm, leftskip=0.1cm]{title page header}
+%      \usebeamerfont{title}\usebeamercolor{title}\inserttitle%
+%\end{beamercolorbox}%
+%\bigskip
+%\hspace{6cm} \vspace{1cm} \begin{beamercolorbox}[wd=4cm, dp=0.3cm, ht=1cm, leftskip=0.2cm]{subtitle}\usebeamerfont{subtitle}\insertsubtitle%
+%\end{beamercolorbox}
+%}
+
+
+
+
+
+% We declare the image that will be used as the logo
+\pgfdeclareimage[width = \textwidth]{big}{figs/logo.pdf}
+
+\setbeamertemplate{title page}{
+%\TitleLine
+\begin{columns}
+    \begin{column}{0.6\textwidth}
+      \pgfuseimage{big}
+    \end{column}
+    \begin{column}{0.4\paperwidth}
+      \usebeamerfont{Title}%
+      \begin{flushright} \textcolor{lsu1}{\inserttitle} \end{flushright}
+      \smallbreak
+      \centering {\normalsize \textit{\insertauthor}}
+      \smallbreak
+      \centering \insertdate
+      \vfill
+      \centering {\footnotesize \insertsubtitle }
+    \end{column}
+\end{columns}
+}
+
+
+
+
+\setbeamertemplate{frametitle}{
+\vspace*{0.3cm}
+\begin{beamercolorbox}[wd=\textwidth, dp=0.3cm, ht=0.9cm, leftskip=0.2cm]{frametitle}
+      \usebeamerfont{frametitle}\insertframetitle%
+\end{beamercolorbox}
+}
+
+\setbeamertemplate{block begin}{
+	\vskip\baselineskip
+	\begin{beamercolorbox}[wd=\textwidth, ht=0.5cm, dp=0.2cm, leftskip=0.2cm]{block title}%
+		\usebeamerfont*{block title}{\rule[-0.4ex]{0mm}{2ex}\insertblocktitle}%
+	\end{beamercolorbox}%
+	{\nointerlineskip\vskip-0.5pt}%
+	\usebeamerfont{block body}%
+	\begin{beamercolorbox}[wd=\textwidth, leftskip=0.2cm, dp=0.2cm]{block body}%
+    \vskip-.75ex\vbox{}%
+}
+\setbeamertemplate{block end}{
+	\end{beamercolorbox}
+	\vspace*{.25cm}
+}
+
+\setbeamertemplate{block example begin}{
+	\vskip\baselineskip
+	\begin{beamercolorbox}[wd=\textwidth, ht=0.5cm, dp=0.2cm, leftskip=0.2cm]{block title example}%
+		\usebeamerfont*{block title example}{\rule[-0.4ex]{0mm}{2ex}\insertblocktitle}%
+	\end{beamercolorbox}%
+	{\nointerlineskip\vskip-0.5pt}%
+	\usebeamerfont{block body example}%
+	\begin{beamercolorbox}[wd=\textwidth, leftskip=0.2cm, dp=0.2cm]{block body example}%
+    \vskip-.75ex\vbox{}%
+}
+\setbeamertemplate{block example end}{
+    \end{beamercolorbox}
+    \vspace*{.25cm}
+}

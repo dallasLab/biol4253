@@ -1,0 +1,37 @@
+---
+title: "Week 1"
+author: "Tad Dallas"
+includes:
+  in_header:
+    - \usepackage{lmodern}
+output:
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    highlight: tango
+    theme: journal
+---
+
+
+
+ 
+
+
+
+
+
+What is R?
+
+
+```{r}
+
+
+
+
+```
