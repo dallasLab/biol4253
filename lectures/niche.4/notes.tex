@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage[running]{lineno}
+\usepackage{setspace}
+\usepackage{rotating}
+
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Tad Dallas (Biol 4253)}
+\lhead{Species niche }
+
+\doublespacing
+
+
+\begin{document}
+
+
+
+
+\subsection*{Reading:}
+
+McInerny, Greg J., and Rampal S. Etienne. "Ditch the niche–is the niche a useful concept in ecology or species distribution modelling?." Journal of Biogeography 39.12 (2012): 2096-2102.
+
+McInerny, Greg J., and Rampal S. Etienne. "Stitch the niche–a practical philosophy and visual schematic for the niche concept." Journal of Biogeography 39.12 (2012): 2103-2111.
+
+Pulliam, R. (2000) On the relationship between niche and distribution. Ecology Letters, 3, 349–361.
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\noindent\hrulefill 
+\end{center}
+
+
+
+\clearpage
+
+
+\iffalse  linking populations to the environment, abiotic tolerance, defining and quantifying the niche, niche models \fi
+
+
+
+\subsection*{The niche}
+
+A cornerstone of much of the theory of population and community ecology is the idea that species have a set of abiotic tolerances. Originally defined with respect with a species geographic distribution by Grinnell, the niche was re-defined by Hutchinson years later with a clear and concise mathematical description of the niche as an $n$-dimensional hypervolume where each $n$ dimension is an environmental tolerance axis. Within these tolerance limits, the species is able to survive and persist, whereas outside these tolerance limits the species dies. But how we conceptually define a species niche, and how we use information on the niche to understand the geographic distribution of species, are subjects of seemingly continuous debate. We won't delve much into the debate on this, but instead I will try to give a general overview of niche concepts and highlight the utility of the niche, how it is defined, and how it is operationalized. 
+
+
+
+
+
+
+
+
+
+\bigskip
+
+
+
+\subsection*{What is the utility of the niche?}
+
+Conceptually, the niche has suffered many different labels and definitions. Ecologists have a love-hate relationship with complexity, in that they seemingly acknowledge that ecological systems are often too multi-dimensional to accurately capture, while also stretching simple concepts and mashing their own ideas into niche ideas. We'll go over examples of this later in this lecture for a bit of levity. 
+
+The true utility of the niche lies in the simple mathematical theory that leads to clear hypotheses regarding species distribution and competition. These ideas about where species are and how ecological communities are formed pre-date Darwin, and are central questions in population and community ecology. For instance, the ability to set fundamental physiological limits for a given species (i.e., to define the niche), allow the projection of physiological limits into geographic space to understand the potential geographic distribution of the species. Let's now try to get at a working definition of the niche, and explore predictions stemming from niche theory. 
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{How is the niche defined?} 
+
+The first to formalize something that sounded like the niche (and using the term 'niche') was Joseph Grinnel, who defined the niche as the geographic range or set of habitats that a species occupies. It did not consider species interactions, and really conflated the species niche with the species geographic distribution. 
+
+A competing definition of the niche around this same time was from Charles Elton, who focused more on the functional role of a species in it's environment, specifically with respect to other interacting species. That is, he defined the niche of a species with respect to food resources and natural enemies (predators, parasites, even competitors). While this definition is more inclusive, it is also quite ambiguous and difficult to actually define. For instance, organisms that benefit from the damming of rivers may co-occur with beavers, but does that make beaver presence part of the species niche? Examining this further, the presence of suitable food resources doesn't ensure occurrence. If a species cannot reach the area of high food availability, or if environmental conditions (traditional niche axes) are unfavorable, the species won't occur there. Like Grinnel, the link between species niche and species geographic distribution is muddied. 
+
+
+Meanwhile, numerous ecologists generated hypotheses given the poorly defined niche. For instance, development of the \textit{competitive exclusion} principle began in the early 1900's (a little before Grinnel and Elton), but it was quickly phrased in niche terms once available. The \textit{competitive exclusion} principle states that two species with similar food requirements cannot coexist on a single limiting resource. This has since been defined in terms of \textit{niche overlap}, which is the degree to which the niches of two species are similar. The idea being that the more two species' niches overlap, the more strongly they will compete with one another. 
+
+
+But in order to calculate niche overlap, we need to be able to actually measure the niche. The previous niche definitions were pretty conceptual and ambiguous. However, thirty years or so after Grinnel, a scientist named G. Evelyn Hutchinson defined the niche as a \textit{persistence} boundary in $n$ dimensions. Considering a single dimension, this would mean that a niche boundary is the point along the niche axis where the species growth rate becomes negative (i.e., where a population of the species could not maintain itself without immigration). This created a clear definition of the niche, which allowed for the empirical measurement of niche axes. Hutchinson also focused on abiotic variables (though biotic variables could also be included), independent of geographic distribution, instead of focusing on the types of environments (ambiguous) or the presence of competiting species or the role of the species in the environment. This isn't to say that species interactions don't affect the species geographic distribution, but they may not influence the niche. Related to this, another interesting distinction Hutchinson made was the separation of the \textit{fundamental} and \textit{realized} niches for a species. 
+
+
+
+The \textit{fundamental} niche being where the set of environments defined by the $n$-dimensional hypervolume where a species could hypothetically occupy. Meanwhile, the \textit{realized} niche is the set of environmental conditions defined by the $n$-dimensional hypervolume where a species \textit{does} persist. That is, interactions with competitors and interactive effects of environmental variables lead to a narrower range of environments where a species is best-suited for persistence. 
+
+
+
+
+
+
+
+
+\subsection*{How is the niche operationalized?}
+
+The niche basically allows ecologists to translate the physiological requirements of an organism/species into a defined hypervolume that characterizes the species abiotic and biotic requirements, which then can be projected into geographic space to start to understand the \textit{potential} distribution of the species. The definition of a species niche and the projection of the \textit{fundamental niche} to geographic space is now termed "species distribution modeling" or "niche modeling". Perhaps we should use the term "species distribution modeling", as these approaches have slightly deviated from their niche roots in a few distinct ways. 
+
+First, the focus is on the potential geographic distribution of a species, not truly defining the environmental thresholds for species persistence. In fact, the use of species occurrence data in place of growth rate precludes the ability of these models to actually capture persistence thresholds. 
+
+Second, these models have become more and more complex, including the presence/density of interacting species, species traits, phylogenetic relationships, and lots of other things that not really true niche axes. 
+
+Third, the niche and the corresponding geographic distribution are two different things. Species distribution models focus largely on the resulting distribution of species instead of focusing on defining the niche itself. That is, a model of the niche would first attempt to define the $n$-dimensional hypervolume, and then maybe project it into geographic space.
+
+
+This is not to say that species distribution models aren't incredibly useful for understanding the potential geographic distribution of species, but the extent to which species distribution models capture the species underlying niche is a bit questionable. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 5"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -25,8 +25,24 @@ output:
 
 
 
+## The measurement of species diversity
 
-What is R?
+
+Alpha, beta, gamma
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+
+
 
 
 ```{r}
@@ -34,4 +50,125 @@ What is R?
 
 
 
+
+
+
+
 ```
+
+
+
+
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+## Competition and coexistence
+
+
+R* theory
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+## Succession (maybe?)
+
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+```{r}
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

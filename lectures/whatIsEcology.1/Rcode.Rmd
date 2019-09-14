@@ -20,18 +20,180 @@ output:
 
 
 
- 
+## What is R?
+
+Computational programming language that is quite useful to analyse, simulate, understand, and visualize data.
+
+
+
+
+## Why do we use R as ecologists?
+
+Ecology is not just fieldwork. Ecologists attempt to understand species interactions, but in order to generalize across different places, we need theoretical development, which often requires comptuational programming languages like R. Further, in order to analyze field data to gain insight, computing is necessary. I once stated during a panel discussion that I thought every ecologist should know how to program in at least one language, and I certainly stand by it. 
+
+
+Many people become interested in ecology because they love nature. This is cool. What I would like to communicate though is that you can also love computers or mathematics and get into ecology. 
 
 
 
 
 
-What is R?
+
+## Installing R
+
+If you want to, here are the resources.
+
+https://www.r-project.org
+
+
+
+
+
+
+
+
+## How will R be used in this course?
+
+You will not need to learn R for this course. I will use code that I have written during the second lecture every week to provide demonstrations of the material we learned in the previous lecture. The goal is to visually show how ecological processes can occur, and how the outcome can be influenced by small changes to the system. If you do not like this approach, we can limit the use of code in this course, but I figured it would be a nice interactive way to examine ecological phenomena. 
+
+
+
+
+
+
+
+
+
+## A quick introduction to R 
+
+```{r}
+
+a <- 3
+b <- 2
+
+a + b
+a - b
+a * b
+a / b
+
+```
+
+
+
+
+
+### Looping
+
+```{r}
+
+vec <- c(0)
+for(i in 1:100){
+  vec[i+1] <- vec[i]+i
+}
+
+
+#there are many different ways to do the same thing
+cumsum(1:100)
+
+```
+
+
+
+
+
+
+### Conditional statements
 
 
 ```{r}
 
+name <- 'tad'
 
-
+if(name == 'tad'){
+  print('Hello, tad')
+}else{
+  print('Who are you?')
+}
 
 ```
+
+
+
+
+
+
+### The importance of the boolean as output (TRUE/FALSE)
+
+```{r}
+
+name=='tad'
+
+1 == 2
+1 != 2
+
+
+1 < 2
+1 > 2
+
+```
+
+
+
+
+
+
+
+
+
+
+
+We can also think about how coding allows to get around some of the limitations of sample size in experimentation
+
+
+
+
+
+
+Sample size of n=10
+
+```{r}
+
+a <- rnorm(10, 1, 0.5)
+b <- rnorm(10, 1.5, 0.5)
+
+
+h <- hist(a, las=1, col=grey(0.1,0.9), 
+  breaks=seq(-0.75, 3.75, length.out=30), 
+  main='', xlab='Values of a or b')
+hist(b, add=TRUE, breaks=h$breaks, 
+  col=adjustcolor('pink', 0.5))
+
+t.test(a,b)
+
+```
+
+
+
+
+
+
+Sample size of n=500
+
+```{r}
+
+a2 <- rnorm(500, 1, 0.5)
+b2 <- rnorm(500, 1.5, 0.5)
+
+h <- hist(a2, las=1, col=grey(0.1,0.9),
+  breaks=seq(-0.75, 3.75, length.out=30), 
+  main='', xlab='Values of a or b')
+
+hist(b2, add=TRUE, breaks=h$breaks, 
+  col=adjustcolor('pink', 0.5))
+
+t.test(a2,b2)
+
+```
+
+
+

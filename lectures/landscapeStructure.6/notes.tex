@@ -1,0 +1,242 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage[running]{lineno}
+\usepackage{setspace}
+\usepackage{rotating}
+
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Tad Dallas (Biol 4253)}
+\lhead{ Metapopulations and island biogeography}
+
+\doublespacing
+
+
+\begin{document}
+
+
+
+
+
+
+
+
+\subsection*{Reading:}
+
+
+Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 2001. Chapter 4. \\
+
+\bigskip
+
+Yu, Angela D.; Lei, Simon A. 2001. Equilibrium theory of island biogeography: A review. In: McArthur, E. Durant; Fairbanks, Daniel J., comps. Shrubland ecosystem genetics and biodiversity: proceedings; 2000 June 13-15; Provo, UT. Proc. RMRS-P-21. Ogden, UT: U.S. Department of Agriculture, Forest Service, Rocky Mountain Research Station. p. 163-171. \url{https://www.fs.fed.us/rm/pubs/rmrs_p021/rmrs_p021_163_171.pdf}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\noindent\hrulefill 
+\end{center}
+
+
+
+
+
+\clearpage
+\subsection*{How does landscape structure influence population processes?}
+
+Alright. So we've studied species population processes, their abiotic tolerances (the niche), and community composition and assembly processes. But we haven't dealt directly with the role of dispersal and spatial habitat distribution on resulting species dynamics. This week, we'll remedy this, by exploring two bodies of theory related to interconnected populations and communities at the landscape level. 
+
+
+
+
+
+\clearpage
+
+
+
+\subsection*{Scaling populations to landscapes}
+
+Populations of a single species may be distributed across a landscape of suitable habitat patches within a larger landscape of unsuitable landscape. Consider an aquatic plant species across a mostly terrestrial landscape dotted with lakes. The species can only exist in the lake habitats, but these lakes can be connected through dispersal processes. This set of lake habitats connected by dispersal comprises a \textit{metapopulation}. 
+
+Metapopulations are considered to be in a relatively constant state of flux, as local extinctions of species in habitat patches are buffered by re-colonization from local dispersal. In this way, dispersal can be beneficial or detrimental to metapopulation persistence. Under high dispersal, patches become homogeneous and population dynamics tend to become synchronous. This synchrony is destabilizing, in that periods of low population sizes will be experienced by all patches, increasing the likelihood of stochastic extinction of the entire metapopulation. On the other hand, too little dispersal will result in spatial clustering of a species, as the species will be confined to the set of patches that can be successfully reached and colonized and similarly potentially increasing extinction risk.
+
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{How do metapopulations work?}
+To understand metapopulations, we'll start with a foundational metapopulation model; the Levins' model. Levins created a simple model focused solely on patch occupancy (i.e., is the species present or absent) as a way to mathematically assess the proportion of occupied patches by a species given minimal demographic information. In this case, local habitat patches are either occupied or unoccupied, and both patch number and the spatial orientation of patches are undescribed. Dispersal among habitat patches can rescue patches from extinction, or allow for the recolonization of extinct patches. All patches are treated as equal, so that any patch is suitable for a species, and (as a simplifying assumption) all habitat patches can be reached from all other patches. This simplified representation treats space as implicit, and patch quality and size as constant; rather than an explicit population size, patch occupancy is just a 0 or 1 state.
+
+
+\begin{equation}
+\frac{dN}{dt} = cN(1-N) - eN
+\end{equation}
+
+where the change in the number of occupied sites ($N$) by a species is a function of colonization rate $c$ and extinction rate $e$. 
+
+This should look somewhat familiar, but if it doesn't, no worries. It can be expressed in the form of the logistic model which we went over when discussing population dynamics. But here, the carrying capacity (which was the number of individuals a site could support in the population dynamics lecture) is now the fraction of patches that will be occupied by a species at equilibrium. 
+
+The equilibrium fraction of patches that should be occupied via colonization and extinction rates is 
+
+\begin{equation}
+K = 1 - \frac{e}{c}
+\end{equation}
+
+Further, this model can be used to generate a threshold condition for metapopulation persistence, which relates to the balance between colonization and extinction rates, and is analagous to population growth rate in the logistic model. That is, a metapoulation will persist if 
+
+\begin{equation}
+  \frac{e}{c} < 1 
+\end{equation}
+
+That is, when extinction rate becomes larger than colonization, the metapopulation will not persist. This shows that even a metapopulation in equilibrium is still in a constant state of patch-level flux. In real applications, this implies that just because a patch of habitat is empty, that may not imply it is uninhabitable; and similarly, just because a population goes extinct, it may not be indicative of broader declines or instability.
+
+
+
+This is admittedly a simple representation of a metapopulation, as it assumes that all habitat patches are equivalent (colonization and extinction rates are constant across patches), there is no spatially-explicit structure to the distribution of patches, and the only thing we track is occupancy (so population dynamics within a single patch are not considered). 
+
+
+
+However, despite this simplicity, the Levins model can yield important insights into spatial population dynamics. For instance, the mean time to extinction of any given population/patch is the inverse of the rate (i.e., $T_E=1/e$). The simplicity of the Levins model has resulted in a sizable body of literature surrounding and extending the model. For instance, in the original Levins' model all patches are equidistant from one another, identical in quality, and can only be in one of two potential states (occupied or unoccupied), but each of these conditions is frequently adjusted in derivative stochastic patch occupancy models (SPOMs). Researchers have shown that despite the simplicity, Levins-type dynamics can emerge from more complicated stochastic metapopulation models, and extensions of the Levins model continue to provide insight into the influence of habitat patch size and topography (i.e., spatial orientation of habitat patches) on metapopulation persistence.
+
+
+
+
+(try to ground in empirical examples here)
+
+
+
+
+
+\bigskip
+\subsection*{Incorporating the influence of patch area and distance between patches}
+
+An extension of the Levins model provides a bridge between metapopulations and island biogeography theory (which will discuss further next). This simple extension considers a set of spatially explicit patches of variable size, where a distance matrix $D$ describes the distance between all patches in the metapopulation. The model borrows elements of Macarthur and Wilson's \textit{Theory of Island Biogeography}, such that distance between patches ($D_{ij}$) and patch area ($A_{i}$) influence extinction and colonization processes, where the patch extinction rate scales with patch area ($e_{i} = e / A_{i}$), and colonization ($c_{i}$) becomes a property of distance ($D_{ij}$), patch area ($A_{i}$), and dispersal rate ($\alpha$) where  
+
+\begin{equation}
+c_{i} = \sum_{j \ne i}e^{-\alpha D_{ij}} A_{j}p_{j}(t)
+\end{equation}
+
+
+\noindent This suggests that the mean time to extinction of a habitat patch ($1 / e_{i}$) is determined by the area of the patch. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{What is the theory of island biogeography?}
+
+As discussed above with respect to patch occupancy in metapopulations, the \textit{theory of island biogeography} attempts to explain the colonization and extinction of species (and subsequently the species richness of islands) as a function of island area and distance from the mainland. These two things influence the number of species that can colonize and persist on a given island, as distance from a mainland source is proportional to species dispersal and colonization probability and island area controls the population size attainable by a given species, and thus influences extinction rate. That is, the theory is based on the relationship between distance from the mainland (colonization rate) and island area (extinction rate) in determining the number of species that an island contains. 
+
+This is fundamentally related to a metapopulation, as the structure of the landscape is the same. That is, a metapopulation consists of habitat patches connected by dispersal but within an inhospitable landscape. The theory of island biogeography assumes the same, originally developed to explain the number of species on isolated islands. 
+
+
+
+
+**draw the classic extinction/colonization species number plot**
+
+
+
+
+
+This assumes that all islands are reachable by every species in the community with a non-zero probability, and is spatially-implicit (i.e., the actual locations of habitat patches are not considered). 
+
+
+
+**give an empirical example to show how the simple model can actually do pretty well**
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Species-area relationships}
+
+One clear extension, and honestly the original purpose of island biogeography theory, is the study of species-area relationships. The idea here is that increasing geographic area results in a greater number of unique species able to occupy the patch. 
+
+
+Species–area relationships exist in two different forms, depending on how the data are structured. The most related to island biogeography theory is the "island" species-area relationship, where a set of discontiguous habitats are studied, and the area of each patch is related to species richness in that patch. The second -- called the "mainland" species-area relationship -- considers a contiguous habitat where patches are nested within another.
+
+**draw these on the board and discuss the differences**
+
+
+
+\begin{equation}
+S = cA^{z}
+\end{equation}
+
+
+where $S$ is the number of species, $A$ is patch area, $z$ describes the shape of the relationships, and $c$ is a constant. $c$ actually describes the number of species we would expect to find in one unit of sampling area (whatever the unit is in the study).  
+
+
+The utility of this simple formula is that it suggests that the number of species is a simple function of area, which can help aid in the design of research (how big of a sampling area is required to truly characterize a community?), and to estimate species richness for unobserved sites of known area (is it possible to estimate the number of species on an island we've never been to?). 
+
+
+One interesting point is that both the theory of island biogeography and the species-area relationship make the assumption that species colonization and extinction rates are only a function of island area and distance to mainland. That is, species do not fundamentally differ in their dispersal rates, or only do so in a proportional way to one another as a function of island area and isolation (distance to mainland). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+

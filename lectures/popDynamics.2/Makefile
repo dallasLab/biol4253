@@ -1,4 +1,4 @@
-TEXFILE = presentation
+TEXFILE = notes
 
 paper:
 	xelatex $(TEXFILE).tex

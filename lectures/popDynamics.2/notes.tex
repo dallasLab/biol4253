@@ -1,0 +1,514 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage[running]{lineno}
+\usepackage{setspace}
+\usepackage{rotating}
+
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Tad Dallas (Biol 4253)}
+\lhead{What controls population dynamics?}
+
+\doublespacing
+
+
+\begin{document}
+
+
+
+
+
+
+
+
+
+\subsection*{Reading:}
+
+Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 2001. Chapters 1-2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\noindent\hrulefill 
+\end{center}
+
+
+
+\clearpage
+
+What controls the dynamics of species populations through time? That is, what controls the rate at which populations increase/decrease? Why don't species exhaust their resources and crash? We'll start with a simple base model, and then build up to examine more realistic population demographics. 
+
+
+
+
+
+
+
+\subsection*{A generalized model of population dynamics}
+
+\begin{equation}
+N_{t+1} = N_{t} + Births + Immigration - Deaths - Emigration 
+\end{equation}
+
+In the case of a closed population (no movement of individuals into or out of the patch), this reduces to 
+
+
+\begin{equation}
+N_{t+1} = N_{t} + Births - Deaths
+\end{equation}
+
+
+
+
+
+
+
+\bigskip
+
+
+
+
+
+
+
+\subsection*{Exponential growth}
+
+
+\noindent \textbf{Discrete model}
+
+The simplest model of population dynamics is based on an exponential increase in population size given a positive growth rate. That is, the population at the next time point ($N_{t+1}$) is based on the population size at the current time ($N_t$) times the growth rate of the population ($\lambda$). 
+
+\begin{equation}
+N_{t+1} = \lambda * N_t 
+\end{equation}
+
+This means that each individual produces $R$ offspring per timestep (generation), which then go on to produce $R$ offspring. The issue with this model is that there is nothing to stop it, so the time series of the population size quickly becomes exponential (as we'll see in the coding demonstration). 
+
+
+
+
+
+
+\bigskip
+
+
+
+\textbf{Continuous model}
+
+A discrete model makes sense when this assumption matches the species biology. That is, if the species reproduces once per year, or if generation time can be bounded within some time window, then a discrete model might capture the relevant dynamics well. Let's consider a system where we want that time window to be incredibly small. 
+
+\begin{equation}
+\frac{dN}{dt} = rN 
+\end{equation}
+
+where $r$ is equal to $b$ - $d$ (\texttt{births - deaths}), where $b$ and $d$ are per capita measures (births or deaths per individual per unit time). This $r$ is the \textit{instantaneous rate of increase}. When $r < 0$, the population decreases towards 0. When $r > 0$ the population increases exponentially (essentially geometrically, but in continuous time). This equation can be simplified back to discrete time, and we see the population size at time $t$ ($N_t$) is
+
+\begin{equation}
+N_{t} = N(0)e^{rt}
+\end{equation}
+
+Where $N(0)$ is the initial population size, $r$ is the instantaneous rate of increase, and $t$ is the number of timesteps. This looks quite similar to the discrete time case, except the growth rate is slightly different. This can also be used to project the expected population growth over time, where $t$ can be any number greater than 1. 
+
+\begin{equation}
+r = ln(\lambda) 
+\end{equation}
+
+
+$\lambda <$ 1, $r <$ 0: population decrease to 0 \\
+$\lambda =$ 1, $r =$ 0: population unchanging \\
+$\lambda >$ 1, $r >$ 0: population increase to infinity \\
+
+
+
+
+\textbf{Equilibria}:\\
+
+$N = 0, r > 0$ (unstable)\\
+$N = 0 , r < 0$ (stable)
+
+
+
+
+\textbf{Assumptions of the exponential model}:
+
+\begin{itemize}
+  \item No immigration or emigration
+  \item Constant $r$ (b-d)
+  \item No age, size, or genetic structure (all individuals are functionally equivalent)
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+
+
+\subsection*{Logistic growth}
+
+It may be more realistic to assume that populations intrinsically limit themselves. That is, competition for space, resources, and mates, produces an upper limit to the population size (but not the growth rate). One way to think about this is that you can have a garden in which the number of individual plants is limited by available space or light, but the growth rates of each of the individual plants could be independent of these effects. 
+
+
+
+\bigskip
+
+\textbf{Discrete model}
+
+In the discrete model, we see that the population still grows at rate $\lambda$, but overall population size is discounted by a scaling term which relates the population size ($N_t$) to an upper threshold. This threshold is the \textbf{carrying capacity ($K$)}, which is hte maximum sustainable population size, given potentially limiting resource such as resources, space, etc. 
+
+
+\begin{equation}
+N_{t+1} = N_{t} + \lambda N_{t} (1 - \frac{N_t}{K})
+\end{equation}
+
+
+
+
+
+
+\bigskip
+
+
+\textbf{Continuous model}
+
+In the continuous model, time step size goes to 0 in the limit (i.e., the time steps are really tiny). When the population size exceeds $K$ (for either discrete or continuous models) population growth becomes negative, leading to a tendency for the system to go to $K$. However, this is sensitive to population growth rate ($\lambda$ or $r$), as large growth rates can lead to complex dynamics, including damped oscillations, limit cycles, and chaos. 
+
+
+\begin{equation}
+\frac{dN}{dt} = rN \left[1- \frac{N}{K}\right], \ \ \ \ \ \  r, K > 0
+\end{equation}
+
+Note: in this model, $r$ and $K$ must be greater than 0.
+
+$\lambda <$ 1, $r <$ 0: population decrease to 0 \\
+$\lambda =$ 1, $r =$ 0: population does not change \\
+$\lambda >$ 1, $r >$ 0: population increase to carrying capacity ($K$) \\
+
+
+\textbf{Assumptions of the logistic model}:
+
+\begin{itemize}
+  \item Constant carrying capacity
+  \item Linear density dependence (population size limits population growth, with each additional individual reducing growth rate equally).
+
+\end{itemize}
+
+
+
+
+\textbf{Equilibria}:\\
+
+$N = K, 0 < r < 3.5$ (stable) \\
+$N = 0, 0 < r < 3.5$ (unstable) \\
+
+$N = K, r < 0$ (unstable) \\
+$N = 0, r < 0$ (stable) \\
+
+
+
+
+
+
+\bigskip
+
+$K$ can vary temporally. What happens when this is the case? 
+
+If $r$ is low, the population doesn't really track changes in $K$, but if the potential response can be high (i.e., if $r$ is large), the population will cycle around $K$, slightly out of phase. $N$ will be shifted to the right of the $K$ wave. Why is this? \\
+
+
+
+
+
+\textbf{Allee effect}: $b$ or $d$ is non-linear, resulting in a population growth rate $r$ which depends on $N_{t}$. Allee effects are important when population sizes become small, as the negative density dependence can cause a situation where population growth rate actually drops below 0 ($r < 0$). 
+
+
+
+
+
+\clearpage
+
+
+
+\subsection*{Structured populations}
+
+The above models assume that all individuals are functionally equivalent. That is, individuals contribute to overall reproductive output and population growth regardless of age, body size, sex, etc. But this is not really true for most natural populations. Most of the time, very young individuals won't reproduce, as they are not reproductively mature. This creates a situation where two populations containing the same number of individuals may have strikingly different dynamics, as the distribution of individuals' ages influences population growth rates. This occurs either through differences in birth rates (as noted above), or as a result of different death rates (e.g., young and old individuals have higher mortality risk than middle-aged).
+
+
+\textbf{Life table}
+
+Originally designed for insurance companies, this is a way to track demographic rates through time, partitioning things by the age of the organism. 
+
+
+
+\begin{table}[h!]
+\centering
+\caption{Life table}
+\vspace{0.5cm}
+\begin{tabular}{cccccc}
+\hline
+age (x) & S(x) & l(x) & b(x) & $l(x)b(x)$ & $l(x)b(x)x$ \\
+\hline
+0 & 500 & 1   & 0.8  & 0.8 & 0   \\
+1 & 400 & 0.8 & 0.5  & 0.4 & 0.4 \\
+2 & 200 & 0.4 & 0.25 & 0.1 & 0.2 \\
+3 & 50  & 0.1 & 0    & 0  &  0 \\
+4 & 0   & 0   & -    & 0  &  0 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+The term $S(x)$ refers to the number of individuals from a particular cohort that are still alive at age $x$. \\
+
+
+The term $l(x)$ represents the probability of surviving from age $x$ to age $x+1$. This is called survival rate.\\
+
+
+The term $b(x)$ represents the per-capita birth rate for females of age $x$. This is the number of offspring generated from one individual of age $x$.\\
+
+
+This gives us a good idea of how age or life stage can influence reproductive output and survival. \\
+
+
+$R_0$ is the net reproductive rate. 
+
+\[ R_{0} = 0.8 + 0.4 + 0.1 + 0 + 0 = 1.3 \] 
+
+$G$ is the generation time, which is quantified as the average age of parents of all offspring produced in a single cohort. It can be calculated as 
+
+
+\[ G = \frac{\Sigma_{x=0}^{k} l(x)b(x)x}{\Sigma_{x=0}^{k} l(x)b(x)}  \]
+
+\[ G = (0.8+0.4+0.1) / (0+0.4+0.2) = 2.17 \]
+
+From $R_0$ and $G$, we can compute $r$ and $\lambda$
+
+
+\[ r = \frac{ln(R_0)}{G} = \frac{ln(1.3)}{2.17} = 0.121 \]
+\[ \lambda = e^{r} = e^{0.121} = 1.129 \]
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+
+
+
+
+
+So how do we model these structured populations? We could break the populations down into stages, and use the models described above for each life stage. Here is an example for a stage-structured population consisting of juveniles ($J$), teenagers ($T$), and adults ($A$). Here, we can track the dynamics of each stage independently, as below. What's wrong with this? It doesn't explicitly consider the inherent connections between the different stages. So it tracks population growth, but not the transitions between classes. \\
+
+%\begin{equation}
+  \begin{align*}
+J_{t+1} &= \lambda_{J} * J_t \\ 
+T_{t+1} &= \lambda_{T} * T_t \\
+A_{t+1} &= \lambda_{A} * A_t \\
+  \end{align*}
+%\end{equation}
+
+
+Then, \[ N_{t} = J_{t} + T_{t} + A_{t} \]
+
+
+
+We can account for population flow explictly by having some survival term which tracks the transition of juveniles to teenagers, and teenagers to adults, but what else does this fail to account for? The contribution of different stage classes is not to it's own class, but to the first stage class, right? How do we incorporate this? We could set up a system of equations, or we could use \textit{matrix modeling}, which essentially sets up a system of equations, but in a nice way.
+
+
+
+
+
+
+\clearpage
+
+
+
+
+
+\subsection*{Matrix modeling}
+
+Elements of the square matrix correspond to the production of (row) by (column). These are transitions between lifestages. This matrix is called a \textit{Leslie matrix}.
+
+
+\begin{table}
+\centering
+\caption{A Leslie matrix describing the survival and fecundity relationships between life stages ($J$, $T$, and $A$)}
+\label{tab:transition}
+\vspace{0.5cm}
+\begin{tabular}{cccc}
+  & J & T & A \\
+  \hline
+J & $F_{J}$  &  $F_{T}$  & $F_{A}$ \\
+T & $S_{J}$  & -         & -      \\
+A & -        & $S_{T}$   & $S_{A}$  \\
+\hline
+\end{tabular}
+\end{table}
+
+Here, we have fecundity $F_{i}$, and stage transition rates ($S_{i}$). It is important to note that fecundity is different from birth rates discussed earlier. Here, fecundity captures both survival \textit{and} birth rate. \\
+
+
+
+So we can use the transition matrix to simulate stage-structured population dynamics. How we do this is by using matrix multiplication, as follows. We have a 1 column matrix containing the initial population sizes for all life stages. 
+
+\begin{equation*}
+\mathbf{n}^{0}=%
+\begin{bmatrix}
+n_{J} \\ 
+n_{T} \\ 
+n_{A} \\
+\end{bmatrix}
+\end{equation*}
+
+
+We can simply multiply this one column matrix by the transition matrix, 
+
+
+\begin{equation*}
+\begin{bmatrix}
+n_{J, t+1} \\ 
+n_{T, t+1} \\ 
+n_{A, t+1} \\
+\end{bmatrix}
+= \mathbf{N} * \mathbf{M} = \begin{bmatrix}
+n_{J, t} \\ 
+n_{T, t} \\ 
+n_{A, t} \\
+\end{bmatrix} * \begin{bmatrix}
+F_{J}$  & F_{T}  & F_{A}  \\
+S_{J}$  & 0      & 0      \\
+0       & S_{T}  & S_{A}  \\
+\end{bmatrix}
+\end{equation*}
+
+
+where $\mathbf{N}$ is the population size matrix and $\mathbf{M}$ is the transition matrix in Table \ref{tab:transition}, to yield the resulting population size at time $t+1$. 
+
+
+\begin{equation}
+\begin{bmatrix}
+n_{J}* F_{J} \ \  + \ \ n_{T} * F_{T}   \ \  + \ \  n_{A} * F_{A} \\
+n_{J}* S_{J} \ \ + \ \  n_{T} * 0      \ \   + \ \  n_{A} * 0    \\
+n_{J}* 0     \ \ + \ \  n_{T} * S_{T}  \ \   +  \ \ n_{A} * S_{A}    \\
+\end{bmatrix}
+\end{equation}
+
+
+
+
+
+\bigskip
+
+
+
+
+
+
+
+
+\textbf{Example}:
+
+This tracks a three-stage population, in which individuals go through juvenile ($J$), teen ($T$), and adult ($A$) stages. 
+
+Here, juveniles transition to teenagers with rate 0.2, and teenagers to adults at rate 0.3. Meanwhile, all stages contribute to the population of juveniles at different per capita rates, with juveniles producing 0.3 new juveniles for every 1 juvenile at time $t$, teenagers producing 0.5 juveniles for every teenager at time $t$, and adults producing 2 juveniles for every adult at time $t$. 
+
+
+
+\begin{table}[h!]
+\centering
+\caption{}
+\vspace{0.5cm}
+\begin{tabular}{cccc}
+& J & T & A \\
+  \hline
+J & 0.3  & 0.5  & 2.0 \\
+T & 0.2  & 0    & 0   \\
+A & 0    & 0.3  & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+Let's simulate the model 1 timestep forward, beginning with the abundance matrix 
+
+
+\begin{equation*}
+\mathbf{N}_{t}= \begin{bmatrix}
+n_{J, t} = 20 \\ 
+n_{T, t} = 10 \\ 
+n_{A, t} = 0  \\
+\end{bmatrix}
+\end{equation*}
+
+
+
+
+\begin{equation}
+\mathbf{N}_{t} * \mathbf{M} = \begin{bmatrix}
+(20 * 0.3) \ + \ (10 * 0.5) \ + \ (0 * 2)     \\
+(20 * 0.2) \ + \ (10 * 0 ) \ + \ (0 * 0)    \\
+(20 * 0 ) \ + \ (10 * 0.3) \ + \ (0 * 0)   \\
+\end{bmatrix} = \begin{bmatrix}
+n_{J, t+1} = 11 \\ 
+n_{T, t+1} =  4 \\ 
+n_{A, t+1} =  3 \\
+\end{bmatrix}
+\end{equation}
+
+
+
+% http://bandicoot.maths.adelaide.edu.au/Leslie_matrix/leslie.cgi?initial_pop%5B0%5D=10&initial_pop%5B1%5D=9&initial_pop%5B2%5D=8&initial_pop%5B3%5D=7&initial_pop%5B4%5D=6&initial_pop%5B5%5D=5&initial_pop%5B6%5D=4&initial_pop%5B7%5D=3&birth_rates%5B0%5D=0.005&birth_rates%5B1%5D=0.1&birth_rates%5B2%5D=0.1&birth_rates%5B3%5D=0.1&birth_rates%5B4%5D=0.1&birth_rates%5B5%5D=0.1&birth_rates%5B6%5D=0.1&birth_rates%5B7%5D=0.005&survival_rates%5B0%5D=0.9&survival_rates%5B1%5D=0.75&survival_rates%5B2%5D=0.6&survival_rates%5B3%5D=0.4&survival_rates%5B4%5D=0.2&survival_rates%5B5%5D=0.1&survival_rates%5B6%5D=0.005&survival_rates%5B7%5D=0.0005&Submit+Leslie+Matrix=Submit+Leslie+Matrix
+
+
+% eigenvector of the dominant eigenvalue of this matrix is the stable age distribution, which is the proportion of individuals of each age class within the population. Once this stable age distribution is reached, the proportions of individuals in each age class remain fixed, and the population goes through exponential growth at rate lambda.
+
+
+
+
+
+
+\end{document}
+

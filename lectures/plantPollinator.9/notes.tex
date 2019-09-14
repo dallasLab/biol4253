@@ -1,0 +1,246 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage[running]{lineno}
+\usepackage{setspace}
+\usepackage{rotating}
+
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Tad Dallas (Biol 4253)}
+\lhead{ Generalizing species interactions to ecological networks}
+
+\doublespacing
+
+
+
+
+
+\begin{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Reading:}
+
+Delmas, Eva, et al. "Analysing ecological networks of species interactions." Biological Reviews 94.1 (2019): 16-36. \\
+\url{https://onlinelibrary.wiley.com/doi/pdf/10.1111/brv.12433}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\noindent\hrulefill 
+\end{center}
+
+
+
+\clearpage
+\subsection*{General overview of network ecology}
+
+Ecological networks are not entirely new to us this semester. We previously discussed them briefly with regards to food webs, where we described the interactions among species as a \textit{directed} network, where energy flowed from one species (node) to another via a feeding interaction (\textit{a link}). However, networks can provide a more general representation of interactions between multiple species. Using a standardized set of tools from graph theory (the study of graphs/networks founded in mathematics and computer science), we can begin to disentangle the complex interactions among species.
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{How to represent interactions as networks}
+There are two main types of networks that are relevant to the study of ecological systems. First, \textit{unipartite} networks consist of a single node type, and can be used to examine interactions among species within a population or among connected populations. Within a population, this would correspond to a social network, where links between individuals consist of links between individuals. These links can also represent dispersal pathways in a metapopulation, which we discussed previously with the Levins' model. Meanwhile, \textit{bipartite} networks represent the interactions between two different types of nodes, which don't interact with one another (explicitly), but interact with the other node type. This is a really common way to represent interactions between host and parasite species, for example. Links between species in a network can be \textit{directed} or \textit{undirected}, where directed links depict a direct flow of energy from A to B, but not from B to A. Meanwhile, undirected links simply provide evidence of an interaction between the two species (the weight of the link is assumed to be the same from A to B as from B to A. 
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Why represent interactions as networks?}
+This may seem like a needless abstraction, but representing interactions in network form is incredibly useful. For one, this is a way to handle the complexity of a system that would otherwise be intractable. Second, the analytical tools developed for networks allow the detection of both large scale (network-level) structure, as well as quantification of species-level contributions to the overall network. We will go over both of these, and provide examples of the insights that can be gained from representing species interactions as ecological networks. 
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Unipartite networks}
+Unipartite networks represent the interactions between nodes of the same class. For example, think of a social contact network (real or online), which describes links between friends or people in close proximity. The study of social (and sexual) contact networks is incredibly important in understanding disease transmission and spread. For instance, when we described the SIR model in a previous lecture, a major assumption of this model was that the population was "well-mixed". This essentially means that all individuals are assumed to be connected, such that the probability of transmission from an infected individual to a susceptible individual is assumed to be equal. But this isn't really how disease transmission works, right? People who come into direct contact with infected individuals are more likely to become infected, and an infected person who contacts nobody is not much of a risk to the whole population. Using networks, it is possible to identify individuals most important for disease transmission and spread, allowing targetted vaccination or treatment. This serves to reduce the vaccination threshold to much lower than estimated by the SIR model. 
+
+**give good example of disease transmission networks, either in humans (ebola) or primates (julie's work)**
+
+This representation of a network of interconnected populations also provides a new set of analytical tools for metapopulations. That is, much of the study of metapopulations developed independently of network theory, despite similar aims. This lead to the development of identical measures with different names, which is never a good thing in science. For instance, metapopulation studies often calculate the connectivity of a node (population) as the sum of all the dispersal links between a specific node. In the study of networks, this is referred to as \textit{degree} (a form of centrality). But while connectivity is one measure, there are numerous ways to measure centrality, depending on what aspect of the node the user considers to be important. For instance, what if we don't care just about the immediate connections between populations, but we want to know how well connected the population is to \textbf{all} patches in the network? This has no developed measure in metapopulations, but is referred to as \textit{closeness} centrality in the study of networks. 
+
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Bipartite networks}
+Bipartite networks represent the interactions between two classes of nodes. Often, this refers to the interactions between trophic levels; host-parasite, consumer-resource, plant-pollinator, etc. However, this can be generalized to include site-species networks, allowing a link between species distribution modeling (which we discussed previously in the niche lecture) and the study of networks. Bipartite networks are incredibly useful in describing the complex associations between sets of species, and have a variety of use cases. For one, trait or phylogenetic information can be mapped onto nodes (species) in the network to start to get at what constrains a link between species. That is, plant-pollinator relationships may be limited by the physical attributes of both species. Imagine a pollinator with a very long probiscus. This pollinator species may be specialized to pollinate flowers with very deep corollas (flower tubes) that other pollinators simply can't use. 
+
+
+
+The use of this "trait matching" approach can also provide a means to predict potentially missing links in networks. These links could either represent potential spillover events (in host-parasite networks) or simply undetected associations given limited sampling effort. 
+
+
+**discuss missing links work**
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Common measures of networks}
+Regardless of network type, there are a common set of statistics which can be calculated on ecological networks to provide some insight into network structure. For instance, the \textit{connectance} of the network measures the fraction of links that are realized of the full set of potential links (i.e, all possible links between nodes in the network). This measure starts to get at how specialized interactions in the network are. In the extreme case, in a bipartite network where species only interact with one other species (highly specialized) the connectance is incredibly low. In the context of social or disease transmission networks, connectance can start to get at the risk of an epidemic as less connected networks reduce the likelihood that an epidemic will occur. 
+
+
+There are two other main measures of networks that ecologists routinely use; \textit{modularity} and \textit{nestedness}. The importance and interpretation changes between unipartite and bipartite networks, so we'll discuss the implications of these for both network types.
+
+
+
+\textit{Modularity} captures the tendency of species to form into groups of species which interact mainly within their own group. In unipartite networks, more modular metapopulations are less susceptible to disturbance, and can strongly reduce the size of epidemics. 
+
+** give a good example of this, and discuss why this is the case **
+
+In bipartite networks, modularity can be used to identify feeding guilds or clusters of specialized interactions between sets of interactors.
+
+** give a good example of this **
+
+
+
+
+
+
+
+
+
+\textit{Nestedness} measures the tendecy for species with fewer interactions to be a subset of those with more interactions. This is slightly confusing, until you sketch it out. 
+
+
+In unipartite networks, nestedness can help
+
+** give a good example of this, and discuss why this is the case **
+
+
+
+In bipartite networks, nestedness can 
+
+** give a good example of this **
+
+
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Common measures of individual species within networks}
+
+Many times, we may want to know identify the most well-connected or "important" species in a network. Consider the case of a disease transmission network. If we can identify those individuals that are capable of spreading the parasite to a large number of people, we may wish to take pre-emptive measures to make sure that individual does not become infected. In bipartite networks, we may wish to focus conservation efforts on species which are most important for maintaining connections with other species. For instance, we may wish to conserve a generalist pollinator species, as this species may be responsible for pollinating a large number of species. Conserving a specialist pollinator will help only a small number of plants in their pollination. 
+
+To get at species/site/node importance in networks, we can measure \textit{centrality}, which attempts to quantify the importance of the node to the network. Centrality comes in many different types, depending on what aspect of the network we deem as important. For instance, in the disease transmission case above, we may wish to vaccinate or remove individuals with the highest number of contacts, corresponding to \textit{degree} centrality. However, we may also wish to remove individuals which serve as bridges between two modules (as detected by modularity or other means). This is especially relevant to disease control efforts which attempt to minimize network-wide infection. This measure of centrality is called \textit{betweenness}. As a final example, the importance of a species can be defined relative to the importance of the species it is connected to. This is, for instance, the method underlying how Google ranks webpages to show you in search results. The idea is that important websites are those connected to important websites. The algorithm, called PageRank, preferentially shows you webpages that are linked to by many other webpages, with the idea that pages that are referenced by a lot of others are probabably good. 
+
+
+** example of centrality in unipartite networks**
+
+
+
+** example of centrality in bipartite networks**
+
+
+
+
+
+
+
+
+
+
+
+\bigskip
+\subsection*{Wrap up}
+
+Relate back to ecological systems more concretely? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 11"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -24,9 +24,7 @@ output:
 
 
 
-
-
-What is R?
+Macroecology
 
 
 ```{r}
@@ -35,3 +33,58 @@ What is R?
 
 
 ```
+
+
+
+
+
+
+
+
+Latitudinal diversity gradients
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+Allometric scaling 
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Species abundance distributions
+
+```{r}
+
+
+
+
+```
+

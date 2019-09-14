@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 10"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -23,10 +23,8 @@ output:
  
 
 
+I have no idea what this will look like for the env change week. 
 
-
-
-What is R?
 
 
 ```{r}

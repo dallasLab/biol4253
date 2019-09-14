@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 8"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -26,7 +26,15 @@ output:
 
 
 
-What is R?
+SIR models
+
+```{r}
+
+
+
+
+```
+
 
 
 ```{r}
@@ -35,3 +43,63 @@ What is R?
 
 
 ```
+
+
+
+
+
+
+Calculation of R0
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+Effect of vaccination and demonstration of herd immunity
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+Compare analytical R0 and herd immunity to simulated data
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

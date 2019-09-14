@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 7"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -26,8 +26,7 @@ output:
 
 
 
-What is R?
-
+Lotka-Volterra consumer-resource dynamics
 
 ```{r}
 
@@ -35,3 +34,30 @@ What is R?
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+Food webs
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+

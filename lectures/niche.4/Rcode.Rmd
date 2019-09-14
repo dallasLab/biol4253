@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 4"
 author: "Tad Dallas"
 includes:
   in_header:
@@ -25,13 +25,100 @@ output:
 
 
 
+# How do we model the niche and corresponding geographic distribution of a species?
 
-What is R?
+1) take occurence points
+2) extract environmental layers
+3) examine the niche in reduced (or not) dimensions
+4) train regression model on species occurrences (discuss presence-absence versus presence-background data)
+5) predict with changing environment or in new area
 
+
+
+
+
+
+
+
+
+1) take occurence points
 
 ```{r}
 
 
 
 
+
 ```
+
+
+
+
+
+
+
+
+2) extract environmental layers
+
+```{r}
+
+
+
+
+
+```
+
+
+
+
+
+
+
+3) examine the niche in reduced (or not) dimensions
+
+```{r}
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+4) train regression model on species occurrences (discuss presence-absence versus presence-background data)
+
+```{r}
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+5) predict with changing environment or in new area
+
+```{r}
+
+
+
+
+
+```
+
+
+
