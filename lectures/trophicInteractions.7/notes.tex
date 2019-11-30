@@ -7,13 +7,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
 \usepackage{gensymb}
-\usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{authblk}
 \usepackage[running]{lineno}
 \usepackage{setspace}
 \usepackage{rotating}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
 
 \setlength{\parindent}{0pt}
 
@@ -34,12 +35,7 @@
 
 \subsection*{Reading:}
 
-Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 2001. Chapter 6.\\
-
-\bigskip
-
-Hui, D. (2012) Food Web: Concept and Applications. Nature Education Knowledge 3(12):6 \url{https://www.nature.com/scitable/knowledge/library/food-web-concept-and-applications-84077181}
-
+Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 2001. Chapter 6. pages 1-14. \\
 
 
 
@@ -61,10 +57,7 @@ This week, we'll look at consumer-resource interactions a bit more explicitly. T
 
 
 
-**show the data on lynx and snowshoe hare**
-
-
-
+\includegraphics[width=\textwidth]{figs/lynx.jpg}
 
 
 Let's see what happens to single species population dynamics when we do consider the resource population explicitly. We'll start by considering the \textit{Lotka-Volterra model}, which tracks consumer ($C$) and resource ($R$) populations through time. 
@@ -87,7 +80,31 @@ where $q$ is the consumer ($C$) mortality rate. Without resources, the consumer 
 \end{equation}
 
 
-Here, the term $caCR$ corresponds to the attack rate ($a$) times the conversion of food into offspring ($c$) times the abundance of both consumer $C$ and resource $R$. This suggests that consumer population growth is fundamentally and closely linked to the abundance of resource $R$. The population dynamics of the resource population are similar to those of consumer, except there is no assumed background mortality rate. Instead, the population $R$ grows exponentially at rate $r$, but the population is reduced by the effect of the consumer ($aCR$). That is, 
+
+Here, the term $caCR$ corresponds to the attack rate ($a$) times the conversion of food into offspring ($c$) times the abundance of both consumer $C$ and resource $R$. \\
+
+
+
+\bigskip
+
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+Recall the consumer-resource model we discussed earlier in terms of R* theory. These models are very similar, except there is now only 1 consumer ($N$ in the R* theory now becomes $C$ in this model), and we treat conversion efficiency in the R* model ($a_j$) as the product of two terms (the attack rate $a$ and the conversion efficiency $c$). 
+
+\[\frac{dN}{dt} = N_{j}(a_{j}R - d) \]
+
+\[\frac{dR}{dt} = r - R\sum_{j} a_{j}N_{j} \]
+
+}
+}
+\bigskip
+
+
+
+
+
+This suggests that consumer population growth is fundamentally and closely linked to the abundance of resource $R$. The population dynamics of the resource population are similar to those of consumer, except there is no assumed background mortality rate. Instead, the population $R$ grows exponentially at rate $r$, but the population is reduced by the effect of the consumer ($aCR$). That is, 
+
 
 
 \begin{equation}
@@ -95,23 +112,75 @@ Here, the term $caCR$ corresponds to the attack rate ($a$) times the conversion 
 \end{equation}
 
 
-Depending on the parameterization of the model (e.g., attack rate $a$, conversion rate $c$, growth rate of the resource $r$, etc.), this model can display a range of dynamic behaviors. One interesting result from this simple model is the existence of sustained oscillatory behavior. The behavior is caused by the inherent feedback between consumer and resource. That is, the consumer and resource oscillate together through time, with the consumer lagged forward in time relative to the resource dynamics. This suggests that resource populations drive consumer dynamics, where resources are allowed to increase at relatively low consumer abundance, but high resource abundance increases consumer populations, which serves to drive down resource populations. We will explore the sensitivity of these fluctuations to model parameterization in the coding exercise. 
 
 
-This behavior has been observed in real consumer-resource systems as well, supporting the theoretical expectation derived from the Lotka-Volterra model. 
-
-In a famous experiment in 1958, Huffaker examined the consumer-resource interaction between two mite species, finding sustained oscillations. 
-
-**show data on Huffaker's mites**
+Depending on the parameterization of the model (e.g., attack rate $a$, conversion rate $c$, growth rate of the resource $r$, etc.), this model can display a range of dynamic behaviors. One interesting result from this simple model is the existence of sustained oscillatory behavior. The behavior is caused by the inherent feedback between consumer and resource. That is, the consumer and resource oscillate together through time, with the consumer lagged forward in time relative to the resource dynamics. This suggests that resource populations drive consumer dynamics, where resources are allowed to increase at relatively low consumer abundance, but high resource abundance increases consumer populations, which serves to drive down resource populations. \\
 
 
-However, it is important to note that Huffaker had to build in \textbf{a lot} of things to help the resource population persist. In essence, this would correspond to artificially lowering the attack rate of the predator. For instance, the experiment consisted of oranges (food resource to the resource species) and orange balls interspersed (serving to increase habitat complexity), and these were spread far apart (creating a metapopulation, essentially). This attempted to provide the resource species a bit of refuge from the predator, who would have otherwise just consumed the resource to extinction. So while much can be learned from the Lotka-Volterra model, it is a simple representation of consumer-resource dynamics which assumes a self-limiting consumer population, homogenous mixing, and a constant attack rate. 
+This behavior has been observed in real consumer-resource systems as well, supporting the theoretical expectation derived from the Lotka-Volterra model.  \\
 
 
 
 
+\bigskip
 
 
+\subsubsection*{Equilibrium resource}
+
+\begin{align}
+\frac{dC}{dt} & = caCR - qC \\  
+0 & = caCR - qC \\
+caCR & = qC \\
+caR & = q \\
+R* = \frac{q}{ca} \\
+\end{align}
+
+
+\subsubsection*{Equilibrium consumer}
+
+\begin{align}
+\frac{dR}{dt} = rR - aCR \\
+0 & = rR - aCR\\
+aCR & = rR \\
+aC & = r \\
+C* = \frac{r}{a} \\
+\end{align}
+
+
+
+
+
+
+\bigskip
+
+\url{https://statisticalplumber.shinyapps.io/lotka/lotka.Rmd} \\
+
+\bigskip
+
+
+
+
+
+
+
+
+\includegraphics[width=\textwidth]{figs/lv.png}
+
+
+
+
+
+
+
+
+
+\subsubsection*{Model assumptions:}
+\begin{itemize}
+	\item Resource population only limited by predator
+	\item Predator ($C$) only eats the one resource $R$
+	\item Individual predators consume infinite number of $R$
+	\item Encounter of predator $C$ and resource $R$ is random and "well-mixed"
+\end{itemize}
 
 
 
@@ -122,20 +191,72 @@ However, it is important to note that Huffaker had to build in \textbf{a lot} of
 
 
 \bigskip
+
+\subsubsection*{Functional response}
+
+Type I: this is what we assume above in the simple model. That is, there is a linear relationship between the number of prey ($R$) consumed and the density of predators $C$.  \\
+
+
+Type II: this functional response is saturating, such that at high predator $C$ density, consumption of prey is reduced (i.e., predators are limited in the capacity to "process" food, or prey become harder to find/attack when predator density is high). \\ 
+
+
+Type III: this functional response is not often observed, but is similar to type II (so there is saturation). However, before this saturation, there is an exponential increase of prey consumed as a function of predator density. This could be the case if a certain density of predators is required to best attack a resource (e.g., maybe 1 or 2 wolves can't take down caribou effectively, but there is some intermediate density where hunting strategy is more effective. After this density, there is a saturating response, as more predators doesn't mean more prey consumption).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+
+
+
+
 \subsection*{Food webs and their structure}
 
-The Lotka-Volterra model examines the interactions between a single consumer and resource species. What if we scale this up to a set of interacting consumer and resource species? While models exist to describe these interactions (especially in the case of a single resource population with many consumers), we will discuss this situation in more conceptual terms. The feeding interactions across \textit{trophic levels} form the \textit{food web}, which describes all the trophic interactions among species in a given location. 
+The Lotka-Volterra model examines the interactions between a single consumer and resource species. What if we scale this up to a set of interacting consumer and resource species? While models exist to describe these interactions (especially in the case of a single resource population with many consumers), we will discuss this situation in more conceptual terms. The feeding interactions across \textit{trophic levels} form the \textit{food web}, which describes all the trophic interactions among species in a given location. \\
 
 
 
-**show an example food web**
+More information on food webs can be found at this link \\ \url{https://www.nature.com/scitable/knowledge/library/food-web-concept-and-applications-84077181/} \\
 
 
 
 
-Here, the food web is depicted as a graph (a network), where nodes of the network are species and links are directional feeding associations describing the flow of energy from one species to another via a "feeding" interaction. Food webs are typically broken down into trophic levels, forming a \textit{trophic pyramid} where each level of the pyramid corresponds to a set of species which occupy the same trophic level. The base of the food pyramid (or food web) is most commonly composed of \textit{autotrophic} species -- also called primary producers -- which are photosynthetic organisms. The next trophic levels consist of \textit{heterotrophic} species. Theh immediate next level are often the small herbivores which consume the autotrophs, and after them are the \textit{primary predators} who consume the herbivores. After this are \textit{secondary predators} and so on. 
+Here, the food web is depicted as a graph (a network), where nodes of the network are species and links are directional feeding associations describing the flow of energy from one species to another via a "feeding" interaction. Food webs are typically broken down into trophic levels, forming a \textit{trophic pyramid} where each level of the pyramid corresponds to a set of species which occupy the same trophic level. The base of the food pyramid (or food web) is most commonly composed of \textit{autotrophic} species -- also called primary producers -- which are photosynthetic organisms. The next trophic levels consist of \textit{heterotrophic} species. The immediate next level are often the small herbivores which consume the autotrophs, and after them are the \textit{primary predators} who consume the herbivores. After this are \textit{secondary predators} and so on. \\ 
 
-**show differences between food web and food pyramid**
+
+Some have also described two different types of food webs; green and brown. Green food webs scale up from autotrophs to herbivores and larger bodied species. The brown food web corresponds to the detrital food web, consisting of dead organic matter (detritus) and the organisms which break this down or consume species which break down detritus. 
+
+
+
+
+
+\bigskip
+\subsection*{Types of food webs}
+
+\textbf{Connectedness food web}: feeding relationships, as described above. This is the most common type of food web. \\
+
+
+\textbf{Energy flow food web}: defines connections as dominant sources of energy transfer. So this removes some feeding links which don't contribute strongly to the conversion of biomass up trophic levels. \\
+
+\textbf{Functional food web}: tracks influence of populations on growth rates \\
+
+
+
+
+
 
 
 
@@ -148,43 +269,45 @@ Here, the food web is depicted as a graph (a network), where nodes of the networ
 \bigskip
 \subsection*{What controls food webs?}
 
-But why do we depict food webs as pyramids in the first place? It's a natural way to showcase the flow of energy to higher trophic levels, but it also often corresponds to the reduction in species richness at each trophic level. That is, there are often many autotrophic species, while there are typically very few secondary predator species. In fact, the total number of trophic levels is fundamentally limited by the flow of energy. 
+But why do we depict food webs as pyramids in the first place? It's a natural way to showcase the flow of energy to higher trophic levels, but it also often corresponds to the reduction in species richness at each trophic level. That is, there are often many autotrophic species, while there are typically very few secondary predator species. In fact, the total number of trophic levels is fundamentally limited by the flow of energy. \\
 
-To explore this more, we'll consider how each trophic level in the pyramid differs in terms of overall abundance and biomass. In terms of abundance, the pyramid shape is maintained, with lower trophic levels typically being overall more abundant. This relationship is even more pronounced when we consider biomass, as autotrophic species generally have quite high biomass. So why is this pyramid shape maintained?
-
-Every trophic interaction represents a flow of energy from one level to the next. But these interactions aren't without waste. That is, the ability of the consumer to convert the resource into energy is not 100\%, and consumers need to consume many resource items to create one new consumer (as we saw in the Lotka-Volterra model). This trophic difference in ability to capture energy is sometimes referred to as the \textit{pyramid of productivity}, which posits that energy transfer between trophic levels to create consumer biomass results in only 10\% of the consumed energy used to create new consumer biomass. This suggests that each trophic level will be 10\% of the size of the previous level. This is an oversimplification, but it's also a good piece of conceptual theory. This also helps explain why food webs tend to have fewer than five trophic levels, as starting with an autotrophic biomass pool of 100,000 units will result in 10 units of predator biomass in the fifth trophic level.
+To explore this more, we'll consider how each trophic level in the pyramid differs in terms of overall abundance and biomass. In terms of abundance, the pyramid shape is maintained, with lower trophic levels typically being overall more abundant. This relationship is even more pronounced when we consider biomass, as autotrophic species generally have quite high biomass. So why is this pyramid shape maintained? \\
 
 
+Every trophic interaction represents a flow of energy from one level to the next. But these interactions aren't without waste. That is, the ability of the consumer to convert the resource into energy is not 100\%, and consumers need to consume many resource items to create one new consumer (as we saw in the Lotka-Volterra model). This trophic difference in ability to capture energy is sometimes referred to as the \textit{pyramid of productivity}, which posits that energy transfer between trophic levels to create consumer biomass results in only 10\% of the consumed energy used to create new consumer biomass. This suggests that each trophic level will be 10\% of the size of the previous level. This is an oversimplification, but it's also a good piece of conceptual theory. This also helps explain why food webs tend to have fewer than five trophic levels, as starting with an autotrophic biomass pool of 100,000 units will result in 10 units of predator biomass in the fifth trophic level. \\
 
 
-
-
+The environment may also constrain food web structure. In fluctuating environments, food webs tend to be smaller and have lower connectance (so there are fewer species, and the species that are present tend to specialize in terms of who they eat).  \\
 
 
 
 
 \bigskip
-\subsection*{The influence of the environment on food webs}
-
-Fluctuating environments should have smaller food webs. 
+\subsection*{What controls food web size?}
 
 
+\textbf{Energetic hypothesis}: there is a limited amount of energy in the environment, and the percent energy transfer (as described above) controls food web size. \\
+
+If energy increased, this should result in longer food chains and more species
 
 
+\textbf{Dynamic stability hypothesis}: Disturbances at lower trophic levels are magnified up the food web, constraining the number of trophic levels possible. This is an explanation for the observation that food chains tend to be shorter in fluctuating environments. 
+
+If environmental conditions fluctuating strongly, weaker interactions should be removed from the food web, lowering connectance. 
 
 
-
-
-
-
-
-
-
+\textbf{Ecosystem size}: the more area available for the food web, the larger the food web, and larger species will be present.
 
 
 
 
 
+
+
+
+\includegraphics[width=\textwidth]{figs/foodwebz.png}
+
+Pyramid structure can vary across ecosystems and across time. In some instances biomass pyramids can be inverted. This pattern is often identified in aquatic and coral reef ecosystems. The pattern of biomass inversion is attributed to different sizes of producers. Aquatic communities are often dominated by producers that are smaller than the consumers that have high growth rates. Aquatic producers, such as planktonic algae or aquatic plants, lack the large accumulation of secondary growth as exists in the woody trees of terrestrial ecosystems. However, they are able to reproduce quickly enough to support a larger biomass of grazers. This inverts the pyramid. Primary consumers have longer lifespans and slower growth rates that accumulates more biomass than the producers they consume. Phytoplankton live just a few days, whereas the zooplankton eating the phytoplankton live for several weeks and the fish eating the zooplankton live for several consecutive years. Aquatic predators also tend to have a lower death rate than the smaller consumers, which contributes to the inverted pyramidal pattern. Population structure, migration rates, and environmental refuge for prey are other possible causes for pyramids with biomass inverted. Energy pyramids, however, will always have an upright pyramid shape if all sources of food energy are included and this is dictated by the second law of thermodynamics.
 
 
 
@@ -207,15 +330,4 @@ Combining concepts of the Lotka-Volterra model to the entire food web scale, wha
 
 
 
-
-
-
-
-\bigskip
-\subsection*{}
-
-
-
-
 \end{document}
-

@@ -34,13 +34,6 @@
 
 
 
-
-
-
-
-
-
-
 \subsection*{Reading:}
 
 Emery, S. "Succession: a closer look." Nature Education (2010). \\ \url{https://www.nature.com/scitable/knowledge/library/succession-a-closer-look-13256638} \\
@@ -82,20 +75,7 @@ Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 20
 
 \subsection*{What controls the structure of ecological communities?}
 
-Last week, we focused on the species niche, or the set of abiotic (and biotic) variables which constrain the persistence of a species in a multi-dimensional space. Today, we'll use similar concepts to build up from single species to interacting communities. An \textit{ecological community} is a set of interacting species which utilize the same environment. The term community is typically applied to a set of species which occupy the same \textit{trophic level}. This is perhaps a more restrictive definition than some have given, with the most liberal definition of the community being all interacting species in an area, which would include the entire \textit{food web}. This includes all \textit{consumer-resource interactions} (which include predator-prey, plant-herbivore, and host-parasite interactions). But we will discuss these trophic relationships later, and will focus on the community of species which all occupy the same trophic level. 
-
-
-
-
-
-
-
-
-
-
-
-
-
+In previous lectures, we focused on the species niche, or the set of abiotic (and biotic) variables which constrain the persistence of a species in a multi-dimensional space. Today, we'll use similar concepts to build up from single species to interacting communities. An \textit{ecological community} is a set of interacting species which utilize the same environment. The term community is typically applied to a set of species which occupy the same \textit{trophic level}. This is perhaps a more restrictive definition than some have given, with the most liberal definition of the community being all interacting species in an area, which would include the entire \textit{food web}. This includes all \textit{consumer-resource interactions} (which include predator-prey, plant-herbivore, and host-parasite interactions). But we will discuss these trophic relationships later, and will focus on the community of species which all occupy the same trophic level. 
 
 
 
@@ -103,15 +83,14 @@ Last week, we focused on the species niche, or the set of abiotic (and biotic) v
 
 
 \clearpage
+
 \subsection*{Species communities}
 
-
-The geographic distribution of species is set by their abiotic tolerances (based on the idea of the niche). Let's consider a set of species with slightly different niches, and corresponding slightly different geographic distributions. Sampling a fixed area, it is possible to observe anywhere between 0 and $S$ species, where $S$ is the total number of species across the landscape. 
-
+The geographic distribution of species is set by their abiotic tolerances (based on the idea of the niche). Let's consider a set of species with slightly different niches, and corresponding slightly different geographic distributions. Sampling a fixed area, it is possible to observe anywhere between 0 and $S$ species, where $S$ is the total number of species across the landscape. But species compete, and in the long-term one species will always win and exclude other species based on R* theory, assuming a common limiting resource ($R$), or there will be a region of stable coexistence, as identified in the Lotka-Volterra model. 
 
 
 
-
+It is important to consider how we describe the diversity of these multi-species communities. Below, I'll talk about three main forms of diversity measurement that vary in scale from local to regional. Then we'll go into successional processes, and how they generate temporal patterns in community composition.  
 
 
 
@@ -119,14 +98,14 @@ The geographic distribution of species is set by their abiotic tolerances (based
 
 
 
-
-\subsection*{Measuring species diversity}
-
-The set of species in the landscape ($S$) captures the regional diversity (also called \textit{gamma $\gamma$ diversity}). At each site, the observed species diversity is called \textit{alpha $\alpha$ diversity}. The difference between semi-independent sites (as they should be connected by dispersal, but at an appropriate spatial scale so as not to be too small) in species composition is termed \textit{beta $\beta$ diversity}.
+\bigskip
 
 
-((discuss some other measures of species diversity -- this may be more amenable to the code lecture))
 
+
+\subsection*{Different scales of diversity}
+
+How do we describe communities, and the relationships between pairs of communities? The set of species in the landscape (as described above) captures the regional diversity (also called \textit{gamma $\gamma$ diversity}). At each site, the observed species diversity is called \textit{alpha $\alpha$ diversity}. The difference between semi-independent sites (as they should be connected by dispersal, but at an appropriate spatial scale so as not to be too small) in species composition is termed \textit{beta $\beta$ diversity}.
 
 
 
@@ -135,6 +114,55 @@ The set of species in the landscape ($S$) captures the regional diversity (also 
 
 
 
+\subsection*{Measuring species diversity (alpha)}
+
+Imagine species diversity as a large collection of jelly beans in a bowl, where each jelly bean is an individual, and colors correspond to species. Pulling out a handful -- corresponding to a \textit{sample} -- and enumerating the species (alpha diversity) may not give you a picture of the actual richness of the community. This is especially true if the relative abundance of the species (different colored jelly beans) varies. Rank abundance plots are one way to examine this, where the shape of the distribution tells us something about commonness and rarity in the system. That is, some environments promote the dominance of a single species relative to a large group of rare species, while other environments may promote more equitable distribution of species abundance. 
+
+
+\paragraph*{}
+This is especially important, as rare species will be less often sampled, making estimates of alpha diversity incorrect if we assume that all species have equal abundance. These differences in relative abundance cause a community to be "uneven", where \textit{evenness} is defined as the tendency for a community to be composed of approximately equal numbers of individuals (a two species community composed of 20 individuals of species A and 20 individuals of species B). 
+
+
+\paragraph*{}
+So how do we get around the issue of a sample not representing the \textit{true} community? We can estimate the likely number of species in the community by using either rarefaction, or species richness estimators. 
+
+
+
+
+
+
+\subsubsection*{Rarefaction}
+
+\textit{Rarefaction} is the process of subsampling the data (taking less than the sample) and estimating species richness for each subsample of $n$ individuals. Rarefaction can exist in at least two forms; individual-based and sample-based. Individual-based rarefaction (which is what we'll focus on) rarefies as a function of individuals (i.e., the unit of interest is the sampled individual). Sample-based rarefaction focuses on the entire sample, which is composed of multiple individuals, potentially of different species. The difference between these two depends on the structure of the data available, and the goal of the researcher. That is, if I want to know how many sampling plots I should examine in a forest if I wanted to fully capture species richness, I would use sample-based rarefaction. If my experimental design consisted of sampling individuals (e.g., small mammal trapping in a single site), then individual-based rarefaction would be more appropriate. 
+
+
+
+
+If we consider a fine enough gradient of $n$ values, we can build up a saturating curve relating species richness (our quantity of interest) to the number of individuals sampled. From this curve, we can ask how many species we would expect to observe if we sampled more individuals than we actually did. 
+
+
+
+Assumptions of rarefaction:
+\begin{itemize}
+  \item underlying community is constant over time (no immigration or emigration of species)
+  \item well-mixed community (spatial distribution of each species is random)
+  \item individuals are sampled at random (brighter colored individuals aren't sampled more often than others)
+  \item sampling with identical methods (if used to compare two communities)
+\end{itemize}
+
+
+
+Apart from the simulation-based approach to rarefaction, there is also a decent approximation of the expected value of species ($S_{m}$) expected to be found of $m$ individuals. 
+
+\[ E(S_{m}) \approx S - \sum_{i=1}^{S}(1-p_{i})^{m} \]
+
+where $S$ is the number of species, $m$ is the total number of individuals in the sample, and $p_i$ is the proportion of species $i$ in the original sample. 
+
+
+
+
+\paragraph*{Rarefaction as a way to compare richness between sites}
+What is we want to know how two sites compare in the number of species which live there, but we have sampled them unequally? We can use rarefaction as a way to subsample the more well sampled community and generate a bootstrapped species richness distribution. 
 
 
 
@@ -144,11 +172,82 @@ The set of species in the landscape ($S$) captures the regional diversity (also 
 
 
 
-\subsection*{Niches and community composition}
 
-**sketch out species niches along a single niche axis and demonstrate how the distribution of species niches can control what communities will look like**
+\subsubsection*{Species richness estimation}
 
-Getting back to our local community, the set of species that occupy a given site is controlled not only by species niches, but also by the presence and abundance of existing species. This does not necessarily mean that other species density should be a niche axis, but instead that a site which could potentially be occupied by a species (i.e., the environment is within the species niche) remains unoccupied for the time being. This is an important distinction, as the mechanisms by which species may exclude another species from a community are numerous. Some of these mechanisms are forms of \textit{competition}, while others are simply a function of dynamic colonization processes (e.g., \textit{priority effects}, successional dynamics). 
+Rarefaction is largely used for interpolation (what is the number of species I would expect to find in this smaller sample than what I took?). Species richness estimators are used for extrapolation (given I found this many species in this sample, how many species are in the entire area?). We are normally far more interested in extrapolation than interpolation. 
+
+One common estimator of species richness is called the Chao1 index, named after and by Anne Chao. It's based on the number of singletons (those species that are represented by a single individual in the sample) and doubletons (those species that are represented by two individuals in the sample). Essentially, the estimator attempts to quantify how often rare species are found, and to extrapolate based on these rare species. A modified ratio between the singletons and the doubletons is used to tell us something about the total number of species, by trying to estimate the number of species in that tail (those that are really rare and infrequently sampled). 
+
+
+\[ S_{est} = S_{obs} + \left( \frac{(f_{1})^{2}}{2f_{2}}\right)\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Measuring species diversity (beta)}
+
+But species richness (alpha diversity) was only one type of diversity we discussed. While alpha diversity is the property of a single community, we often need a way to compare communities. Beta diversity is also called "species turnover", as it attempts to estimate the relative amount of shared species and unique species for any pair of communities. 
+
+
+Jaccard similarity: bounded between 0 and 1. Is equal to 1 when two communities are identical, and 0 when the communities share 0 species. 
+
+
+\[ J(A,B) =  \frac{| A \cap	 B |}{| A \cup B|} \]
+
+
+$| A \cap	 B |$ is the shared species between communities $A$ and $B$, while $| A \cup B |$ is the total number of shared and non-shared species. 
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection*{Distance-decay in community similarity}
+
+We can consider a set of communities potentially connected by dispersal processes (i.e., immigration and emigration occur). A common observation in the spatial structure of communities is that distance between two communities is negatively related to the similarity of the two communities. That is, communities which are farther apart tend to be more dissimilar than two communities which are close together. This can happen for a number of reasons, including 1) dispersal limitation or  2) a spatially-autocorrelated environmental landscape, among some others that I can't think of now.
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection*{How have alpha and beta diversity changed over time?}
+
+Dornelas et al. 2014 (www.doi.org/10.1126/science.1248484) paper showing little evidence for a net change in species richness (alpha diversity), but a clear increase in community similarity (beta diversity).  (i.e., communities are becoming more homogeneous, and some species are lost, but invasive species or common species are filling those gaps). 
+
+
+
+
+
+
+
+
 
 
 
@@ -162,21 +261,6 @@ Getting back to our local community, the set of species that occupy a given site
 
 
 \clearpage
-\subsection*{Competition}
-
-Competition is the interaction between species which serves to reduce the survival or fecundity of individuals of both species. For example, plant species may compete for soil nutrients, light availability, and space. Meanwhile, animal communities may compete for prey resources or nesting habitat. Here, it's important to make a distinction between competition which occurs between individuals of different species (\textit{interspecific competition}) from when a single species competes with itself (\textit{intraspecific competition}). We discussed intraspecific competition earlier as a form of population regulation that can lead to stabilizing population dynamics. 
-
-Apart from this distinction between inter and intra -specific competition, there are three main types of competition; \textit{exploitative},  \textit{interference},  and \textit{apparent} competition). 
-
-
-
-\textit{exploitative} competition: A competitive interaction where individuals consume a common limiting resource. e.g., bird species which occupy tree holes may compete for nesting sites, as there are only so many tree holes to nest in. Another, more classic example, would be competition for a prey resource e.g., two small mammal species may compete for seed resources. 
-
-
-\textit{interference} competition: A competitive interaction where individuals interact directly. e.g., territorial species defending their territory from establishment of another species, aggression between individuals of different species that affects the survival or reproduction of one or both individuals. 
-
-
-\textit{apparent} competition: A competitive interaction where one species indirectly influences the survival or reproduction of another species through indirect effects on a shared predator or parasite. e.g., a species which is able to tolerate infection by a shared parasite may increase the abundance of the parasite, which can have a proportionately stronger influence on a second competing species. This does not require the species to have a limiting resource (like classic exploitative competition) or to interact directly (like interference competition). 
 
 
 
@@ -189,55 +273,76 @@ Apart from this distinction between inter and intra -specific competition, there
 
 
 
-\subsection*{What makes a good competitor?}
-The idea that competition can be a major force structuring communities shouldn't come as a surprise, as we discussed the idea of competitive exclusion previously, where species with a large degree of niche overlap cannot coexist indefinitely on a limiting resource. But now, these different forms of competition create new ways through which competition can act, potentially leading to exclusion of one species. For instance, in \textit{interference} competition, one predator species may scare another predator species off from it's normal prey resource, resulting in a shift in diet. This shift in diet could come at a demographic cost (e.g., lower population growth rates). 
-
-So what makes a species a good competitor? This is a big question, and we won't go into too much detail here. One school of thought suggests that the winner of competition (and therefore the thing that makes for a good competitor) is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R*$ (R star), and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R*$ will outcompete a species with a higher $R*$, especially as resources become limited. 
+\subsection*{Community composition and assembly}
 
 
+Community composition describes the number of species within a given community, and is typically treated as presence-absence data (a species is either there or it is not) without consideration of species abundance. We talked about species richness (alpha diversity), which is a coarse measure of a community. Community composition typically considers the identities of species in the community. Species play different roles in ecological communities. \\
 
-**Go into more detail about R* in the coding lecture**
+For instance, a \textit{keystone species} is a species that has a large impact on community structure relative to it's abundance in the community. An example would a top predator (like a sea star), which eats mussels. The removal of this sea star species results in the mussel population growing and excluding over 20 species. \\
 
+Another type of species that can play a substantial role in determining what species can exist within the community are \textit{foundation species}. These are species which provide necessary resources like habitat to other species. An example would be a bird that creates holes for other species to live in as a consequence of foraging behavior of the bird. 
 
-However, much of this theory was meant to explain how species diversity is maintained when the species are all present in the regional species pool. But what if we consider \textit{community assembly} instead of composition? That is, community composition is the set of interacting species which make up the community at a single point in time, under the assumption that all species may arrive at the site. \textit{Community assembly} is the set of processes by which communities are formed. Including this temporal axis is important, as each snapshot in time of a community can tell something about the community composition, but examining change in communities through time allows for examination of community assembly. 
-
-
-
-
-
-
-
+So what determines community structure? 
+\begin{itemize}
+  \item environmental conditions
+  \item geographic location of site
+  \item species interactions
+  \item regional species pool 
+\end{itemize}
 
 
 
 
-\clearpage
+\paragraph*{}
+But what if we consider \textit{community assembly} instead of composition? That is, community composition is the set of interacting species which make up the community at a single point in time, under the assumption that all species may arrive at the site. \textit{Community assembly} is the set of processes by which communities are formed. Including this temporal axis is important, as each snapshot in time of a community can tell something about the community composition, but examining change in communities through time allows for examination of community assembly. One way community assembly can occur is through succession.
+
+
+
+
 \subsection*{Succession}
+
 Imagine a community assembly process on a large area of land that recently had a large disturbance event (e.g., a large fire removed all species from an area). This area will be re-colonized by species from the regional species pool, and the order of arrival of species allows the study of community assembly. This community assembly process is also called \textit{succession}. Succession can either be primary (as described above where all species are removed) or secondary (where a subset of species remain after a disturbance event). The idea of succession was formed early in the history of ecology, and was developed mainly using plant communities as an example. There were two main people involved in early ideas of succession; Gleason and Clements. Clements argued that successional dynamics were deterministic, where a disturbed site will eventually reach a \textit{climax community} that is a stable assemblage. Meanwhile, Gleason posited that species responded individually to environmental gradients, such that successional dynamics were a process related to the species abiotic tolerances (i.e., their niche). Ecologists have largely abandoned the idea of the \textit{climax community} and the deterministic view of succession. Instead, we recognize the importance of chance, species differences in colonization rates and competitive ability, and site-level variation in environmental factors across successional time. 
 
+
+\paragraph*{}
 In the 1970's, Levins developed the idea of a species tradeoff which could explain successional dynamics without invoking changing environmental conditions. The idea was that early colonizing species after a disturbance tended to be 'weedy' species, that could disperse and grow quickly (in the case of plants), but that were poor competitors. Meanwhile, good competitors did not disperse and colonize as well, and took longer to arrive at a disturbed patch. However, once they did arrive, they would outcompete the early colonizing species, resulting in replacement of species through time (i.e., successional dynamics). This species tradeoff -- species are either good at colonizing sites or good competitors -- is referred to as the \textit{competition-colonization tradeoff}. 
 
 
+\textit{Autogenic succession}: a term where successional dynamics are driven by the identities of species in the communities altering the competitive landscape. This is essentially a form of historical contingency. An example would be if a large plant with big leaves established in a early successional plot, shading out plants that require lots of light, but allowing shade-tolerant plants to invade.  \\
+
+\textit{Allogenic succession}: a term where successional dynamics are driven by temporal environmental changes. Environmental conditions (soil moisture, N availability, etc.) will change over time in successional plots, as succession is typically examined after a large disturbance event (e.g., a fire). 
 
 
 
 
 
-\clearpage
+
+\subsection*{}
+Another interacting force, slightly on the other end of the deterministic--stochastic spectrum, is the neutral theory of biodiversity, which predicts that community assembly occurs through stochastic processes. That is, whichever species get to a new site will colonize it, and will persist independent of any historical contingency (i.e., priority effect). This is because neutral theory asserts that species have equivalent demographic rates and dispersal rates. The environment can only support so many individuals, which controls the overall number of organisms in the community. Changes to the community happen through probabilistic processes (i.e., stochasticity as we discussed in previous lectures). Specifically, demographic stochasticity, as the environment can be assumed to be constant and/or non-limiting to any one species (i.e., no niche limitation present). This is a pretty big assumption depending on the scale at which the community is examined. 
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection*{Why aren't all communities predictable?}
 
-But if we know the regional species pool and the colonization and competitive ability of all species, could we then predict community assembly (successional) processes? No...or at least not in the deterministic sense that earlier ecologists proposed. And there are at least two reasons for this; species may fundamentally change the environment they colonize, making the order of colonization extremely important (remember here that dispersal is a stochastic process, where competition-colonization tradeoffs exist, but are hardly absolute). This effect of the order of arrival of species to a site is called \textit{historical contingency} or a \textit{priority effect}. The second reason community composition and assembly processes may not be predictable is due to stochasticity. That is, the dispersal and establishment of species to a site is not deterministic, but is probabilistic. Further, the outcome of competition between species is probabilistic. 
+But if we know the regional species pool and the colonization and competitive ability of all species, could we then predict community assembly (successional) processes? No...or at least not in the deterministic sense that earlier ecologists proposed with respect to things like succession. 
 
 
-
-\textbf{Historical contingency} or \textit{priority effects}: \\
-As noted above, the order of species arriving to a given site may strongly influence the equilibrium community composition later in time. Without detailed knowledge on the order of arrival of species, as well as the complex relationships between species, it is difficult to estimate the probability that a dispersing species will establish in a site. This is further influenced by the \textit{propagule pressure} or the number of individuals or the frequency of dispersal events into a patch. The existing community's ability to reduce the success of the dispersing species is referred to as \textit{biotic resistance}. 
+And there are at least two reasons for this; species may fundamentally change the environment they colonize, making the order of colonization extremely important (remember here that dispersal is a stochastic process, where competition-colonization tradeoffs exist, but are hardly absolute). This effect of the order of arrival of species to a site is called \textit{historical contingency} or a \textit{priority effect}. The second reason community composition and assembly processes may not be predictable is due to stochasticity. That is, the dispersal and establishment of species to a site is not deterministic, but is probabilistic. Further, the outcome of competition between species is often probabilistic (recall that in Lotka-Volterra competition, the initial number of individuals of the $n$ species determined the outcome of competition. 
 
 
+\textbf{Historical contingency} or \textit{priority effects}: As noted above, the order of species arriving to a given site may strongly influence the equilibrium community composition later in time. Without detailed knowledge on the order of arrival of species, as well as the complex relationships between species, it is difficult to estimate the probability that a dispersing species will establish in a site. This is further influenced by the \textit{propagule pressure} or the number of individuals or the frequency of dispersal events into a patch. The existing community's ability to reduce the success of the dispersing species is referred to as \textit{biotic resistance}.\\ 
 
 
-\textbf{Stochasticity}: We touched briefly on the influence of stochasticity in earlier lectures on population dynamics. Stochasticity relates to the inherent randomness in integer-valued probabilistic processes like birth and death (e.g., distribution of offspring is not a single number). Stochasticity also influences the structure of ecological communities, as competition among species may decrease population sizes, which increases the role of \textit{demographic stochasticity}, leading some species to go extinct in unpredictable ways. The lack of ability to predict which species in a competitive system will go extinct is called \textit{competitive indeterminacy}. \\ 
+\textbf{Stochasticity}: We touched on the influence of stochasticity in earlier lectures on population dynamics. Stochasticity relates to the inherent randomness in integer-valued probabilistic processes like birth and death (e.g., distribution of offspring is not a single number). Stochasticity also influences the structure of ecological communities, as competition among species may decrease population sizes, which increases the role of \textit{demographic stochasticity}, leading some species to go extinct in unpredictable ways. The lack of ability to predict which species in a competitive system will go extinct is called \textit{competitive indeterminacy}. \\ 
 
 
 

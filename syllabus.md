@@ -190,7 +190,7 @@ I will not take attendence. However, much of the material presented will not be 
 
 
 
-\textcolor{ProcessBlue}{\Large Exam 4 \ \ \normalsize ~December 10 (finals week)}
+\textcolor{ProcessBlue}{\Large Exam 4 \ \ \normalsize December 5 }
 
 **Can we generalize species interactions to ecological networks?**
 
