@@ -22,22 +22,31 @@ header-includes:
 
 \setstretch{1}
 
-**Location**: 228 Tureaud Hall
+**Location**: Zoom 
 
-**Time**: T and Th from 4:30 - 5:50pm
+**Time**: T and Th from 1:30pm - 02:50pm and 3:00pm - 4:20pm
 
 **Instructor**: Dr. Tad Dallas (tadallas@lsu.edu)
 
 **Office**: A343 Life Sciences
 
-**Office hours**: T and Th from 2:30 - 4:20pm 
+**Office hours**: T 1:30 - 3:30pm 
 
 \bigskip
 \setstretch{1.5}
 
+
 **Course Overview**:
 
 Ecology is the study of species interactions. This broad umbrella covers levels of biological organization from individuals to entire ecosystems. We will explore ecological concepts across these different levels of organization, and gain an understanding of general ecological concepts. The course will focus particularly on population and community ecology, which aims to understand the processes which govern the abundance and diversity of species. However, we will also be addressing trophic relationships (e.g., predators eating prey), disease (e.g., epidemic spread), and mutualisms (e.g., plants and pollinators).
+
+
+This course will be taught asynchronously, meaning that Tuesday's lecture will be recorded and released to watch whenever you would like (before Thursday), and then Thursday's class will dig deeper into the concept and clarify points of confusion. 
+
+
+YouTube lectures: https://www.youtube.com/playlist?list=PLGKQe3NU_VU1NtfDbKIl_hXfrpfeOMkz2
+
+
 
 
 \bigskip
@@ -55,7 +64,8 @@ Over the course, it is expected that students gain
 
 **Syllabus Subject to Change**:
 
-Changes to the syllabus may be made during the semester. The most up-to-date and current syllabus will always be available on the course website (Moodle).
+Changes to the syllabus may be made during the semester. The most up-to-date and current syllabus will always be available on the course Github page (https://github.com/dallasLab/biol4253/) and should also be updated on Moodle (but this is not a certainty). 
+
 
 
 
@@ -93,7 +103,7 @@ As a rule, make-up exams will be essay or oral in form depending on the decision
 
 **Group Project**: 
 
-Students will complete a group project which will be presented to the class at the end of the semester (5-8 minute presentations). The project options are open, but must deal with an ecological topic covered in class. Topics must be approved by the instructor. 
+Students will complete a group project which will be presented to the class at the end of the semester (5-8 minute recorded presentations). The project options are open, but must deal with an ecological topic covered in class. Topics must be approved by the instructor. 
 
 Audio-visual equipment can be [checked out from the library](https://grok.lsu.edu/browse.aspx?parentcategoryid=2558). 
 
@@ -110,11 +120,7 @@ _The project is worth 100 points_
 
 Louisiana State University adopted the Commitment to Community in 1995 to set forth guidelines for student behavior both inside and outside of the classroom.  The Commitment to Community charges students to maintain high standards of academic and personal integrity.  All students are expected to read and be familiar with the LSU Code of Student Conduct and Commitment to Community, found online at www.lsu.edu/saa.  It is your responsibility as a student at LSU to know and understand the academic standards for our community. 
 
-
-
-Students who are suspected of violating the Code of Conduct will be referred to the office of Student Advocacy & Accountability.  For undergraduate students, a first academic violation could result in a zero grade on the assignment or failing the class and disciplinary probation until graduation.  For a second academic violation, the result could be suspension from LSU.  For graduate students, suspension is the appropriate outcome for the first offense.
-
-
+Students who are suspected of violating the Code of Conduct will be referred to the office of Student Advocacy & Accountability. For undergraduate students, a first academic violation could result in a zero grade on the assignment or failing the class and disciplinary probation until graduation.  For a second academic violation, the result could be suspension from LSU.  For graduate students, suspension is the appropriate outcome for the first offense.
 
 Further information is provided on the [LSU website](https://www.lsu.edu/online/faculty/academicintegrity.php)
 
@@ -131,9 +137,14 @@ More information on registering a disability is available at [LSU Disability Ser
 
 
 
+
+
 ## Late Assignments: 
 
 Assignments are expected to be turned in on time. I will not accept late assignments.
+
+
+
 
 
 ## Attendance: 
@@ -144,16 +155,20 @@ I will not take attendence. However, much of the material presented will not be 
 \clearpage
 
 
+
+
+
+
+
+
+
+
 # Schedule
 
 ---
 
-\iffalse
-29 - 4 exams - 2 presentations = 23 classes
-\fi
 
-
-\textcolor{ProcessBlue}{\Large Exam 1 \ \ \normalsize September 17}
+\textcolor{ProcessBlue}{\Large Exam 1 \ \ \normalsize February 9}
 
 **What is ecology?**
 
@@ -166,7 +181,7 @@ I will not take attendence. However, much of the material presented will not be 
 
 
 
-\textcolor{ProcessBlue}{\Large Exam 2 \ \ \normalsize October 15}
+\textcolor{ProcessBlue}{\Large Exam 2 \ \ \normalsize March 2}
 
 **What is a species niche?**
 
@@ -175,7 +190,7 @@ I will not take attendence. However, much of the material presented will not be 
 ---
 
 
-\textcolor{ProcessBlue}{\Large Exam 3 \ \ \normalsize November 12}
+\textcolor{ProcessBlue}{\Large Exam 3 \ \ \normalsize April 6}
 
 **How does landscape structure influence population processes?**
 
@@ -190,7 +205,7 @@ I will not take attendence. However, much of the material presented will not be 
 
 
 
-\textcolor{ProcessBlue}{\Large Exam 4 \ \ \normalsize December 5 }
+\textcolor{ProcessBlue}{\Large Exam 4 \ \ \normalsize Final exam day April 2x }
 
 **Can we generalize species interactions to ecological networks?**
 
