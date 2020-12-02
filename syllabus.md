@@ -26,13 +26,16 @@ header-includes:
 
 **Time**: T and Th from 1:30pm - 02:50pm and 3:00pm - 4:20pm
 
-**Instructor**: Dr. Tad Dallas (tadallas@lsu.edu)
+**Instructor**: Dr. Tad Dallas (tadallas@lsu.edu) and Daijiang Li (dli30@lsu.edu)
 
-**Office**: A343 Life Sciences
+**Office**: LSA 343 Life Sciences (Tad) and LSB 125 (Daijiang)
 
 **Office hours**: T 1:30 - 3:30pm 
 
+
+
 \bigskip
+
 \setstretch{1.5}
 
 
@@ -62,6 +65,9 @@ Over the course, it is expected that students gain
 
 \bigskip
 
+
+
+
 **Syllabus Subject to Change**:
 
 Changes to the syllabus may be made during the semester. The most up-to-date and current syllabus will always be available on the course Github page (https://github.com/dallasLab/biol4253/) and should also be updated on Moodle (but this is not a certainty). 
@@ -89,6 +95,8 @@ There is no required textbook, but readings will be provided from the primary li
 There will be a total of 500 points, consisting of four exams and a final project. 
 
 
+
+
 **Exams**: 
 
 There will be four exams given in this class. Although there will be **no comprehensive** exam, each successive section will build upon material learned in earlier sections. Thus, on Exams 2-4, students will be expected to draw upon major points from previous material covered. Exams will consist of any combination of the following types of questions: fill in the blank, multiple choice, short answer, essay or problem solving. _Each exam will be worth 100 points_. 
@@ -103,13 +111,16 @@ As a rule, make-up exams will be essay or oral in form depending on the decision
 
 **Group Project**: 
 
-Students will complete a group project which will be presented to the class at the end of the semester (5-8 minute recorded presentations). The project options are open, but must deal with an ecological topic covered in class. Topics must be approved by the instructor. 
+Students will complete a group project which will be presented to the class at the end of the semester. The project options are open, but must deal with an ecological topic covered in class. Topics must be approved by the instructor. 
 
 Audio-visual equipment can be [checked out from the library](https://grok.lsu.edu/browse.aspx?parentcategoryid=2558). 
 
-The group members should be prepared to answer questions from the classmates and your instructors about your project. You will be graded on your creativity, enthusiasm, accuracy and how clearly the project relates to the field of ecology. More detail on the group project is at the end of this document.
+You will be graded on your creativity, enthusiasm, accuracy and how clearly the project relates to the field of ecology. More detail on the group project is at the end of this document.
 
 _The project is worth 100 points_
+
+
+
 
 
 
@@ -190,6 +201,10 @@ I will not take attendence. However, much of the material presented will not be 
 ---
 
 
+
+
+
+
 \textcolor{ProcessBlue}{\Large Exam 3 \ \ \normalsize April 6}
 
 **How does landscape structure influence population processes?**
@@ -226,7 +241,7 @@ I will not take attendence. However, much of the material presented will not be 
 
 Here are a final set of instructions for your class presentations.
 
-1. **Time limit**. Each presentation will be allotted 8 minutes with 2 minutes of questions. Your video or presentation is NOT ALLOWED TO EXCEED 8 MINUTES!!! Presentations going over this limit will be interrupted. An incomplete presentation will affect your grade.
+1. **Time limit**. Each presentation will be allotted 5 minutes. Presentations going over this limit will be interrupted. An incomplete presentation will affect your grade.
 
 
 2. **Participation**. Everyone in your group must contribute equally to the presentation/video. That includes being involved in the research and occurring in the video or contributing to the oral presentation. If one of your assigned group members has not responded to your requests to participate or does not show up for the presentation, proceed without him/her. That person will receive an F and you will not be penalized for their lack of participation.
