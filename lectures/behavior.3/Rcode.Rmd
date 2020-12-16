@@ -37,14 +37,13 @@ output:
 
 
 logisticGrowth <- function(n, r, k){
-  n*exp(r*(1-(n / k)))
+  n+(n*r*(1-(n / k)))
 }
 
 logisticStochasticGrowth <- function(n, r, k){
   n <- sum(rbinom(n, 1, log(r)))
   n*exp(r*(1-(n / k)))
 }
-
 
 logisticDynamics <- function(n,r,k, steps=100, stochastic=FALSE){
   ret <- c()
@@ -78,11 +77,7 @@ plot(1:stps,
 
 
 sapply(seq(5,30,by=1), function(x){
- lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='dodgerblue')
-})
-
-sapply(seq(5,30,by=1), function(x){
- lines(logisticDynamics(n=x, r=rep(c(0.5,1.5),5), k=30, steps=stps), col='firebrick')
+ lines(logisticDynamics(n=x, r=rep(c(0.5,1.5),5), k=30, steps=stps, stochastic=TRUE), col='firebrick')
 })
 
 
@@ -259,6 +254,53 @@ sapply(rep(5,10), function(x){
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n <- 10
+b <- 0.5
+d <- 0.5
+
+N <- c()
+N[1] <- n
+for(i in 1:500){
+  N[i+1] <- N[i]*rnorm(1,1,0.1) 
+}
+
+
+pdf('out.pdf')
+plot(N, type='b', 
+  col='dodgerblue',xlab='Time', ylab='Population size')
+dev.off()
+
+
+
+
+
+
+
+
+
 
 
 

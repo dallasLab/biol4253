@@ -122,3 +122,56 @@ output:
 
 
 
+
+
+
+
+
+
+
+## TILMAN R*
+
+library(ecostudy)
+## One resource
+mod <- tilman(S = 20, a = 0.5, r = c(2,1), m = 0.5, k = c(5,0.5), c = 0.1)
+mod
+plot(mod)
+## Two resources
+mod2 <- update(mod, S=c(20,20), k=c(5,0.5, 1,2), c = c(0.15, 0.1, 0.1, 0.2))
+tilmandiagr(mod2)
+tilmandiagr(mod2, S = c(10,20), add = TRUE, time = 100)
+tilmandiagr(mod2, S = c(20,10), add = TRUE, time = 100)
+op <- par(mfrow=c(3,1), mar=c(4,4,0,1)+.1)
+plot(mod2)
+plot(mod2, S = c(10,20))
+plot(mod2, S = c(20,10))
+par(op)
+
+
+
+
+
+
+
+
+## LOTKA-VOLTERRA COMPETITION
+
+mod <- lotkacomp(0.8, 0.6, 20, 20)
+plot(mod)
+
+## Add trajectory line and starting point
+lines(mod, 1, 1, col="green", lwd=2)
+points(1, 1, pch=16, col="green")
+## Plot populations against time
+plot(traj(mod, 1, 1))
+## Textual output
+mod
+summary(mod)
+
+
+
+
+
+
+
+

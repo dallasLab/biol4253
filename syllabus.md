@@ -20,17 +20,20 @@ header-includes:
 
 ---
 
+
 \setstretch{1}
 
 **Location**: Zoom 
 
-**Time**: T and Th from 1:30pm - 02:50pm and 3:00pm - 4:20pm
+**Time**: section 1 is T Th 1:30pm - 02:50pm; section 2 is T Th 3:00pm - 4:20pm \\ note: the Tuesday lecture will be asynchronous, meaning we won't meet, but you'll be expected to have watched the recorded lecture. 
 
 **Instructor**: Dr. Tad Dallas (tadallas@lsu.edu) and Daijiang Li (dli30@lsu.edu)
 
 **Office**: LSA 343 Life Sciences (Tad) and LSB 125 (Daijiang)
 
-**Office hours**: T 1:30 - 3:30pm 
+**Office hours**: T 1:30 - 3:00pm 
+
+
 
 
 
@@ -229,6 +232,13 @@ I will not take attendence. However, much of the material presented will not be 
 **How do we scale small scale processes to global scales?**
 
 ---
+
+
+
+
+
+
+
 
 
 

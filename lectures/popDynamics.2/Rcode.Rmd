@@ -37,8 +37,9 @@ expoGrowth <- function(n, r){
 }
 
 
+
 #effect of growth rate
-plot(n0, expoGrowth(n0,1.15),
+plot(n0, expoGrowth(n0, 1.15),
   type='l', las=1, 
   xlab='Population size at time t', 
   ylab='Population size at time t+1', 
@@ -53,6 +54,8 @@ legend('bottomright', paste(expression(lambda), c('1.15', '=1', '=0.75')),
  
 
 ```
+
+
 
 
 
@@ -74,7 +77,7 @@ expoDynamics <- function(n,r, steps=100){
 
 ```{r}
 
-t <- 10
+t <- 50
 n0 <- 20
 
 #effect of growth rate
@@ -83,7 +86,7 @@ plot(1:(t+1), expoDynamics(n0, 1.15, steps=t),
   xlab='Time', 
   ylab='Population size', 
   col='dodgerblue')
-lines(1:(t+1), expoDynamics(n0,1, steps=t),
+lines(1:(t+1), expoDynamics(n0, 1, steps=t),
   col='firebrick')
 lines(1:(t+1), expoDynamics(n0, 0, steps=t),
   col='green')
@@ -234,11 +237,11 @@ logisticDynamics <- function(n,r,k, steps=100){
 
 ```{r}
 
-stps <- 10
+stps <- 20
 
 plot(1:stps,
  logisticDynamics(n=30, r=1, k=30, steps=stps),
-  type='l', las=1,ylim=c(0,100),
+  type='l', las=1, ylim=c(0,50),
   xlab='Time', 
   ylab='Population size', 
   col=1)
@@ -272,7 +275,7 @@ r=0
 
 ```{r}
 
-stps <- 10
+stps <- 20
 
 plot(1:stps,
  logisticDynamics(n=30, r=0, k=30, steps=stps),
@@ -301,7 +304,7 @@ r=1.5
 
 ```{r}
 
-stps <- 10
+stps <- 20
 
 plot(1:stps,
  logisticDynamics(n=29, r=1.5, k=30, steps=stps),
@@ -360,7 +363,7 @@ r=3.2
 
 ```{r}
 
-stps <- 100
+stps <- 20
 
 plot(1:stps,
  logisticDynamics(n=20, r=3.2, k=30, steps=stps),
@@ -389,10 +392,10 @@ r > 3.56
 
 ```{r}
 
-stps <- 200
+stps <- 100
 
 plot(1:stps,
- logisticDynamics(n=30, r=3.75, k=30, steps=stps),
+ logisticDynamics(n=30, r=4.75, k=30, steps=stps),
   type='l', las=1,ylim=c(0,150),
   xlab='Time', 
   ylab='Population size', 
@@ -400,7 +403,7 @@ plot(1:stps,
 
 
 plot(1:stps,
- logisticDynamics(n=29, r=3.75, k=30, steps=stps),
+ logisticDynamics(n=29, r=4.75, k=30, steps=stps),
   type='l', las=1,ylim=c(0,150),
   xlab='Time', 
   ylab='Population size', 

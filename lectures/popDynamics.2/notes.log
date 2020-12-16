@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.9.4)  12 SEP 2019 18:30
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.9.19)  16 DEC 2020 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,7 +495,7 @@ l.422 S_{J}$  &
 ] [12] [13] (./notes.aux) ) 
 Here is how much of TeX's memory you used:
  3658 strings out of 494988
- 47145 string characters out of 6178639
+ 47145 string characters out of 6178638
  110043 words of memory out of 5000000
  7439 multiletter control sequences out of 15000+600000
  26911 words of font info for 45 fonts, out of 8000000 for 9000
