@@ -7,3 +7,6 @@ lectures/niche.4/video
 lectures/communityComposition.5/video
 lectures/landscapeStructure.6/video
 .Rproj.user
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
