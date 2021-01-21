@@ -399,9 +399,7 @@ So we can use the transition matrix to simulate stage-structured population dyna
 \begin{equation*}
 \mathbf{n}^{0}=%
 \begin{bmatrix}
-n_{J} \\ 
-n_{T} \\ 
-n_{A} \\
+n_{J} & n_{T} & n_{A} \\
 \end{bmatrix}
 \end{equation*}
 
@@ -416,9 +414,7 @@ n_{T, t+1} \\
 n_{A, t+1} \\
 \end{bmatrix}
 = \mathbf{N} * \mathbf{M} = \begin{bmatrix}
-n_{J, t} \\ 
-n_{T, t} \\ 
-n_{A, t} \\
+n_{J, t} & n_{T, t} & n_{A, t} \\
 \end{bmatrix} * \begin{bmatrix}
 F_{J}$  & F_{T}  & F_{A}  \\
 S_{J}$  & 0      & 0      \\
@@ -480,9 +476,7 @@ Let's simulate the model 1 timestep forward, beginning with the abundance matrix
 
 \begin{equation*}
 \mathbf{N}_{t}= \begin{bmatrix}
-n_{J, t} = 20 \\ 
-n_{T, t} = 10 \\ 
-n_{A, t} = 0  \\
+n_{J, t} = 20  & n_{T, t} = 10 & n_{A, t} = 0  \\
 \end{bmatrix}
 \end{equation*}
 
