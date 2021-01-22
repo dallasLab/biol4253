@@ -130,22 +130,16 @@ output:
 
 
 ## TILMAN R*
+devtools::install_github('jarioksa/ecostudy')
 
 library(ecostudy)
 ## One resource
 mod <- tilman(S = 20, a = 0.5, r = c(2,1), m = 0.5, k = c(5,0.5), c = 0.1)
-mod
 plot(mod)
-## Two resources
-mod2 <- update(mod, S=c(20,20), k=c(5,0.5, 1,2), c = c(0.15, 0.1, 0.1, 0.2))
-tilmandiagr(mod2)
-tilmandiagr(mod2, S = c(10,20), add = TRUE, time = 100)
-tilmandiagr(mod2, S = c(20,10), add = TRUE, time = 100)
-op <- par(mfrow=c(3,1), mar=c(4,4,0,1)+.1)
-plot(mod2)
-plot(mod2, S = c(10,20))
-plot(mod2, S = c(20,10))
-par(op)
+abline(v=6, lwd=2, lty=2)
+legend(30,100, legend=c('Resource', 'Consumer 1', 'Consumer 2'),
+	pch=16, col=c(1,'dodgerblue', 'firebrick'), bty='n')
+
 
 
 
@@ -156,17 +150,73 @@ par(op)
 
 ## LOTKA-VOLTERRA COMPETITION
 
-mod <- lotkacomp(0.8, 0.6, 20, 20)
-plot(mod)
-
 ## Add trajectory line and starting point
-lines(mod, 1, 1, col="green", lwd=2)
-points(1, 1, pch=16, col="green")
-## Plot populations against time
-plot(traj(mod, 1, 1))
-## Textual output
-mod
-summary(mod)
+plotTraj <- function(mod,N1,N2){
+	lines(mod, N1, N2, col="green", lwd=2)
+	points(N1, N2, pch=16, col="green")
+}
+
+
+
+
+
+mod1 <- lotkacomp(0.75, 0.5, 50, 20)
+plot(mod1)
+legend('topright', c("species 1", "species 2"), 
+	col=c('dodgerblue', 'firebrick'), lwd=2, bty='n')
+plotTraj(mod1, 10,10)
+plotTraj(mod1, 10,40)
+plotTraj(mod1, 10,70)
+plotTraj(mod1, 40,60)
+title('Species 1 wins!')
+
+mod2 <- lotkacomp(0.5, 0.75, 20, 50)
+plot(mod2)
+legend('topright', c("species 1", "species 2"), 
+	col=c('dodgerblue', 'firebrick'), lwd=2, bty='n')
+plotTraj(mod2, 10,10)
+plotTraj(mod2, 10,40)
+plotTraj(mod2, 40,40)
+plotTraj(mod2, 40,20)
+title('Species 2 wins!')
+
+
+
+
+mod3 <- lotkacomp(alpha=0.5, beta=3, K1=40, K2=100)
+plot(mod3)
+legend('topright', c("species 1", "species 2"), 
+	col=c('dodgerblue', 'firebrick'), lwd=2, bty='n')
+
+plotTraj(mod3, 20,40)
+plotTraj(mod3, 21,40)
+plotTraj(mod3, 19,40)
+
+plotTraj(mod3, 10,10)
+plotTraj(mod3, 10,30)
+plotTraj(mod3, 10,40)
+
+plotTraj(mod3, 10,65)
+plotTraj(mod3, 40,50)
+plotTraj(mod3, 40,20)
+title('Unstable coexistence!')
+
+
+
+
+
+mod4 <- lotkacomp(0.5, 0.5, 20, 20)
+plot(mod4)
+legend('topright', c("species 1", "species 2"), 
+	col=c('dodgerblue', 'firebrick'), lwd=2, bty='n')
+
+plotTraj(mod4, 10,30)
+plotTraj(mod4, 10,5)
+plotTraj(mod4, 30,20)
+plotTraj(mod4, 25,5)
+title('Stable coexistence!')
+
+
 
 
 
