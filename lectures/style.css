@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body { font-family: 'Yanone Kaffeesatz', 'Palatino Linotype', 'Droid Serif', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+.font120 {
+  font-size: 120%;
+}
+
+.font150 {
+  font-size: 150%;
+}
+
+.font200 {
+  font-size: 200%;
+}
+
+.font300 {
+  font-size: 300%;
+}
+
+.font400 {
+  font-size: 400%;
+}
+
+.red {
+  color: #f92672;
+}
+
+.cyan {
+  color: #00FFFF;
+}
+
+.blue { color: blue;}
+
+.green { color: green;}

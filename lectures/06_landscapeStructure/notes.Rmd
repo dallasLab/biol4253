@@ -12,12 +12,15 @@ output:
 fontsize: 12pt
 linestretch: 1.5
 mainfont: Arial
+urlcolor: blue
+linkcolor: orange
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
   - \fancyhf{}
   - \rhead{Biol 4253}
   - \lhead{Metapopulations and island biogeography}
+  - \setlength{\headheight}{14.5pt}
 ---
 
 ```{r knitr_options, include=FALSE}
