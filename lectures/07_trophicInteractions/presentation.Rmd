@@ -277,7 +277,7 @@ knitr::include_graphics("figs/spider.png")
 .font200[2 Complex habitats]
 
 
-```{r fighabitat, out.width = '63%'}
+```{r fighabitat, out.width = '60%'}
 knitr::include_graphics("figs/complexhabitat.png")
 ```
 
@@ -332,7 +332,7 @@ knitr::include_graphics("figs/energeyflow.png")
 # Pyramid structure
 
 ```{r fig3, out.width = '90%'}
-knitr::include_graphics("figs/foodwebz.png")
+knitr::include_graphics("figs/foodweb.png")
 ```
 
 ---
