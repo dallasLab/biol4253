@@ -1,5 +1,6 @@
 exams
 Teaching
+
 lectures/whatIsEcology.1/video
 lectures/popDynamics.2/video
 lectures/behavior.3/video
@@ -10,3 +11,18 @@ lectures/landscapeStructure.6/video
 .DS_Store
 */.DS_Store
 */*/.DS_Store
+
+lectures/01_whatIsEcology/video
+lectures/02_popDynamics/video
+lectures/03_behavior/video
+lectures/04_niche/video
+lectures/05_communityComposition/video
+lectures/06_landscapeStructure/video
+
+lectures/01_whatIsEcology/README.md
+lectures/02_popDynamics/README.md
+lectures/03_behavior/README.md
+lectures/04_niche/README.md
+lectures/05_communityComposition/README.md
+lectures/06_landscapeStructure/README.md
+

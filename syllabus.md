@@ -28,7 +28,7 @@ output: pdf_document
 
 - Note: the Tuesday lecture will be asynchronous, meaning we won't meet, but you'll be expected to have watched the recorded lecture. 
 
-**Instructor**: Dr. Tad Dallas (`tadallas@lsu.edu`) and Daijiang Li (`dli30@lsu.edu`)
+**Instructor**: Dr. Tad Dallas (`tadallas@lsu.edu`) and Dr. Daijiang Li (`dli30@lsu.edu`)
 
 **Office**: LSA 343 Life Sciences (Tad) and LSB 125 (Daijiang)
 
@@ -93,7 +93,21 @@ There is no required textbook, but readings will be provided from the primary li
 
 ## Grading
 
-There will be a total of 500 points, consisting of four exams and a final project. 
+There will be a total of 500 points, consisting of four exams and a final project. LSU has a plus-minus grading scale. There will be no curve. 
+
+|grade| percent |
+| -- |  --    |
+| A+ |  > 98  |
+| A  |  93-98 |
+| A- |  90-92 |
+| B+ |  87-89 |
+| B  |  83-86 |
+| B- |  80-82 |
+| C+ |  77-79 |
+| C  |  73-76 |
+| C- |  70-72 |
+| D  |  65-69 |
+| F  |  < 64  |
 
 
 
