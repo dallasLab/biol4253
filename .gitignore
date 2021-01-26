@@ -1,5 +1,17 @@
 exams
 Teaching
+
+lectures/whatIsEcology.1/video
+lectures/popDynamics.2/video
+lectures/behavior.3/video
+lectures/niche.4/video
+lectures/communityComposition.5/video
+lectures/landscapeStructure.6/video
+.Rproj.user
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+
 lectures/01_whatIsEcology/video
 lectures/02_popDynamics/video
 lectures/03_behavior/video

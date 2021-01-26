@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Trophic interactions</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daijiang Li" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Trophic interactions
+### Daijiang Li
+### LSU
+### 2021/01/19 (updated: 2021-01-22)
+
+---
+
+class: left, middle
+
+
+
+# Consumer-resource interactions (general predator-prey relationship)
+
+.font200[
+1. Types of predation
+2. Predator-prey cycles
+3. Why predators don't kill all their prey?
+4. Food web
+]
+
+
+
+---
+
+# Predation (in broad ecological terms)
+
+.font150[
+Any interaction between two species in which one is benefited and the other is harmed.
+
+Density of one species changes the .blue[***per capita***] population growth rate of the other
+
+Species A (_resource_) --- **.green[+]** ---&gt; Species B (_consumer_)
+
+Species A (_resource_) &lt;--- **.red[-]** --- Species B (_consumer_)
+] 
+
+???
+
+It is per captia, not necessary the population size. For example, if it is a good year with mild winter, then rabbits survival will be high, leading to a high population growth rate and the abundance of rabbits will be high by the end of summer. Foxes will take advantage of this and kill more rabbits than normal. Even though the population size of rabbits increased, the per capita population growth rate will be lower than those without foxes. 
+
+---
+
+# Types of predation
+
+.font150[
+A. Predator-prey (e.g., lions and wildebeests)
+
+B. Herbivore-plant (e.g., rabbits and dandelions)
+
+C. Parasite-host (e.g., filariasis and humans)
+]
+
+![](figs/3types.png)
+
+---
+class: center, middle
+
+## Is this a predator-prey interaction?
+
+&lt;img src="figs/is_it_pred_prey.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Predator-prey cycles
+
+&lt;img src="figs/lynx.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Lotka-Volterra model
+
+.pull-left[
+.font200[Predator (Consumer)]
+
+.font120[$$ \frac{dC}{dt} = -qC $$]
+
+
+.font120[$$ \frac{dC}{dt} = - qC + caCR $$]
+
+]
+
+.pull-right[
+.font200[Prey (Resource)]
+
+.font120[$$ \frac{dR}{dt} = rR $$]
+
+
+.font120[$$ \frac{dR}{dt} = rR - aCR $$]
+]
+
+--
+
+.font150[The consumer and resource oscillate together through time, with the consumer lagged forward in time relative to the resource dynamics.]
+
+---
+
+# Equilibrium
+
+
+.pull-left[
+.font200[Predator (Consumer)]
+
+.font120[
+`\begin{align}
+\frac{dC}{dt} &amp; = caCR - qC   \\
+0 &amp; = caCR - qC \\
+caCR &amp; = qC \\
+caR &amp; = q \\
+R* &amp; = \frac{q}{ca} 
+\end{align}`
+]
+
+]
+
+.pull-right[
+.font200[Prey (Resource)]
+
+.font120[
+`\begin{align}
+\frac{dR}{dt} &amp; = rR - aCR \\
+0 &amp; = rR - aCR \\
+aCR &amp; = rR \\
+aC &amp; = r \\
+C* &amp; = \frac{r}{a} 
+\end{align}`
+]
+]
+
+--
+
+.pull-left[
+.font150[
+Predator population will be stable when the number of preys equals the ratio of the predator's mortality rate and its attack times conversion rate.
+]
+]
+
+--
+
+.pull-right[
+.font150[
+Prey population will be stable when the number of predators equals the ratio of the prey's growth rate and predator's attack rate.
+]
+]
+
+???
+
+Predator population will increase if R* &gt; q/ca, decrease if R* &lt; q/ca
+
+Prey popualation will increase if C* &lt; r/a, decrease of C* &gt; r/a
+
+---
+
+# Predator-prey models predict stable limit cycles
+
+&lt;img src="figs/cycle.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;!-- # Empirical examples? --&gt;
+
+&lt;!-- - Snowshoe Hares and Lynx --&gt;
+&lt;!-- - Huffaker's mite experiments --&gt;
+&lt;!-- - Parasitoid-host cycles --&gt;
+
+# Model assumptions
+
+.font200[
+- Resource population only limited by predator
+
+- Predator (_C_ ) only eats the one resource _R_
+
+- Individual predators consume infinite number of _R_
+
+- Encounter of predator _C_ and resource _R_ is random and "well-mixed" (homogenous habitats)
+]
+
+---
+
+# How can we make the L-V model more realistic?
+
+.font120[ Individual predators consume infinite number of _R_]
+
+&lt;img src="figs/type1.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+--
+
+.font150[Type I _functional response_ (relationship between the density of prey and an individual predator's rate of resource consumption)]
+
+
+---
+
+# Functional response types
+
+&lt;img src="figs/functypes.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Why predators don't kill all their prey?
+
+--
+
+.font150[Because this would cause their own extinction?]
+
+--
+
+.font150[Or even further, some may say that the predators actually act in the best interest of the prey by removing the "old and sick."]
+
+--
+
+.font150[.red[Wrong!] Because predators do not act this way, nor should they.]
+
+
+???
+
+Predators faced with the choice between killing prey and starving, or having their offspring starve, should always kill the prey.
+
+---
+background-image: url('figs/prime.png')
+background-position: 80% 100%
+class: right, middle, inverse
+
+.pull-right[
+## .blue[Why predators don't kill all their prey?] .red[Because they can’t.]
+] 
+
+
+
+---
+
+# Why predators don't kill all their prey? .red[Because they can’t.]
+
+.font200[1 Prey defense]
+
+.pull-left[
+&lt;img src="figs/defense.png" width="95%" style="display: block; margin: auto;" /&gt;
+ 
+.center["Testing the carnivore-proof vest"]
+]
+
+.pull-left[
+&lt;img src="figs/spider.png" width="70%" style="display: block; margin: auto;" /&gt;
+ 
+.center["If we pull this off, we'll eat like kings."]
+]
+
+---
+
+# Why predators don't kill all their prey? .red[Because they can’t.]
+
+.font200[1 Prey defense]
+
+.font200[2 Complex habitats]
+
+
+&lt;img src="figs/complexhabitat.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Why predators don't kill all their prey? .red[Because they can’t.]
+
+.font200[1 Prey defense]
+
+.font200[2 Complex habitats]
+
+.font200[3 Predators have their own predators]
+
+
+???
+
+The density of sp B can’t get high enough to drive sp A extinct because of sp C.
+
+---
+
+# Food web
+
+&lt;img src="figs/foodweb.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Types of food webs
+
+.font200[
+- Connectedness food web
+
+- Energy flow food web
+
+- Functional food web
+]
+
+---
+
+# What controls food webs?
+
+&lt;img src="figs/energeyflow.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+.font150[Energy; disturbance; ecosystem size; etc.]
+
+---
+
+# Pyramid structure
+
+&lt;img src="figs/foodweb.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Trophic cascades
+
+### Changes in abundances of organisms at one trophic level can influence energy flow at multiple trophic levels
+
+.pull-left[
+.font150[
+- Top-down
+- Bottom-up
+]
+
+&lt;img src="figs/deerclosure.png" width="100%" style="display: block; margin: auto;" /&gt;
+Benefits to humans of removing a top predator &lt;&lt; damage inflicted by a mesopredator/herbivor that become more abundanct after the top predator declines.
+]
+
+.pull-right[
+&lt;img src="figs/cascade.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+class: center, middle
+# Question
+
+## .red[Do clear predator-prey cycles occur frequently in nature?]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
