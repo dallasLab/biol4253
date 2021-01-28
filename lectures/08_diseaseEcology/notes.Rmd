@@ -42,7 +42,7 @@ Kilpatrick, A. M. \& Altizer, S. (2010) Disease Ecology. Nature Education Knowle
 
 Host-parasite interactions are a type of consumer-resource interaction, where the resource is the host, and the consumer is the parasite. Here, the interaction is characterized by a gain for the parasite and a loss for the host, fundamentally differing from other symbioses such as mutualism or competition.
 
-Parasites are a diverse group. Pretty much every group of living thing has a parasite, including parasites (a parasite of a parasite is called a _hyperparasite_). The diversity of life history strategies, transmission modes, and lifestyles make parasites unique. Parasites infect a set of hosts, referred as the _host range_ or the set of _permissive hosts_. Meanwhile, hosts harbor any number of parasite species, which is referred as that hosts _parasite species richness_. Parasites may be _specialists_ (infecting only a single host species) or quite _generalists_ (infecting a broad range of host species). 
+Parasites are a diverse group. Pretty much every group of living thing has a parasite, including parasites (a parasite of a parasite is called a _hyperparasite_). The diversity of life history strategies, transmission modes, and lifestyles make parasites unique. Parasites infect a set of hosts, referred as the _host range_ or the set of _permissive hosts_. Meanwhile, hosts harbor any number of parasite species, which is referred as that host's _parasite species richness_ or _parasite load_. Parasites may be _specialists_ (infecting only a single host species) or quite _generalists_ (infecting a broad range of host species). 
 
 Apart from the impacts of parasites on human health, agricultural crops, and livestock, parasites provide an interesting system to study and test fundamental ecological theory (some of which we've touched on previously). For instance, we can apply concepts from population dynamics to model the effect of parasites on host population dynamics. Previously, scientists demonstrated that infection of red grouse by a parasitic nematode caused the grouse population to exhibit cycles. 
 
@@ -55,15 +55,9 @@ First, the location on the host can determine parasite grouping with _endoparasi
 
 Second, the size of the parasite itself can be a grouping (though this is slightly subjective), with _microparasites_ typically referring to those parasites that are too small to see with the naked eye and that reproduce within the host, and _macroparasites_, which are larger and reproduce outside of the host. Examples of microparasites would be fungal parasites, bacteria, viruses. Examples of macroparasites would be helminths, arthropods like ticks and fleas. A confusing one would be botflies, which are large dipteran parasites which deposit a single larvae under the skin of the host, which emerges as an adult.
 
-Third, parasite transmission mode can be horizontal (from organism to organism), vertical (from mother to offspring), or environmental (through the environment). 
+Third, parasite transmission mode can be horizontal (from organism to organism) or vertical (from mother to offspring).
 
-
-# The parasite niche
-
-The parasite niche is defined in a similar manner as the niche of a free-living species. That is, abiotic tolerances are important in describing the parasite niche. However, parasite lifecycle controls to what extent environmental axes are true niche axes. For instance, a parasite species which is only ever exposed to the internal environment of the host should not have a niche axis related to the temperature of the external environment, as this is unlikely to directly influence parasite persistence. For this parasite, in particular, the environment _is_ the host individual, such that an appropriate niche axis might relate more to some property of the host. The characterization of the parasite niche is important to understanding the geographic distribution of a parasite. That is, we can imagine situations where the environment is ideal for a parasite, but there are no _permissive_ host species present, so the parasite cannot persist. We can also imagine a situation where a permissive host species is present, but the environment too harsh and the parasite cannot persist in these conditions.
-
-Apart from using the niche concept to understand a parasite species geographic distribution, the niche concept also can allow for the estimation of _host switching_ potential. That is, what is the probability that a parasite can infect any given novel host, when it has not previously been found to infect this host. Host switching is important, as it can lead to _spillover_ events, if the host switching involves the ability to infect a human host. There may be a set of host traits which allow the prediction of host switching. That is, hosts that are more similar to known hosts of a parasite might be more likely to become infected. This makes sense in light of niche concepts, as host phylogenetic distance may represent a niche axis, along which more closely related hosts would be more likely to become infected. However, not all niche concepts can be mapped onto parasites as easy. For instance, defining persistence for a parasite which may have epidemic-like dynamics is difficult (though not impossible, as we'll discuss in the R0 section).
-
+<!-- or environmental (through the environment).  -->
 
 # Parasite life cycle complexity
 
@@ -76,6 +70,13 @@ knitr::include_graphics("figs/DirectLifeCycle.jpg")
 ```{r fig2, out.width = '75%', fig.cap="Example of a complex life cycle parasite."}
 knitr::include_graphics("figs/IndirectLifeCycle.jpg")
 ```
+
+# The parasite niche
+
+The parasite niche is defined in a similar manner as the niche of a free-living species. That is, abiotic tolerances are important in describing the parasite niche. However, parasite lifecycle controls to what extent environmental axes are true niche axes. For instance, a parasite species which is only ever exposed to the internal environment of the host should not have a niche axis related to the temperature of the external environment, as this is unlikely to directly influence parasite persistence. For this parasite, in particular, the environment _is_ the host individual, such that an appropriate niche axis might relate more to some property of the host. The characterization of the parasite niche is important to understanding the geographic distribution of a parasite. That is, we can imagine situations where the environment is ideal for a parasite, but there are no _permissive_ host species present, so the parasite cannot persist. We can also imagine a situation where a permissive host species is present, but the environment too harsh and the parasite cannot persist in these conditions.
+
+Apart from using the niche concept to understand a parasite species geographic distribution, the niche concept also can allow for the estimation of _host switching_ potential. That is, what is the probability that a parasite can infect any given novel host, when it has not previously been found to infect this host. Host switching is important, as it can lead to _spillover_ events, if the host switching involves the ability to infect a human host. There may be a set of host traits which allow the prediction of host switching. That is, hosts that are more similar to known hosts of a parasite might be more likely to become infected. This makes sense in light of niche concepts, as host phylogenetic distance may represent a niche axis, along which more closely related hosts would be more likely to become infected. However, not all niche concepts can be mapped onto parasites as easy. For instance, defining persistence for a parasite which may have epidemic-like dynamics is difficult (though not impossible, as we'll discuss in the R0 section).
+
 
 # Modeling host-parasite interactions
 

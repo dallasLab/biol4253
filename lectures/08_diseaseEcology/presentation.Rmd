@@ -1,0 +1,181 @@
+---
+title: "Parasite-Host Interactions"
+author: "Daijiang Li"
+institute: "LSU"
+date: "2021/01/27 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: left, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+```
+
+background-image: url('figs/covid.png')
+background-position: 50% 50%
+background-size: contain
+class: center, middle, inverse
+
+# Pandemic
+
+---
+
+
+# Parasite-Host Interactions 
+
+.font200[
+1. Effects of parasites
+2. Types of parasites
+3. Modeling parsite-host interactions
+4. Parasite-host coevolution
+5. Disease controls
+]
+
+---
+class: center, middle
+
+
+.pull-left[
+![zombie movies](figs/zombie.jpeg)
+### Zombie Movies
+]
+
+--
+
+.pull-right[
+![amber snail](figs/amberSnail.gif)
+
+### [Zombie in nature](https://www.wired.com/2014/09/absurd-creature-of-the-week-disco-worm/)
+]
+
+---
+
+# Parasite, pathogen, infection, and disease
+
+.font200[.red[parasite]: an organism that lives in or on another organism (.green[host]) and causes .blue[harmful] effects as it consumes resources from the host.]   .font150[(consumer-resource)]
+
+--
+
+.font200[When parasites colonize a host, that host is said to harbor an .red[infection]]
+
+--
+
+.font200[Only if that infection gives rise to symptoms that are clearly harmful to the host should the host be said to have a .red[disease], e.g., COVID-19]
+
+--
+
+.font200[.red[Pathogen]: any parasite that causes a disease (i.e. is ‘pathogenic’), e.g., SARS-CoV-2]
+
+
+???
+
+though infection by a pathogen does not always result in an infectious disease; asymptomatic
+
+---
+
+# Parasites are diverse
+
+### Pretty much every organism of living thing has one or more parasite, including parasites (_hyperparasite_)
+
+--
+
+### Many parasites are host-specified or at least have a limited range of hosts (_specialists_); few has a broad range of hosts (_generalists_)
+
+--
+
+### The conclusion seems _unavoidable_ that .red[more than 50%] of the species on the earth, and many more than 50% of individuals, are parasites
+
+
+---
+
+# Effects of parasites
+
+### Large toll on people: >25% human deaths are caused by infectious disease; 100 million people died in 1918 (spanish flu caused by H1N1 virus); >2 million deaths caused by COVID-19 so far
+
+### On wildlife: bird flu; chytrid fugus caused extinctions of amphibian species; white-nose syndrome for bats
+
+### On plants: crops (e.g., wheat rust), trees (e.g., chestnut blight, dutch elm disease)
+
+???
+
+american chestnut trees used to be >50% of trees in temperate forests; now they are rare since the introduce of chestnut blight around 1900 from Asian
+
+---
+
+# Types of parasites
+
+.font130[
+- By location 
+  + .blue[ectoparasites]: live on the outside of organisms (e.g., ticks, mites, lice, fleas, mistletoes) 
+  + .blue[endoparasites]: live inside organisms (e.g., virus, cestode), often cause diseases
+]
+
+--
+
+.font130[
+- By size
+  + .blue[microparasites]: small and often intra-cellular, reproduce directly within host and are often extremely numerous (e.g., virus, some types of bacteria and protists)
+  + .blue[macroparasites]: larger, live on or within a host (in cavities such as the gut or inter-cellular), do not reproduce in their host (e.g., helminth worms in an intestine, some types of fungi, bacteria and protozoa)
+]
+
+--
+
+.font130[
+- By transmission mode
+  + .blue[horizontal]: move between individuals other than parents and offsprings
+  + .blue[vertical]: transmitted from a parent to its offspring
+]
+
+???
+
+tradeoffs: exposure to natural enemies, external envi, difficulty to move among host, ease of feeding on hosts
+
+---
+class: center
+
+# Parasite life cycle complexity
+
+![lyme disease cycle](figs/lyme.jpg)
+
+---
+
+# The parasite niche
+
+### Multidimensional space of tolerances and requirements of a species (abiotic and biotic)
+
+### Niche --> understand and predict geographic distribution
+
+### Niche --> understand host range and predict host switching; _spillover_ if the host switching involves the ability to infect a human host
+
+.font130[
+- Spanish flu in 1918 (H1N1 virus from birds)
+- HIV (virus from chimpanzees)
+- SARS in 2003 (SARS-CoV from bats?)
+- COVID-19 (SARS-CoV-2 from ?)
+]
+
+
+---
+
+# Hosts as habitats
+
+.font130[Hosts as reactive environments: resistance, tolerance, recovery, and immunity]
+
+```{r, out.width='60%'}
+knitr::include_graphics("figs/chimp.jpeg")
+```
+
+
+
+???
+
+Chimpanzees infected with nematodes seek out and eat a bitter plant that contains chemicals that kill or paralyze the nematodes
+
