@@ -154,7 +154,6 @@ A mixed sexual and asexual (clonal) population of snails was exposed to a pathog
 
 The other aspect is the evolution of the parasite to overcome host defenses. We've documented this often, in terms of virus evolution to evade detection from the host immune system, among other examples. 
 
-
 # Environmental controls of disease spread
 
 The environment influences infection dynamics in a number of ways. 
@@ -165,23 +164,6 @@ Second, the environment could influence the growth of pathogen within an infecte
 
 Third, the environment can control host or vector behavior. For instance, host individuals exposed to rising temperatures might seek refuge (use habitat differently) which could enhance parasite transmission. More frequent drought can shift host distributions in space and may enhance or reduce parasite transmission. In terms of the vector behavior, a good example is when there is an interaction between infection status of a vector and the environment. Mosquitoes infected by Plasmodium (the pathogen which causes malaria) tend to prefer to occupy warmer habitats, which increases pathogen growth. That is, the pathogen modifies the host behavior to enhance the growth of the pathogen within the host individual.
 
-
-# Land use change and disease spread
-
-Human land use change has influenced pathogen spillover events (when zoonotic pathogens infecting wildlife transfer to human populations). There are a number of reasons for this, partly related to the environmental effects discussed above, and partly to due with how land use change influences host communities. 
-
-For starters, land use change results in increased contact of wildlife and human populations, which can potentially enable zoonotic pathogens to spillover into human populations. 
-
-Land use change also alters host communities, as some species are less affected by disturbance. These species tend to become more abundant in disturbed landscapes, and are often pretty competent disease carriers. Here, competence means that the host individual is good at carrying and spreading the pathogen. An example would be that white-footed mice are found in higher abundance in urban and disturbed environments. These mice are also really competent vectors of a number of diseases (e.g. Lyme disease). An example not related only to vector-borne disease is the spread of a horizontally transmitted pathogen of house sparrows (conjunctivitis) in urban environments. Food supplementation (bird feeders, etc.) has caused these birds to come in close contact with other bird species (and with other individuals of their own species). This close contact has lead to the infection prevalence (percent of individuals infected) being higher in urban environments (where contact rates between birds are higher) than in more natural environments. 
-
-
-# Community composition and disease spread
-
-Host species differ in their susceptibility (ability to become infected) and suitability (ability to transmit parasites). On top of this, most parasite species infect more than one host species. Therefore, the diversity of host species present in a given site may influence the resulting parasite infection dynamics. These relationships are often referred to as _diversity-disease_ relationships. On one hand, increased host diversity may reduce overall parasite burden or abundance through the addition of host species which are less suitable, lowering overall transmission risk or parasite abundance. This is called a _dilution effect_. On the other hand, if species in more diverse communities are **more** suitable, this would likely increase overall transmission risk or parasite abundance, leading to an _amplification effect_. 
-
-Evidence for the dilution effect comes from a Lyme disease system, where the white-footed mouse is a competent host for Lyme disease, and is also super common. The presence of other, less competent, hosts reduces encounters of ticks with the most competent host (the white-footed mouse).
-
-However, this requires that there is a direct relationship between host abundance and host competence, which is not really always the case (it rarely is).
 
 # Social contact networks and disease invasion/spread
 
@@ -199,3 +181,20 @@ Sexual contact networks are often really variable in terms of number of links pe
 Designing vaccination strategies should incorporate information on the structure of the network (larger bodied individuals tend to have more links, etc.).
 
 Fragmenting the network into groups is a good way at isolating and protecting subgroups of nodes (e.g., will draw an example of this in the notes). The idea is that we can fragment the network into two subgroups that aren't connected, even if the pathogen invades one part of the network, the other will be great. 
+
+# Land use change and disease spread
+
+Human land use change has influenced pathogen spillover events (when zoonotic pathogens infecting wildlife transfer to human populations). There are a number of reasons for this, partly related to the environmental effects discussed above, and partly to due with how land use change influences host communities. 
+
+For starters, land use change results in increased contact of wildlife and human populations, which can potentially enable zoonotic pathogens to spillover into human populations. 
+
+Land use change also alters host communities, as some species are less affected by disturbance. These species tend to become more abundant in disturbed landscapes, and are often pretty competent disease carriers. Here, competence means that the host individual is good at carrying and spreading the pathogen. An example would be that white-footed mice are found in higher abundance in urban and disturbed environments. These mice are also really competent vectors of a number of diseases (e.g. Lyme disease). An example not related only to vector-borne disease is the spread of a horizontally transmitted pathogen of house sparrows (conjunctivitis) in urban environments. Food supplementation (bird feeders, etc.) has caused these birds to come in close contact with other bird species (and with other individuals of their own species). This close contact has lead to the infection prevalence (percent of individuals infected) being higher in urban environments (where contact rates between birds are higher) than in more natural environments. 
+
+
+# Community composition and disease spread
+
+Host species differ in their susceptibility (ability to become infected) and suitability (ability to transmit parasites). On top of this, most parasite species infect more than one host species. Therefore, the diversity of host species present in a given site may influence the resulting parasite infection dynamics. These relationships are often referred to as _diversity-disease_ relationships. On one hand, increased host diversity may reduce overall parasite burden or abundance through the addition of host species which are less suitable, lowering overall transmission risk or parasite abundance. This is called a _dilution effect_. On the other hand, if species in more diverse communities are **more** suitable, this would likely increase overall transmission risk or parasite abundance, leading to an _amplification effect_. 
+
+Evidence for the dilution effect comes from a Lyme disease system, where the white-footed mouse is a competent host for Lyme disease, and is also super common. The presence of other, less competent, hosts reduces encounters of ticks with the most competent host (the white-footed mouse).
+
+However, this requires that there is a direct relationship between host abundance and host competence, which is not really always the case (it rarely is).
