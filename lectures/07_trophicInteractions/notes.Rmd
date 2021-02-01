@@ -65,8 +65,8 @@ where $q$ is the consumer ($C$) mortality rate. Without resources, the consumer 
 
 Here, the term $caCR$ corresponds to the attack rate ($a$) times the conversion of food into offspring ($c$) times the abundance of both consumer $C$ and resource $R$. 
 
-\noindent\fbox{%
-    \parbox{\textwidth}{%
+\noindent\fbox{
+    \parbox{\textwidth}{
 Recall the consumer-resource model we discussed earlier in terms of R\* theory. These models are very similar, except there is now only 1 consumer ($N$ in the R\* theory now becomes $C$ in this model), and we treat conversion efficiency in the R\* model ($a_j$) as the product of two terms (the attack rate $a$ and the conversion efficiency $c$). 
 
 $$\frac{dN}{dt} = N_{j}(a_{j}R - d)$$
