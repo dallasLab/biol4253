@@ -44,7 +44,7 @@ Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 20
 This week, we'll look at consumer-resource interactions a bit more explicitly. These were mentioned briefly along with food webs in the community lecture, but now we'll go into more detail. Consumer-resource interactions are a broad class of interactions that include predator-prey, plant-herbivore, and host-parasite interactions. The availability of resource fundamentally constrains the number of predators that can exist. In the logistic model, we assumed that population dynamics were constrained by some carrying capacity $K$, which could be driven by resources, but we did not consider resources explicitly. The availability of resources strongly influences predator populations. 
 
 ```{r fig1, out.width = '100%'}
-knitr::include_graphics("figs/lynx.jpg")
+knitr::include_graphics("figs/lynx.png")
 ```
 
 Let's see what happens to single species population dynamics when we do consider the resource population explicitly. We'll start by considering the _Lotka-Volterra model_, which tracks consumer ($C$) and resource ($R$) populations through time. 

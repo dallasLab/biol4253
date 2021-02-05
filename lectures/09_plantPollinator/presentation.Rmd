@@ -1,0 +1,300 @@
+---
+title: "Networks"
+author: "Daijiang Li"
+institute: "LSU"
+date: "2021/02/03 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: left, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+```
+
+background-image: url('figs/network.jpg')
+background-position: 50% 50%
+background-size: contain
+class: center, top, inverse
+
+# .font200[.red[Networks are everywhere]]
+
+--
+
+### social network
+
+--
+
+### transportation network
+
+--
+
+### power grid network
+
+--
+
+### information network
+
+???
+
+Internet	Routers	Internet connections	Undirected	192,244	609,066	6.34
+WWW	Webpages	Links	Directed	325,729	1,497,134	4.60
+Power Grid	Power plants, transformers	Cables	Undirected	4,941	6,594	2.67
+Mobile-Phone Calls	Subscribers	Calls	Directed	36,595	91,826	2.51
+Email	Email addresses	Emails	Directed	57,194	103,731	1.81
+Science Collaboration	Scientists	Co-authorships	Undirected	23,133	93,437	8.08
+Actor Network	Actors	Co-acting	Undirected	702,388	29,397,908	83.71
+Citation Network	Papers	Citations	Directed	449,673	4,689,479	10.43
+E. Coli Metabolism	Metabolites	Chemical reactions	Directed	1,039	5,802	5.58
+Protein Interactions	Proteins	Binding interactions	Undirected	2,018	2,930	2.90
+
+---
+
+background-image: url('figs/econet.jpeg')
+background-position: 50% 50%
+background-size: contain
+class: left, top
+
+.font200[.red[Ecological Networks]]
+
+(Pocock et al. 2016)
+
+---
+class: center, middle
+
+# .font150[Why ecological networks?]
+
+???
+
+what is ecology?
+networks as a natural way to connect interactive species
+be able to handle complex systems
+analytical tools to detect system level structure and species level contributions
+
+
+---
+
+# Network types
+
+.pull-left[
+.font150[
+- unipartite
+  + weighted?
+  + directed?
+]
+]
+
+.pull-right[
+.font150[
+- bipartite
+  + weighted?
+  + directed?
+]
+]
+
+![network types](figs/network_types.png)
+.right[Delmas et al. 2019]
+
+---
+
+# Unipartite networks
+
+## Interactions between nodes of the .green[same class]
+
+.font200[
+- social contact network (e.g., contact tracing, target vaccination)
+
+- species co-occurrence network (e.g., metapopulations, community assembly/disassembly)
+
+- www (e.g., information flow, fraud prevention)
+]
+
+---
+
+# Bipartite networks
+
+## Interactions between .green[two classes] of nodes
+
+.font200[
+- Host-parasite
+
+- Predator-prey
+
+- Plant-pollinator
+]
+
+---
+background-image: url('figs/diff_network.jpeg')
+background-position: 50% 50%
+background-size: contain
+class: left, top
+
+ Different 
+ 
+ isualizations
+ 
+ of the same
+ 
+ network
+ 
+ (Pocock et al.   
+ 2016)
+ 
+---
+class: center, middle
+
+# Network & Graph
+
+.font200[
+|  Network Science |  Graph Theory |
+|--|--|
+|  Network |   Graph |
+|  Node (N)   |  Vertex (V) |
+|  Link (L)   |  Edge (E) |
+]
+
+---
+class: center, middle
+
+# Adjacency matrix
+
+![adjacency matrix](figs/adjac.png)
+
+
+
+---
+
+layout: true
+
+# Common measures of networks
+
+---
+
+### .green[Order (S)]: the total number of nodes
+
+--
+
+### .green[Size (L)]: the total number of links (interactions)
+
+--
+
+### .green[Linkage density]: L/S
+
+--
+
+### .green[Connectance (Co)]: L/m (m: possible number of interactions)
+
+???
+
+the connectance range: 0-1
+
+---
+
+### .green[Degree]: the number of links a node has to other nodes; $k_i$ to be the degree of the _i_ th node in the network
+
+--
+### .green[Degree distribution _P(k)_]: the probability that a species has _k_ interactions within the network. P(k) = N(k)/S. 
+The degree distribution plays a central role in network theory with the calculation of most network properties requires us to know _P(k)_
+![](figs/degree_distri.jpeg)
+
+---
+
+### .green[Clustering coefficient (CC)]: the degree to which the neighbors of a given node link to each other.
+
+$$CC_i = \frac{2N_i}{K_i(K_i - 1)}$$
+<br>
+
+![cc](http://networksciencebook.com/images/ch-02/figure-2-16.jpg)
+
+---
+### .green[Modularity]: how closely connected nodes are divided into modules
+![](http://networksciencebook.com/images/ch-02/figure-2-15.jpg)
+
+
+---
+
+### .green[Nestedness]: the tendency for species with fewer interactions to be a subset of those with more interactions
+
+```{r, out.width='90%'}
+knitr::include_graphics("figs/nestednes.png")
+```
+
+---
+layout: false
+background-image: url('figs/mod_nest.jpeg')
+background-position: 50% 50%
+background-size: contain
+class: right, bottom 
+
+Pocock et al. 2016
+
+---
+
+layout: true
+
+# Common measures of networks
+
+---
+
+### .green[Centrality]: the importance of a node in the network; many different types to measure centrality: degree, closeness, betweenness, eigenvector, and Katz’s covered in Delmas et al. (2019)
+
+```{r, out.width='55%'}
+knitr::include_graphics("figs/central.png")
+```
+
+???
+
+degree: just number of interactions
+closeness: global scale,  the proximity of a species to all other species in the network, account the structure of the whole network
+
+---
+
+### .green[Contribution to network properties]
+
+.font130[
+$$C_{i}=\frac{P-\bar{P_{i}}}{\sigma_{\bar{P_{i}}}}$$
+]
+
+--
+
+### Error tolerance and attack tolerance
+![](http://networksciencebook.com/images/ch-01/figure-1-1.jpg)
+
+
+---
+
+### Compare different nodes and different networks
+
+.pull-left[
+### Nodes
+
+$$ J(A,B) =  \frac{| A \cap	 B |}{| A \cup B|} $$
+]
+
+--
+
+.pull-right[
+### Networks
+
+![](figs/beta.png)
+.right[[Poisot et al. 2012](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12002)]
+]
+
+---
+layout: false
+background-image: url('figs/econet.jpeg')
+background-position: 50% 50%
+background-size: contain
+class: center, top, inverse
+
+<br>
+<br>
+
+# .red[Network rewiring in a changing world]

@@ -41,6 +41,8 @@ Delmas, Eva, et al. "Analysing ecological networks of species interactions." Bio
 
 _We will mainly focus on material from pages 1-13._
 
+Chapter 1 of Network Science by Albert-Lászió Barbási. <http://networksciencebook.com/chapter/1>
+
 
 # General overview of network ecology
 
@@ -50,17 +52,15 @@ Ecological networks are not entirely new to us this semester. We previously disc
 knitr::include_graphics("figs/netTypes.png")
 ```
 
-# How to represent interactions as networks
-
-There are two main types of networks that are relevant to the study of ecological systems. First, _unipartite_ networks consist of a single node type, and can be used to examine interactions among species within a population or among connected populations. Within a population, this would correspond to a social network, where links between individuals consist of links between individuals. These links can also represent dispersal pathways in a metapopulation, which we discussed previously with the Levins' model. Meanwhile, _bipartite_ networks represent the interactions between two different types of nodes, which don't interact with one another (explicitly), but interact with the other node type. This is a really common way to represent interactions between host and parasite species, for example. Links between species in a network can be _directed_ or _undirected_, where directed links depict a direct flow of energy from A to B, but not from B to A. Meanwhile, undirected links simply provide evidence of an interaction between the two species (the weight of the link is assumed to be the same from A to B as from B to A. 
-
-Links in a network, apart from being directed or undirected, may be either binary (referred to as "unweighted" edges) or have some property describing the rate or amount of information flow (or strength of interaction; referred to as "weighted" edges).
-
-
 # Why represent interactions as networks?
 
 This may seem like a needless abstraction, but representing interactions in network form is incredibly useful. For one, this is a way to handle the complexity of a system that would otherwise be intractable. Second, the analytical tools developed for networks allow the detection of both large scale (network-level) structure, as well as quantification of species-level contributions to the overall network. We will go over both of these, and provide examples of the insights that can be gained from representing species interactions as ecological networks. 
 
+# How to represent interactions as networks
+
+There are two main types of networks that are relevant to the study of ecological systems. First, _unipartite_ networks consist of a single node type, and can be used to examine interactions among individuals within a population or among connected populations. Within a population, this would correspond to a social network, where links between individuals consist of links between individuals. These links can also represent dispersal pathways in a metapopulation, which we discussed previously with the Levins' model. Meanwhile, _bipartite_ networks represent the interactions between two different types of nodes, which don't interact with one another (explicitly), but interact with the other node type. This is a really common way to represent interactions between host and parasite species, for example. Links between species in a network can be _directed_ or _undirected_, where directed links depict a direct flow of energy from A to B, but not from B to A. Meanwhile, undirected links simply provide evidence of an interaction between the two species (the weight of the link is assumed to be the same from A to B as from B to A. 
+
+Links in a network, apart from being directed or undirected, may be either binary (referred to as "unweighted" edges) or have some property describing the rate or amount of information flow (or strength of interaction; referred to as "weighted" edges).
 
 # Unipartite networks
 

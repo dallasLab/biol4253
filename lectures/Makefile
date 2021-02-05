@@ -1,4 +1,4 @@
-ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/presentation.pdf 02_popDynamics/notes.pdf 03_behavior/notes.pdf 04_niche/notes.pdf 05_communityComposition/notes.pdf 06_landscapeStructure/notes.pdf 07_trophicInteractions/notes.pdf 07_trophicInteractions/presentation.html 08_diseaseEcology/notes.pdf 09_plantPollinator/notes.pdf 10_envChange/notes.pdf 11_macroecology/notes.pdf
+ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/presentation.pdf 02_popDynamics/notes.pdf 03_behavior/notes.pdf 04_niche/notes.pdf 05_communityComposition/notes.pdf 06_landscapeStructure/notes.pdf 07_trophicInteractions/notes.pdf 07_trophicInteractions/presentation.html 08_diseaseEcology/notes.pdf 08_diseaseEcology/presentation.html 09_plantPollinator/notes.pdf 09_plantPollinator/presentation.html 10_envChange/notes.pdf 11_macroecology/notes.pdf
 
 OStype := $(shell uname -s)
 
