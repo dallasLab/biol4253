@@ -57,6 +57,12 @@ Protein Interactions	Proteins	Binding interactions	Undirected	2,018	2,930	2.90
 
 ---
 
+# [The rise of networks](http://networksciencebook.com/chapter/1#scientific-impact)
+
+![rise of networks](http://networksciencebook.com/images/ch-01/figure-1-12.jpg)
+
+---
+
 background-image: url('figs/econet.jpeg')
 background-position: 50% 50%
 background-size: contain
@@ -138,7 +144,7 @@ class: left, top
 
  Different 
  
- isualizations
+ visualizations
  
  of the same
  
