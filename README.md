@@ -8,6 +8,8 @@
 
 ### [Youtube lectures](https://www.youtube.com/playlist?list=PLGKQe3NU_VU1NtfDbKIl_hXfrpfeOMkz2)
 
+### [Github repo](https://github.com/dallasLab/biol4253)
+
 ## Notes in PDF
 
 - [Lecture 01's notes](lectures/01_whatIsEcology/notes.pdf)
@@ -17,12 +19,12 @@
   + [Reading: A primer of ecology, Chapter 1-2](lectures/02_popDynamics/gotelliPopDynamics.pdf)
 - [Lecture 03's notes](lectures/03_behavior/notes.pdf)
   + [Reading: Demography in an increasingly variable world](lectures/03_behavior/boyce2006.pdf)
-  + [Reading: Causes and consequences of dispersal in plants and animals](lectures/03_behavior/dispersalPlants.pdf)
+  + [Reading: Causes and consequences of dispersal in plants and animals](https://www.nature.com/scitable/knowledge/library/causes-and-consequences-of-dispersal-in-plants-15927714)
 - [Lecture 04's notes](lectures/04_niche/notes.pdf)
   + [Reading: Stitch the niche - a practical philosophy and visual schematic for the niche concept](lectures/04_niche/SitchTheNiche.pdf)
   + [Reading: On the relationship between niche and distribution](lectures/04_niche/Pulliam2000.pdf)
 - [Lecture 05's notes](lectures/05_communityComposition/notes.pdf)
-  + [Reading: Succession: a closer look](lectures/05_communityComposition/Succession_A_Closer_Look.pdf)
+  + [Reading: Succession: a closer look](https://www.nature.com/scitable/knowledge/library/succession-a-closer-look-13256638/)
   + [Reading: A primer of ecology. Chapter 9](lectures/05_communityComposition/gotelliMeasuringDiversity.pdf)
 - [Lecture 06's notes](lectures/06_landscapeStructure/notes.pdf)
   + [Reading: A primer of ecology. Chapter 4](lectures/06_landscapeStructure/gotelliMetapops.pdf)
@@ -36,7 +38,7 @@
   + [Reading: Analysing ecological networks of species interactions](lectures/09_plantPollinator/delmas2019.pdf)
   + [Reading: Network Science, Chapter 1](http://networksciencebook.com/chapter/1)
 - [Lecture 10's notes](lectures/10_envChange/notes.pdf)
-  + [Reading: Global Change](lectures/10_envChange/Global Change_ An Overview _ Learn Science at Scitable.pdf)
+  + [Reading: Global Change](https://www.nature.com/scitable/knowledge/library/global-change-an-overview-13255365)
   + [Reading: Ecological responses to recent climate change](lectures/10_envChange/walther2002.pdf)
 - [Lecture 11's notes](lectures/11_macroecology/notes.pdf)
   + [Reading: The what, how and why of doing macroecology](lectures/11_macroecology/geb.12855.pdf)
