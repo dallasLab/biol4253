@@ -22,7 +22,7 @@
   + [Reading: Stitch the niche - a practical philosophy and visual schematic for the niche concept](lectures/04_niche/SitchTheNiche.pdf)
   + [Reading: On the relationship between niche and distribution](lectures/04_niche/Pulliam2000.pdf)
 - [Lecture 05's notes](lectures/05_communityComposition/notes.pdf)
-  + [Reading: Succession: a closer look](lectures/Succession_A_Closer_Look.pdf)
+  + [Reading: Succession: a closer look](lectures/05_communityComposition/Succession_A_Closer_Look.pdf)
   + [Reading: A primer of ecology. Chapter 9](lectures/05_communityComposition/gotelliMeasuringDiversity.pdf)
 - [Lecture 06's notes](lectures/06_landscapeStructure/notes.pdf)
   + [Reading: A primer of ecology. Chapter 4](lectures/06_landscapeStructure/gotelliMetapops.pdf)
