@@ -1,0 +1,48 @@
+---
+title: "Macroecology"
+author: "Daijiang Li"
+institute: "LSU"
+date: "2021/03/01 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+class: left, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+```
+
+
+# Latitudinal gradients in species richness
+
+![Latitude gradient of biodiversity](figs/ldg.jpeg)
+.right[[Mannion et al. 2014](https://www.sciencedirect.com/science/article/pii/S0169534713002358)]
+
+???
+
+Distribution of extant terrestrial vertebrate species showing the high concentration of diversity in equatorial regions
+
+---
+
+# Hypotheses
+
+Speciation and extinction rates determine species richness
+
+- Climate: high solar energy, low seasonality --> high productivity --> high species richness
+
+- Geographic: larger and more heterogeneous areas in tropics
+
+- Historical:  more time, less perturbed in the past by climatic events, accumulating species over time
+
+- Niche breath and inter-specific interactions: stronger competition in tropics leads to narrower niche; or more controlled by predators, parasites, and pathogens
+
+
+
