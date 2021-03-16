@@ -112,6 +112,8 @@ C* & = \frac{r}{a}
 
 <https://ecoapps-lvpredatorprey.herokuapp.com>
 
+<https://shiny.aj2duncan.com/risk/lotka-volterra/>
+
 
 ```{r fig2, out.width = '100%'}
 knitr::include_graphics("figs/lv.png")
