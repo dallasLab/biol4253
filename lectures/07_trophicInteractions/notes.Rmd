@@ -3,12 +3,12 @@ title: "Notes of Lecture 7"
 author: "Tad Dallas, Daijiang Li"
 date: "12/19/2020"
 output:
+  html_document:
+    df_print: paged
   bookdown::pdf_document2: 
     latex_engine: xelatex
     number_sections: no
     toc: no
-  html_document:
-    df_print: paged
 fontsize: 12pt
 linestretch: 1.5
 mainfont: Arial
@@ -108,7 +108,9 @@ C* & = \frac{r}{a}
 
 
 
-<https://statisticalplumber.shinyapps.io/lotka/lotka.Rmd>
+<!-- <https://statisticalplumber.shinyapps.io/lotka/lotka.Rmd> -->
+
+<https://ecoapps-lvpredatorprey.herokuapp.com>
 
 
 ```{r fig2, out.width = '100%'}
