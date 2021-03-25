@@ -1,104 +1,36 @@
 ---
 title: "Week 8"
-author: "Tad Dallas"
+author: "Tad Dallas, Daijiang Li"
 includes:
   in_header:
     - \usepackage{lmodern}
 output:
-  pdf_document:
-    fig_caption: yes
-    fig_height: 6
-    fig_width: 6
-    toc: yes
   html_document:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
     highlight: tango
     theme: journal
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+runtime: shiny
 ---
-
-
-
- 
-
 
 
 
 
 SIR models
 
-```{r}
-
-
-
-
+```{r fig.width='100%'}
+if(!require(shinySIR)) install.packages("shinySIR")
+shinySIR:::run_shiny(model = "SIR", 
+                     ics = c(S = 90, I = 10, R = 0), 
+                     tmax = 500, 
+                     showtable = TRUE)
 ```
-
-
-
-```{r}
-
-
-
-
-```
-
-
-
-
-
-
-Calculation of R0
-
-```{r}
-
-
-
-
-```
-
-
-
-
-
-
-Effect of vaccination and demonstration of herd immunity
-
-```{r}
-
-
-
-
-```
-
-
-
-
-
-
-
-
-Compare analytical R0 and herd immunity to simulated data
-
-```{r}
-
-
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
