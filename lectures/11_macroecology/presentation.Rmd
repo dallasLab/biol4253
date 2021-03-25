@@ -99,7 +99,7 @@ In the reductionist view, adequate modelling of the components should always rep
 
 ???
 
-the claim that macroecology can be explained by individ‐ uals and population dynamics can be demonstrated rigorously to be possible only rarely, owing to the transmutation problem
+the claim that macroecology can be explained by individuals and population dynamics can be demonstrated rigorously to be possible only rarely, owing to the transmutation problem
 
 ---
 
@@ -279,4 +279,3 @@ class: center, bottom, inverse
 # .red[Macroecology in an era of rapid change]
 
 ### .font120[How would environmental changes such as climate change, land use change, and biological invasions affect species range, abundance, body size, and diversity, and ultimately, the human society?]
-

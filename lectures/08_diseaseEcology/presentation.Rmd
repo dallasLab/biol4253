@@ -302,7 +302,7 @@ https://www.nature.com/articles/s42003-020-01609-6
 
 $R_0 = \frac{\beta S (1 - c)}{d} < 1$
 
-$c > 1 - \frac{d}{\beta S} = \frac{1}{1 - R_0}$
+$c > 1 - \frac{d}{\beta S} = 1 - \frac{1}{R_0}$
 ]
 
 --
@@ -385,5 +385,3 @@ class: left, middle, inverse
 
 ## .red[How does this lecture help you in]
 ## .red[understanding the current pandemic?]
-
-
