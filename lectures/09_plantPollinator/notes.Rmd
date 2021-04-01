@@ -165,9 +165,9 @@ Degree centrality: $k_i = \sum_{j=1}^{n} A_{ij}$
 
 What if we don't care just about the immediate connections between nodes, but we want to know how well connected the node is to **all** nodes in the network? This is referred to as _closeness_ centrality.  
 
-Closeness centrality: $k_i = \sum_{j!=i}^{n} \frac{n-1}{d_ij}$ 
+Closeness centrality: $k_i = \sum_{j!=i}^{n} \frac{n-1}{d_{ij}}$ 
 
-where $n$ is the number of nodes in the network, and $d_ij$ is the shortest path length between $i$ and $j$.
+where $n$ is the number of nodes in the network, and $d_{ij}$ is the shortest path length between $i$ and $j$.
 
 However, we may also wish to remove individuals which serve as bridges between two modules (as detected by modularity or other means). This is especially relevant to disease control efforts which attempt to minimize network-wide infection. This measure of centrality is called _betweenness_.
 
