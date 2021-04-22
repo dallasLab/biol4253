@@ -234,7 +234,7 @@ We will not take attendance. However, much of the material presented will not be
 
 **How do we scale small scale processes to global scales?**
 
-\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day April 27 }
+\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day April 26 3 - 5pm (for section at 1:30-2:50pm); Apil 28 10am - noon (for section at 3-4:20pm)}
 
 ---
 
