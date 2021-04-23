@@ -59,7 +59,7 @@ Protein Interactions	Proteins	Binding interactions	Undirected	2,018	2,930	2.90
 
 # [The rise of networks](http://networksciencebook.com/chapter/1#scientific-impact)
 
-![rise of networks](http://networksciencebook.com/images/ch-01/figure-1-12.jpg)
+![rise of networks](figs/figure-1-12.jpg)
 
 ---
 
@@ -217,11 +217,11 @@ The degree distribution plays a central role in network theory with the calculat
 $$CC_i = \frac{2N_i}{K_i(K_i - 1)}$$
 <br>
 
-![cc](http://networksciencebook.com/images/ch-02/figure-2-16.jpg)
+![cc](figs/figure-2-16.jpg)
 
 ---
 ### .green[Modularity]: how closely connected nodes are divided into modules
-![](http://networksciencebook.com/images/ch-02/figure-2-15.jpg)
+![](figs/figure-2-15.jpg)
 
 
 ---
@@ -271,7 +271,7 @@ $$C_{i}=\frac{P-\bar{P_{i}}}{\sigma_{\bar{P_{i}}}}$$
 --
 
 ### Error tolerance and attack tolerance
-![](http://networksciencebook.com/images/ch-01/figure-1-1.jpg)
+![](figs/figure-1-1.jpg)
 
 
 ---
