@@ -22,17 +22,15 @@ output: pdf_document
 
 \setstretch{1}
 
-**Location**: Zoom 
+**Location**: 210 Williams (and maybe Zoom if we go virtual)
 
-**Time**: section 1 is T Th 1:30pm - 02:50pm; section 2 is T Th 3:00pm - 4:20pm   
+**Time**: section 3 is T Th 4:30pm-5:50pm
 
-- Note: the Tuesday lecture will be asynchronous, meaning we won't meet, but you'll be expected to have watched the recorded lecture. 
+**Instructor**: Dr. Tad Dallas (`tadallas@lsu.edu`) 
 
-**Instructor**: Dr. Tad Dallas (`tadallas@lsu.edu`) and Dr. Daijiang Li (`dli30@lsu.edu`)
+**Office**: LSA 343 Life Sciences (Tad)
 
-**Office**: LSA 343 Life Sciences (Tad) and LSB 125 (Daijiang)
-
-**Office hours**: T 1:30 - 3:00pm 
+**Office hours**: T 3:00 - 4:30pm or by appointment 
 
 
 
@@ -45,26 +43,15 @@ output: pdf_document
 
 **Course Overview**:
 
-Ecology is the study of species interactions. This broad umbrella covers levels of biological organization from individuals to entire ecosystems. We will explore ecological concepts across these different levels of organization, and gain an understanding of general ecological concepts. The course will focus particularly on population and community ecology, which aims to understand the processes which govern the abundance and diversity of species. However, we will also be addressing trophic relationships (e.g., predators eating prey), disease (e.g., epidemic spread), and mutualisms (e.g., plants and pollinators).
+Ecology is the study of species interactions. This broad umbrella covers levels of biological organization from individuals to entire ecosystems. We will explore ecological concepts across these different levels of organization, and gain an understanding of general ecological concepts. The course will focus particularly on population and community ecology, which aims to understand the processes which govern the abundance and diversity of species.We will also be addressing trophic relationships (e.g., predators eating prey), disease (e.g., epidemic spread), and mutualisms (e.g., plants and pollinators). It's going to be fun. 
 
 
-This course will be taught asynchronously, meaning that Tuesday's lecture will be recorded and released to watch whenever you would like (before Thursday), and then Thursday's class will dig deeper into the concept and clarify points of confusion. 
+This course will be taught in-person, barring any lockdown due to coronavirus. There are previous recorded lectures from Spring 2021 available on YouTube:
 
+<https://www.youtube.com/playlist?list=PLGKQe3NU_VU1NtfDbKIl_hXfrpfeOMkz2>
 
-YouTube lectures: <https://www.youtube.com/playlist?list=PLGKQe3NU_VU1NtfDbKIl_hXfrpfeOMkz2>
+These are not meant to cover the same _exact_ material we will cover this semester, but may be a nice signpost if you find a particular concept difficult and want to hear it explained another way, or if you have to miss a lecture. Still, this course is constantly evolving, so the best resource for learning the material is still likely the notes.pdf files in the `lectures` folder in the GitHub site (https://github.com/dallasLab/biol4253). I will make a concerted effort to also upload these to Moodle for folks who prefer Moodle. See below statement concerning the structure of the syllabus as well. 
 
-
-
-
-\medskip
-
-**Course Goals**:
-
-Over the course, it is expected that students gain
-
-* a conceptual foundation of ecological principles, from individuals to ecosystems
-* the ability to link existing ecological theory to natural systems
-* an appreciation for ecological systems
 
 \medskip
 
@@ -79,6 +66,22 @@ Changes to the syllabus may be made during the semester. The most up-to-date and
 
 \medskip
 
+**Course Goals**:
+
+Over the course, it is expected that students gain
+
+* a conceptual foundation of ecological principles, from individuals to ecosystems
+* the ability to link existing ecological theory to natural systems
+* an appreciation for ecological systems
+
+
+
+
+\medskip
+
+
+
+
 
 **Suggested Reading**:
 
@@ -86,6 +89,7 @@ There is no required textbook, but readings will be provided from the primary li
 
 > Gotelli's _Primer of Ecology_ [link to book](https://openlibrary.org/books/OL344539M/A_primer_of_ecology)
 
+Readings are made available in the subfolder for each week (they will be in the `readings` subfolder e.g., <https://github.com/dallasLab/biol4253/tree/master/lectures/01_whatIsEcology/readings>)
 
 
 
@@ -93,7 +97,7 @@ There is no required textbook, but readings will be provided from the primary li
 
 ## Grading
 
-There will be a total of 500 points, consisting of four exams and a final project. LSU has a plus-minus grading scale. There will be no curve. 
+There will be a total of 500 points, consisting of four exams and a final project. LSU has a plus-minus grading scale. If you have 92.7 points, you still have not gotten to 93, and have an A-. There will be no overall curve, but I will likely provide opportunities to improve exam grades.
 
 |grade| percent |
 | -- |  --    |
@@ -117,7 +121,7 @@ There will be a total of 500 points, consisting of four exams and a final projec
 There will be four exams given in this class. Although there will be **no comprehensive** exam, each successive section will build upon material learned in earlier sections. Thus, on Exams 2-4, students will be expected to draw upon major points from previous material covered. Exams will consist of any combination of the following types of questions: fill in the blank, multiple choice, short answer, essay or problem solving. _Each exam will be worth 100 points_. 
 
 
-As a rule, make-up exams will be essay or oral in form depending on the decision of the instructor and will be only available to those persons who have obtained prior approval or have a valid written excuse. We reserve the right to verify any excuse.
+As a rule, make-up exams will be essay or oral in form depending on the decision of the instructor and will be only available to those persons who have obtained prior approval or have a valid written excuse. The instructor reserves the right to verify any excuse.
 
 
 
@@ -167,7 +171,7 @@ More information on registering a disability is available at [LSU Disability Ser
 
 ## Late Assignments: 
 
-Assignments are expected to be turned in on time. We will not accept late assignments.
+Assignments are expected to be turned in on time. I will not accept late assignments.
 
 
 
@@ -175,7 +179,7 @@ Assignments are expected to be turned in on time. We will not accept late assign
 
 ## Attendance: 
 
-We will not take attendance. However, much of the material presented will not be available if you aren't in class to hear it. We will do my best to make lecture notes available, but this should not be viewed as a substitute for coming to class. If you miss a lecture, the best option for getting the needed material is to do the readings and reach out to a classmate. 
+I will not take attendance. However, much of the material presented will not be available if you aren't in class to hear it. I will do my best to make lecture notes available, but this should not be viewed as a substitute for coming to class. If you miss a lecture, the best option for getting the needed material is to do the readings and reach out to a classmate. 
 
 
 \clearpage
@@ -200,7 +204,7 @@ We will not take attendance. However, much of the material presented will not be
 
 **How does individual behavior influence population processes?**
 
-\textcolor{blue}{\Large Exam 1 \ \ \normalsize February 9}
+\textcolor{blue}{\Large Exam 1 \ \ \normalsize September 9}
 
 
 ---
@@ -209,7 +213,7 @@ We will not take attendance. However, much of the material presented will not be
 
 **What determines community composition?**
 
-\textcolor{blue}{\Large Exam 2 \ \ \normalsize March 2}
+\textcolor{blue}{\Large Exam 2 \ \ \normalsize October 2}
 
 ---
 
@@ -222,7 +226,7 @@ We will not take attendance. However, much of the material presented will not be
 
 **What are the effects of parasites and pathogens?**
 
-\textcolor{blue}{\Large Exam 3 \ \ \normalsize April 6}
+\textcolor{blue}{\Large Exam 3 \ \ \normalsize November 4}
 
 
 ---
@@ -234,7 +238,7 @@ We will not take attendance. However, much of the material presented will not be
 
 **How do we scale small scale processes to global scales?**
 
-\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day April 26 3 - 5pm (for section at 1:30-2:50pm); Apil 28 10am - noon (for section at 3-4:20pm)}
+\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day}
 
 ---
 
@@ -254,7 +258,7 @@ We will not take attendance. However, much of the material presented will not be
 
 ## BIOL 4253 – Student Presentations
 
-Here are a final set of instructions for your class presentations.
+Here are a final set of instructions for your class presentations. Please see the rubric <https://github.com/dallasLab/biol4253/blob/master/finalProjectRubric.pdf> for a coarse breakdown of points. This is worth the same as an exam, and should be worked on throughout the semester. I encourage discussing potential ideas with me and/or potential team members. You will form teams of 3-5 students to address a topic in more detail than we were able to get into in class. Presentations should not be overly general (e.g., "what is climate change?") or oddly specific to an organism of interest (e.g., "everything about the right whale"). Instead, I'd like presentations to go into detail on an ecological concept (e.g., competitive exclusion) in more detail, and with relevant citations, providing us all with some fun examples of the phenomenon as well as some nuance (e.g., in what systems would we expect to observe competitive exclusion?) and a demonstration of tying different concepts together (e.g., how woudl demographic stochasticity influence competitive exclusion?).
 
 1. **Time limit**. Each presentation will be allotted 5 minutes. Presentations going over this limit will be interrupted. An incomplete presentation will affect your grade.
 
@@ -271,7 +275,7 @@ Here are a final set of instructions for your class presentations.
 5. **Submission of presentations**. All presentations must be submitted as a digital file before presentations begin. 
 
 
-6. **Order of presentations**. Presentations will be given over a two-day period. To keep things as fair as possible, we will randomly determine the order of presentation. You will all need to be prepared to give your presentations/videos on the first day. 
+6. **Order of presentations**. Presentations will be given over a two-day period. To keep things as fair as possible, I will randomly determine the order of presentation. You will all need to be prepared to give your presentations/videos on the first day. 
 
 
 7. **Presentations & Final Exam**. The material presented by your classmates will be treated like any other lecture material and, thus, could be included on the final exam.  You will only be responsible for the content of the presentations given during your assigned section of the class. 

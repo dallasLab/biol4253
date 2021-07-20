@@ -1,7 +1,7 @@
 ---
 title: "Notes of Lecture 9"
-author: "Tad Dallas, Daijiang Li"
-date: "12/19/2020"
+author: ""
+date: ""
 output:
   bookdown::pdf_document2: 
     latex_engine: xelatex
@@ -35,13 +35,11 @@ if(!require(bookdown)) install.packages("bookdown")
 
 # Reading:
 
-Delmas, Eva, et al. "Analysing ecological networks of species interactions." Biological Reviews 94.1 (2019): 16-36. 
+Pascual, Mercedes, Jennifer A. Dunne, and Jennifer A. Dunne, eds. Ecological networks: linking structure to dynamics in food webs. Oxford University Press, 2006. (pages 3-15; see `readings` folder)
 
-<https://onlinelibrary.wiley.com/doi/pdf/10.1111/brv.12433>
 
-_We will mainly focus on material from pages 1-13._
+Students may also find <http://networksciencebook.com> helpful if a concept is tough to grasp (chapters 1 and 2 mainly).
 
-Chapter 1 of Network Science by Albert-Lászió Barbási. <http://networksciencebook.com/chapter/1>
 
 
 # General overview of network ecology
