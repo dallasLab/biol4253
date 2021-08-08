@@ -1,7 +1,7 @@
 ---
-title: "Notes of Lecture 10"
-author: "Tad Dallas, Daijiang Li"
-date: "12/19/2020"
+title: "week 10: Environmental change"
+author: "Tad Dallas"
+date: ""
 output:
   bookdown::pdf_document2: 
     latex_engine: xelatex
@@ -36,9 +36,14 @@ if(!require(bookdown)) install.packages("bookdown")
 # Reading:
 
 Camill, P. (2010) Global Change. Nature Education Knowledge 3(10):49 
-<https://www.nature.com/scitable/knowledge/library/global-change-an-overview-13255365>
+[link to paper](https://www.nature.com/scitable/knowledge/library/global-change-an-overview-13255365)
 
-Walther, G.R., Post, E., Convey, P., Menzel, A., Parmesan, C., Beebee, T.J., Fromentin, J.M., Hoegh-Guldberg, O. and Bairlein, F., 2002. Ecological responses to recent climate change. Nature, 416(6879), p.389. <http://eebweb.arizona.edu/courses/Ecol206/Walther%20et%20al%20Nature%202002.pdf>
+Walther, G.R., Post, E., Convey, P., Menzel, A., Parmesan, C., Beebee, T.J., Fromentin, J.M., Hoegh-Guldberg, O. and Bairlein, F., 2002. Ecological responses to recent climate change. Nature, 416(6879), p.389. [link to paper](http://eebweb.arizona.edu/courses/Ecol206/Walther%20et%20al%20Nature%202002.pdf)
+
+
+
+
+
 
 
 # How does global environmental change influence ecology?

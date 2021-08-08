@@ -1,7 +1,7 @@
 ---
-title: "Notes of Lecture 7"
-author: "Tad Dallas, Daijiang Li"
-date: "12/19/2020"
+title: "week 7: Trophic interactions"
+author: "Tad Dallas"
+date: ""
 output:
   html_document:
     df_print: paged
@@ -109,10 +109,11 @@ C* & = \frac{r}{a}
 
 
 <!-- <https://statisticalplumber.shinyapps.io/lotka/lotka.Rmd> -->
-
 <https://ecoapps-lvpredatorprey.herokuapp.com>
-
 <https://shiny.aj2duncan.com/risk/lotka-volterra/>
+
+
+
 
 
 ```{r fig2, out.width = '100%'}

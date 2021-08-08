@@ -1,0 +1,328 @@
+---
+title: "week 4: the niche"
+author: "Tad Dallas"
+date: ""
+output:
+  html_document:
+    df_print: paged
+  bookdown::pdf_document2: 
+    latex_engine: xelatex
+    number_sections: no
+    toc: no
+fontsize: 12pt
+linestretch: 1.5
+mainfont: Arial
+urlcolor: blue
+linkcolor: orange
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \rhead{Biol 4253}
+  - \lhead{the niche}
+  - \setlength{\headheight}{14.5pt}
+---
+
+```{r knitr_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align='center', cache = FALSE, warning = FALSE,
+        message = FALSE, echo = FALSE, out.width = '95%')
+options(digits = 3, width = 88)
+if(!require(bookdown)) install.packages("bookdown")
+```
+
+\thispagestyle{fancy}
+
+# Reading:
+
+Pulliam, R. (2000) On the relationship between niche and distribution. Ecology Letters, 3, 349–361.
+
+
+
+
+
+
+
+\clearpage
+
+
+## The niche
+
+A cornerstone of much of the theory of population and community ecology is the idea that species have a set of abiotic tolerances. Originally defined with respect with a species geographic distribution by Grinnell, the niche was re-defined by Hutchinson years later with a clear and concise mathematical description of the niche as an $n$-dimensional hypervolume where each $n$ dimension is an environmental tolerance axis. Within these tolerance limits, the species is able to survive and persist, whereas outside these tolerance limits the species dies. But how we conceptually define a species niche, and how we use information on the niche to understand the geographic distribution of species, are subjects of seemingly continuous debate. We won't delve much into the debate on this, but instead I will try to give a general overview of niche concepts and highlight the utility of the niche, how it is defined, and how it is operationalized. 
+
+
+
+
+
+
+
+
+
+\bigskip
+
+
+
+### What is the utility of the niche?
+
+Conceptually, the niche has suffered many different labels and definitions. Ecologists have a love-hate relationship with complexity, in that they seemingly acknowledge that ecological systems are often too multi-dimensional to accurately capture, while also stretching simple concepts and mashing their own ideas into niche ideas. We'll go over examples of this later in this lecture for a bit of levity. 
+
+
+
+The true utility of the niche lies in the simple mathematical theory that leads to clear hypotheses regarding species distribution and competition. These ideas about where species are and how ecological communities are formed pre-date Darwin, and are central questions in population and community ecology. For instance, the ability to set fundamental physiological limits for a given species (i.e., to define the niche), allow the projection of physiological limits into geographic space to understand the potential geographic distribution of the species. Let's now try to get at a working definition of the niche, and explore predictions stemming from niche theory. 
+
+
+
+
+
+
+
+
+
+
+
+
+### How is the niche defined?
+
+The first to formalize something that sounded like the niche (and using the term 'niche') was Joseph Grinnel, who defined the niche as the geographic range or set of habitats that a species occupies. It did not consider species interactions, and really conflated the species niche with the species geographic distribution. 
+
+
+
+A competing definition of the niche around this same time was from Charles Elton, who focused more on the functional role of a species in it's environment, specifically with respect to other interacting species. That is, he defined the niche of a species with respect to food resources and natural enemies (predators, parasites, even competitors). While this definition is more inclusive, it is also quite ambiguous and difficult to actually define. For instance, organisms that benefit from the damming of rivers may co-occur with beavers, but does that make beaver presence part of the species niche? Examining this further, the presence of suitable food resources doesn't ensure occurrence. If a species cannot reach the area of high food availability, or if environmental conditions (traditional niche axes) are unfavorable, the species won't occur there. Like Grinnel, the link between species niche and species geographic distribution is muddied. 
+
+
+
+Meanwhile, numerous ecologists generated hypotheses given the poorly defined niche. For instance, development of the _competitive exclusion_ principle began in the early 1900's (a little before Grinnel and Elton), but it was quickly phrased in niche terms once available. 
+
+
+
+The previous niche definitions were pretty conceptual and ambiguous. However, thirty years or so after Grinnel, a scientist named G. Evelyn Hutchinson defined the niche as a _persistence_ boundary in $n$ dimensions. Another interesting distinction Hutchinson made was the separation of the _fundamental_ and _realized_ niches for a species. 
+
+
+
+The _fundamental_ niche being where the set of environments defined by the $n$-dimensional hypervolume where a species could hypothetically occupy. Meanwhile, the _realized_ niche is the set of environmental conditions defined by the $n$-dimensional hypervolume where a species _does_ persist. That is, interactions with competitors and interactive effects of environmental variables lead to a narrower range of environments where a species is best-suited for persistence. Here, we will define the Hutchinsonian niche as including both abiotic and biotic variables. The inclusion of biotic variables is mainly just for coherence with the readings. Hutchinson's original niche idea did not include biotic variables. Let's brainstorm some reasons why this might have been the case?
+
+
+
++ Species densities will also be functions of abiotic variables, making it pretty difficult to tease apart the influence of abiotic and biotic variables as niche axes. 
++ Niche axes need to create persistence thresholds. Biotic interactions typically don't result in exclusion (but see _competitive exclusion_ section below). 
++ Opens the door to the inclusion of non-interacting species, as well as predators, parasites, resources, etc. (a mix of good and bad in this sense, as some of these may be limiting, but we've also just made the niche quite ambiguous and difficult to operationalize).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### The consequences of the niche
+
+Species with a larger set of abiotic tolerances should hypothetically have a larger geographic distribution, and be the strongest competitors in variable environments. This is because they are able to persist in a broader range of conditions than species with more narrow niches. This suggests that there should be a direct positive relationship between species geographic range size and climatic niche size. 
+
+[There is](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12140)
+
+
+
+#### The idea of a vacant niche
+
+The idea is that some range of environmental niche space is not being occupied, and therefore some species "should" be there to "fill" the vacant niche. This borrows a slightly different definition of the word _niche_, as the Hutchinsonian niche view would define the niche by the range of environments in which a species occurs, so it's a property of the species and not a property of the habitat. The idea of the vacant niche treats the niche as a property of the climatic space or of a particular ecosystem. An example of a vacant niche comes from Lawton and colleagues, who studied a fern species and the associated insect communities. They found a wide range of insect species on the fern plants, despite the plants being a relatively homogeneous environmental space. Thus, they argued that the plants with few species must have some vacant niches. That is, the plant contains some set of environmental space that is unoccupied by the set of species. Thus, the environmental niche space is a property of the fern, defined independently of the species niche limits. 
+
+
+
+**What is wrong with this idea?**: 
+Apart from mis-defining the niche, this completely ignores the influence of dispersal limitation. Dispersal limitation occurs when a species is able to successfully disperse to a given habitat (e.g., low species richness on a fern which is a bit far away and therefore tough to disperse to). The other two things that are largely ignored in this view of vacant niches is the influence of _competitive exclusion_ and _historical contingency_. 
+
+
+
+
+
+
+
+
+
+
+
+
+## Niche overlap and competitive exclusion
+
+
+Getting back to our local community, the set of species that occupy a given site is controlled not only by species niches, but also by the presence and abundance of existing species. This does not necessarily mean that other species density should be a niche axis, but instead that a site which could potentially be occupied by a species (i.e., the environment is within the species niche) remains unoccupied for the time being (what some would refer to as a "vacant niche"). This is an important distinction, as the mechanisms by which species may exclude another species from a community are numerous. Some of these mechanisms are forms of _competitive exclusion_, while others are simply a function of dynamic colonization processes (e.g., _historical contingency_). 
+
+
+
+### Competitive exclusion
+
+The _competitive exclusion_ principle states that two species with similar food requirements cannot coexist on a single limiting resource. This has since been defined in terms of _niche overlap_, which is the degree to which the niches of two species are similar. The idea being that the more two species' niches overlap, the more strongly they will compete with one another. 
+
+
+
+
+### Historical contingency
+
+This is when the order of species arrivals to a community influences the subsequent colonization of other species. That is, an environment could have ideal abiotic conditions for a species, but the presence of a competitor changes the behavior, fecundity, or survival of the would-be colonizer. Coral reef communities exhibit historical contingency, as the initial colonization by a territorial fish species will reduce the colonization rate of species differentially (some species can tolerate the territoriality a bit better than others).  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Niche evolution
+
+Selective pressures as well as genetic drift can change niche limits of a species. This is especially important as shifting climates could potentially displace species. In this case, where the climate in a given location is shifting outside of a species niche limits, species can either 1) disperse and track their favorable environment, 2) adapt abiotic tolerances to current conditions or 3) die. 
+
+
+
+
+Apart from adaptation to new environments, species niches can change in response to competitive pressure. This happens through a process called niche partitioning. It is important to note that niche partitioning does not have to change the shape of the species niche, so niche evolution might not actually occur, but niche partitioning is a process through which niche evolution _may_ occur, and is important for species coexistence. 
+
+
+
+### Niche partitioning
+
+**Niche partitioning** is the process by which natural selection drives competing species into different patterns of resource use or different niches. Coexistence is obtained through the differentiation of their realized ecological niches. 
+
+
+
+**Spatial niche partitioning**: As an example of niche partitioning, several anole lizards in the Caribbean islands share common food needs - mainly insects. They avoid competition by occupying different physical locations. Although these reptiles might occupy different locations, you may also find groups living around the same area, in which can contain up to as many as fifteen different lizards. For example, some live on the leaf litter floor while others live on branches. Species who live in different areas compete less for food and other resources, which minimizes competition between species. Another example would be Darwin's finches with their beak size variation by specializing on different seed types.
+
+
+
+**Temporal niche partitioning**: Occurs when species differ in their competitive abilities based on varying environmental conditions. For example, in the Sonoran Desert, some annual plants are more successful during wet years, while others are more successful during dry years. This is fundamentally linked to our earlier examinations of environmental stochasticity. Before, we introduced environmental stochasticity as the temporal variation in demographic rates of a population driven by the environment. Here, environmental stochasticity can maintain the coexistence of two species which compete for a limiting resource, which helps explain how species can coexistence when competitive exclusion says that they shouldn't.
+
+
+
+
+
+
+
+
+
+
+\clearpage
+## Competition
+
+Competition is the interaction between species which serves to reduce the survival or fecundity of individuals of both species. For example, plant species may compete for soil nutrients, light availability, and space. Meanwhile, animal communities may compete for prey resources or nesting habitat. Here, it's important to make a distinction between competition which occurs between individuals of different species (_interspecific competition_) from when a single species competes with itself (_intraspecific competition_). We discussed intraspecific competition earlier as a form of population regulation that can lead to stabilizing population dynamics. 
+
+Apart from this distinction between inter and intra -specific competition, there are three main types of competition; 
+
++ exploitative 
++ interference
++ apparent
+
+
+_exploitative competition_: A competitive interaction where individuals consume a common limiting resource. e.g., bird species which occupy tree holes may compete for nesting sites, as there are only so many tree holes to nest in. Another, more classic example, would be competition for a prey resource e.g., two small mammal species may compete for seed resources. 
+
+
+_interference competition_: A competitive interaction where individuals interact directly. e.g., territorial species defending their territory from establishment of another species, aggression between individuals of different species that affects the survival or reproduction of one or both individuals. 
+
+
+_apparent competition_: A competitive interaction where one species indirectly influences the survival or reproduction of another species through indirect effects on a shared predator or parasite. e.g., a species which is able to tolerate infection by a shared parasite may increase the abundance of the parasite, which can have a proportionately stronger influence on a second competing species. This does not require the species to have a limiting resource (like classic exploitative competition) or to interact directly (like interference competition). 
+
+
+
+
+### What makes a good competitor?
+
+The idea that competition can be a major force structuring communities shouldn't come as a surprise, as we discussed the idea of competitive exclusion previously, where species with a large degree of niche overlap cannot coexist indefinitely on a limiting resource. But now, these different forms of competition create new ways through which competition can act, potentially leading to exclusion of one species. For instance, in _interference_ competition, one predator species may scare another predator species off from it's normal prey resource, resulting in a shift in diet. This shift in diet could come at a demographic cost (e.g., lower population growth rates). 
+
+
+
+
+### R star theory 
+
+So what makes a species a good competitor? This is a big question, and we won't go into too much detail here. One school of thought suggests that the winner of competition (and therefore the thing that makes for a good competitor) is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R^{*}$ (R star), and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R^{*}$ will outcompete a species with a higher $R^{*}$, especially as resources become limited. Let's look at this, starting with a set of coupled differential equations describing a set of $j$ species ($N_j$) eating a shared resource $R$. 
+
+
+\[\frac{dN}{dt} = N_{j}(a_{j}R - d) \]
+
+\[\frac{dR}{dt} = r - R\sum_{j} a_{j}N_{j} \]
+
+where $N_{j}$ is the density of species $j$, $R$ is a common shared resource among all $j$ species that grows at some constant rate $r$, $a_{j}$ is the conversion efficiency (how well can species $j$ turn resource into babies?), $d$ is a death rate (can be species-specific; $d_{j}$). Then the equilibrium of each species $j$ can be estimated as a function of resource ($R$), describing the amount of resources needed hit 0 net population growth ($\frac{dN}{dt} = 0$). 
+
+\[ R^{*} = \frac{d}{a_{j}} \]
+
+In the two species case, this suggests that the species with the lowest $R^{*}$ value will eventually outcompete the other species. This is because the competitor can capitalize on the resource more efficiently, or at least needs less resource to maintain a positive growth rate. So when resources are depleted, the species with the lower $R^{*}$ has a competitive advantage, as it has a positive growth rate while other species may decline. 
+
+
+
+What form of competition is this modeling? Why might this limit the application to other systems?
+
+
+
+
+
+
+
+
+
+
+
+
+### Competition without considering a limiting resource
+
+Recall the logistic model 
+
+\[ \frac{dN}{dt} = rN\left(1-\frac{N}{K} \right) \]
+
+
+Let's add competition to it through direct interactions and extend it to 2 species. This model is called the Lotka-Volterra model.
+
+\[ \frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right) \]
+
+\[ \frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} \right) \]
+
+
+where we have populations of two species ($N_{1}$ and $N_{2}$), which grow at rates $r_{i}$ and compete through interspecific effects on the other species through $\alpha$ terms. 
+
+
+Let's look at the long-run outcomes of Lotka-Volterra competition, of which there are only 4. We'll do this by generating what is referred to as a "state-space", in which the abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis. Each point within the state-space represents a combination of abundances of the two species. For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). Each species has a line, and these lines are called \textit{zero net growth isoclines}. 
+
+
+
+
+```{r fig2, out.width = '100%'}
+knitr::include_graphics("figs/lv.png")
+```
+
+
+
+\bigskip
+
+
+---
+# ((know how the state-space of N1 by N2 looks, and the 4 different scenarios we went over in class))
+---
+
+
+
+So this is a form of competition that does not require a limiting resource, and identifies a fairly small region of state space and parameterization that leads to stable coexistence. So if coexistence is so tough, why do we see lots of species coexisting in nature? Even when there is a single limiting resource! This question has confused ecologists for a long while, since around the time when we started to try to operationalize the niche. In fact, Hutchinson (the same person who defined the niche in the arguably "best" way) described what is known as the \textit{paradox of the plankton}, where many many species of plankton coexist on an arguably limiting resource (e.g., nitrogen, silicate acid, etc.). This runs counter to what we would expect to see given our models, and what would be predicted by the competitive exclusion principle. So what causes species to coexist on limiting resource (we discussed this above a bit; spatial or temporal variation in environmental conditions or resources that cause differential favoritism of some species some of the time or in some of the places). But lots of other things as well. For example, vertical gradients of light or turbulence, differential predation, or constantly changing environmental conditions (both in terms of environmental stochasticity and environmental noise color, remember the difference?).
+
+
+
+
+

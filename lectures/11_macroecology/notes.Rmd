@@ -1,7 +1,7 @@
 ---
-title: "Notes of Lecture 11"
-author: "Tad Dallas, Daijiang Li"
-date: "12/19/2020"
+title: "Week 11: macroecology"
+author: "Tad Dallas"
+date: ""
 output:
   bookdown::pdf_document2: 
     latex_engine: xelatex
@@ -36,9 +36,14 @@ if(!require(bookdown)) install.packages("bookdown")
 
 # Reading:
 
-McGill, Brian J. "The what, how and why of doing macroecology." Global Ecology and Biogeography 28.1 (2019): 6-17. <https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.12855>
+McGill, Brian J. "The what, how and why of doing macroecology." Global Ecology and Biogeography 28.1 (2019): 6-17. [link to paper](https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.12855)
 
-Shade, A., Dunn, R. R., Blowes, S. A., Keil, P., Bohannan, B. J., Herrmann, M., ... \& Chase, J. (2018). Macroecology to unite all life, large and small. Trends in Ecology \& Evolution. <https://www.indiana.edu/~microbes/publications/Shade_etal_2018_InPress.pdf>
+
+
+Shade, A., Dunn, R. R., Blowes, S. A., Keil, P., Bohannan, B. J., Herrmann, M., ... \& Chase, J. (2018). Macroecology to unite all life, large and small. Trends in Ecology \& Evolution. [link to paper](https://www.indiana.edu/~microbes/publications/Shade_etal_2018_InPress.pdf)
+
+
+
 
 
 # How do we scale small scale processes to global scales?
@@ -77,9 +82,9 @@ _climatic stability hypothesis_: Fluctuating environments tend to cause species 
 **The mid-domain effect** The inherent constraints on latitude and shifting species ranges causes species richness to peak at middle latitudes. That is, assuming the random placement of a species with some fixed latitudinal range, there will still be more species near the equator. 
 
 
-
-((draw this out)) 
-
+---
+# ((draw this out)) 
+---
 
 
 The mid-domain effect doesn't mean that we shouldn't look for latitudinal diversity relationships, but we should recognize that they could be the result of randomness. Teasing the randomness from the pattern sometimes requires the use of a _null model_. In the case of the mid-domain effect, a null model would correspond to shuffling species ranges around and measuring the strength and variation in the resulting latitudinal diversity relationship. We also talked about null models a bit when we discussed ecological networks (specifically the importance of a single node to a property of the entire network). 
@@ -103,7 +108,12 @@ Species abundance distributions are common ways to describe the structure of eco
 **Abundant-center hypothesis** The abundant center hypothesis is a classic distance-abundance relationship, where we relate some measure of distance of a population to an aspect of the species entire range to species abundance at that particular site. Specifically, the abundant center hypothesis states that species density should be highest in the center of species range. 
 
 
-((sketch this in notes to clarify)) 
+
+---
+# ((sketch this in notes to clarify)) 
+---
+
+
 
 
 This makes a number of assumptions, some of which are:
@@ -115,4 +125,18 @@ This makes a number of assumptions, some of which are:
 So how do we operationalize this relationship? We measure species density across a species range, we calculate the range boundaries and measure distance (either to the range center or to the range boundary) and then we regress species density (y-axis) and the measure of distance we went with. If we measured distance from the range edge, we would expect a negative relationship between distance and abundance (density) if distance was measured as distance from the range center, and a positive relationship if distance was measured as distance from the range edge. 
 
 
-# Conclusions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

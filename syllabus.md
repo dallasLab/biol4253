@@ -56,6 +56,18 @@ These are not meant to cover the same _exact_ material we will cover this semest
 \medskip
 
 
+**Vaccination statement**:
+
+Below is the standardized LSU message regarding the COVID-19 vaccine. I have some definite thoughts on this, as my PhD was on the ecology and evolution of infectious disease, and I continue to do research in this space. However, vaccination has been framed as a freedom/political issue (why does this not happen with MMR vaccine or tetanus?), so here we are. Over 500k cases and around 11k deaths in Louisiana alone (around 900 in EBR parish), and this is the messaging that I (as a representative of LSU) can provide. 
+
+> LSU strongly encourages all students, faculty and staff to get vaccinated for COVID-19. Visit www.lsu.edu/roadmap/vaccines/ to learn how to get vaccinated on campus. Vaccination helps keep our campus community safe, helps protect those among us who are most vulnerable to COVID-19, and is our path back to more normal operations and the full college experience that our students deserve.  
+
+
+
+\medskip
+
+
+
 
 **Syllabus Subject to Change**:
 

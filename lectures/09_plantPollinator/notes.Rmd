@@ -1,6 +1,6 @@
 ---
-title: "Notes of Lecture 9"
-author: ""
+title: "week 9: ecological networks"
+author: "Tad Dallas"
 date: ""
 output:
   bookdown::pdf_document2: 
@@ -37,8 +37,6 @@ if(!require(bookdown)) install.packages("bookdown")
 
 Pascual, Mercedes, Jennifer A. Dunne, and Jennifer A. Dunne, eds. Ecological networks: linking structure to dynamics in food webs. Oxford University Press, 2006. (pages 3-15; see `readings` folder)
 
-
-Students may also find <http://networksciencebook.com> helpful if a concept is tough to grasp (chapters 1 and 2 mainly).
 
 
 
@@ -199,8 +197,17 @@ $| A \cap	 B |$ is the number of shared interactions between species $A$ and $B$
 
 Much like the examples of beta diversity we discussed, we can use this measure to assess the similarity of interaction patterns between two species, and then to relate this measure to ecological differences between species. The most obvious measure would be to measure the phylogenetic similarity between two host species (or plants or pollinators etc. etc.) and to examine the _distance decay_ relationship in beta diversity (interaction similarity) as a function of phylogenetic distance between species. 
 
+---
+## ((sketch this out))
+--- 
 
-((sketch this out))
+
+
+
+
+
+
+
 
 
 # Assessing the potential consequences of realistic species loss
