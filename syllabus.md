@@ -22,7 +22,7 @@ output: pdf_document
 
 \setstretch{1}
 
-**Location**: 210 Williams (and maybe Zoom if we go virtual)
+**Location**: 210 Williams (lectures will be live-streamed and recorded on YouTube)
 
 **Time**: section 3 is T Th 4:30pm-5:50pm
 
@@ -30,7 +30,7 @@ output: pdf_document
 
 **Office**: LSA 343 Life Sciences (Tad)
 
-**Office hours**: T 3:00 - 4:30pm or by appointment 
+**Office hours**: T 3:00 - 4:30pm (virtual; Zoom link will be given in class and sent out on Moodle)
 
 
 
@@ -53,18 +53,34 @@ This course will be taught in-person, barring any lockdown due to coronavirus. T
 These are not meant to cover the same _exact_ material we will cover this semester, but may be a nice signpost if you find a particular concept difficult and want to hear it explained another way, or if you have to miss a lecture. Still, this course is constantly evolving, so the best resource for learning the material is still likely the notes.pdf files in the `lectures` folder in the GitHub site (https://github.com/dallasLab/biol4253). I will make a concerted effort to also upload these to Moodle for folks who prefer Moodle. See below statement concerning the structure of the syllabus as well. 
 
 
+Updated in-person lecture recordings will be made available on YouTube as well at: 
+
+<https://www.youtube.com/playlist?list=PLGKQe3NU_VU1rGupJx_H4aIiM024NiW9c>
+
+
+I will do my best to make sure that everything students in-person see will also be in the recorded lectures. 
+
+
+
+
 \medskip
 
 
 **Vaccination statement**:
 
-Below is the standardized LSU message regarding the COVID-19 vaccine. I have some definite thoughts on this, as my PhD was on the ecology and evolution of infectious disease, and I continue to do research in this space. However, vaccination has been framed as a freedom/political issue (why does this not happen with MMR vaccine or tetanus?), so here we are. Over 500k cases and around 11k deaths in Louisiana alone (around 900 in EBR parish), and this is the messaging that I (as a representative of LSU) can provide. 
+Below is the standardized LSU message regarding the COVID-19 vaccine. I have some definite thoughts on this, as my PhD was on the ecology and evolution of infectious disease, and I continue to do research in this space. However, vaccination has been framed as a freedom/political issue (why does this not happen with MMR vaccine or tetanus?), so here we are. Over 500k cases and around 11k deaths in Louisiana alone (over 900 in EBR parish), and this is the messaging that I (as a representative of LSU) can provide. 
 
 > LSU strongly encourages all students, faculty and staff to get vaccinated for COVID-19. Visit www.lsu.edu/roadmap/vaccines/ to learn how to get vaccinated on campus. Vaccination helps keep our campus community safe, helps protect those among us who are most vulnerable to COVID-19, and is our path back to more normal operations and the full college experience that our students deserve.  
 
 
+I will enforce masking in class, but it's a mask, not a force field. Anybody not wearing a mask that covers their nose and face will be asked to leave. 
+
+
+
+
 
 \medskip
+
 
 
 
@@ -109,7 +125,7 @@ Readings are made available in the subfolder for each week (they will be in the 
 
 ## Grading
 
-There will be a total of 500 points, consisting of four exams and a final project. LSU has a plus-minus grading scale. If you have 92.7 points, you still have not gotten to 93, and have an A-. There will be no overall curve, but I will likely provide opportunities to improve exam grades.
+There will be a total of 500 points, consisting of four exams and a final project. LSU has a plus-minus grading scale. If you have 92.7 points, you still have not gotten to 93, and have an A-. There will be no overall curve, but I will likely provide opportunities to improve exam grades. If you are confused by the grading chart below, think of it as a threshold. If you get a 92.74942% in the class, you have not exceeded the 93% threshold for an A, and receive an A-. 
 
 |grade| percent |
 | -- |  --    |

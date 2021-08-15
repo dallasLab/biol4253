@@ -1,0 +1,115 @@
+---
+title: "Week 1: intro to ecology"
+author: "Tad Dallas"
+institute: "LSU"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+class: left, middle
+
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
+```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+
+
+
+
+???
+Comment
+
+
+
+
+???
+Comment
+
+
+
+---
+
+```{r out.width='57%'}
+knitr::include_graphics('figs/fig.jpg')
+```
+
+
+
+
+---
+background-image: url('figs/FIG.jpg')
+background-position: 50% 50%
+background-size: contain
+class: left, bottom
+
+# Human (_Homo Sapiens_)
+
+.font200[SOME TEXT]
+
+
+???
+Comment
+
+---
+
+# Human Population Growth
+
+![](https://ourworldindata.org/uploads/2018/11/Annual-World-Population-since-10-thousand-BCE-for-OWID.png)
+
+
+
+
+???
+Comment
+
+---
+class: center
+
+# Welcome to the .red[Anthropocene]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

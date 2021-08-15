@@ -1,0 +1,72 @@
+---
+title: "Week 2: population dynamics"
+author: "Tad Dallas"
+institute: "LSU"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+class: left, middle
+
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
+```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+
+
+
+
+???
+Comment
+
+
+
+
+
+
+
+---
+
+```{r out.width='70%'}
+knitr::include_graphics('figs/expo.png')
+```
+
+
+
+---
+
+```{r out.width='100%'}
+knitr::include_graphics('figs/logo.jpg')
+```
+
+
+
+
+---
+
+```{r out.width='100%'}
+knitr::include_graphics('figs/humans.png')
+```
+
+
+

@@ -1,8 +1,8 @@
 ---
-title: "Global Environmental Change"
-author: "Daijiang Li"
+title: "Week 10: environmental change"
+author: "Tad Dallas"
 institute: "LSU"
-date: "2021/02/18 (updated: `r Sys.Date()`)"
+date: ""
 output:
   xaringan::moon_reader:
     css: ["default", "default-fonts", "../style.css"]
@@ -15,10 +15,24 @@ output:
 ---
 class: left, middle
 
+
 ```{r setup, include=FALSE}
+
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
 ```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+---
 
 background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Katrina-noaaGOES12.jpg')
 background-position: 50% 50%
@@ -48,19 +62,9 @@ knitr::include_graphics('figs/envichange.jpeg')
 ```
 
 
----
-background-image: url('figs/homo.jpeg')
-background-position: 50% 50%
-background-size: contain
-class: left, bottom
 
-# Human (_Homo Sapiens_)
 
-.font200[On Earth for about .red[0.005%] of the planet's history] (Rosenblum 2021)
 
-???
-
-out of Africa hypothesis; Fossil remains indicate that early modern H. sapiens were present in Africa from about 200,000 years ago
 
 ---
 
@@ -73,6 +77,9 @@ out of Africa hypothesis; Fossil remains indicate that early modern H. sapiens w
 ???
 
 10-12 billion
+
+
+
 
 ---
 class: center

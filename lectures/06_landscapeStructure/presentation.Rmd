@@ -1,0 +1,84 @@
+---
+title: "Week 6: the influence of space"
+author: "Tad Dallas"
+institute: "LSU"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+class: left, middle
+
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
+```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+
+
+---
+
+```{r out.width='75%'}
+knitr::include_graphics('figs/etib.png')
+```
+
+
+
+---
+
+```{r out.width='75%'}
+knitr::include_graphics('figs/MP1.jpg')
+```
+
+
+
+
+
+
+
+---
+
+```{r out.width='75%'}
+knitr::include_graphics('figs/sar.png')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,8 @@
 ---
-title: "Macroecology"
-author: "Daijiang Li"
+title: "Week 11: macroecology"
+author: "Tad Dallas"
 institute: "LSU"
-date: "2021/03/01 (updated: `r Sys.Date()`)"
+date: ""
 output:
   xaringan::moon_reader:
     css: ["default", "default-fonts", "../style.css"]
@@ -15,10 +15,31 @@ output:
 ---
 class: left, middle
 
+
 ```{r setup, include=FALSE}
+
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
 ```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+
+
+
+---
+
+
+
+
 class: middle
 
 # What is .green[Macro]ecology?
