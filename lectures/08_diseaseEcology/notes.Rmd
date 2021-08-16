@@ -38,7 +38,7 @@ if(!require(bookdown)) install.packages("bookdown")
 Kilpatrick, A. M. \& Altizer, S. (2010) Disease Ecology. Nature Education Knowledge 3(10):55  
 [link to paper](https://www.nature.com/scitable/knowledge/library/disease-ecology-15947677)
 
-Athni et al. (2021). The influence of vector-borne disease on human history: socio‐ecological mechanisms. Ecology Letters. (optional but highly recommended)  
+(optional, but recommended): Athni et al. (2021). The influence of vector-borne disease on human history: socio‐ecological mechanisms. Ecology Letters. (optional but highly recommended)  
 [link to paper](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.13675?af=R)
 
 
