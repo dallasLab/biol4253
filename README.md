@@ -20,7 +20,7 @@
 - [Lecture 01's notes](lectures/01_whatIsEcology/notes.pdf)
   + [Reading: How to read a scientific article](http://www.owlnet.rice.edu/~cainproj/courses/HowToReadSciArticle.pdf)
   + [Reading: What does ecology have to do with me?](https://www.esa.org/about/what-does-ecology-have-to-do-with-me/)
-  + [Presentation](lectures/01_whatIsEcology/presentation.pdf)
+  + [Presentation](lectures/01_whatIsEcology/presentation.html)
 
 
 - [Lecture 02's notes](lectures/02_popDynamics/notes.pdf)
