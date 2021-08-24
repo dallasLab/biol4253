@@ -186,7 +186,7 @@ Further information is provided on the [LSU website](https://www.lsu.edu/online/
 
 
 
-## Special needs statement
+## Getting additional assistance 
 
 Our goal is to help you learn. Students who have any difficulty (either permanent or temporary) that might affect their ability to perform in class can contact us privately, or reach out to the LSU Disability Services staff. 
 
@@ -232,7 +232,7 @@ I will not take attendance. However, much of the material presented will not be 
 
 **How does individual behavior influence population processes?**
 
-\textcolor{blue}{\Large Exam 1 \ \ \normalsize September 9}
+\textcolor{blue}{\Large Exam 1 \ \ \normalsize September 14}
 
 
 ---
@@ -241,7 +241,7 @@ I will not take attendance. However, much of the material presented will not be 
 
 **What determines community composition?**
 
-\textcolor{blue}{\Large Exam 2 \ \ \normalsize October 2}
+\textcolor{blue}{\Large Exam 2 \ \ \normalsize October 5}
 
 ---
 
@@ -254,7 +254,7 @@ I will not take attendance. However, much of the material presented will not be 
 
 **What are the effects of parasites and pathogens?**
 
-\textcolor{blue}{\Large Exam 3 \ \ \normalsize November 4}
+\textcolor{blue}{\Large Exam 3 \ \ \normalsize November 2}
 
 
 ---
@@ -266,7 +266,7 @@ I will not take attendance. However, much of the material presented will not be 
 
 **How do we scale small scale processes to global scales?**
 
-\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day}
+\textcolor{blue}{\Large Exam 4 \ \ \normalsize Final exam day (December 10; 5:30-7:30pm)}
 
 ---
 
