@@ -22,7 +22,7 @@ output: pdf_document
 
 \setstretch{1}
 
-**Location**: 210 Williams (lectures will be live-streamed and recorded on YouTube)
+**Location**: 210 Williams (lectures will be live-streamed and recorded)
 
 **Time**: section 3 is T Th 4:30pm-5:50pm
 
@@ -53,9 +53,7 @@ This course will be taught in-person, barring any lockdown due to coronavirus. T
 These are not meant to cover the same _exact_ material we will cover this semester, but may be a nice signpost if you find a particular concept difficult and want to hear it explained another way, or if you have to miss a lecture. Still, this course is constantly evolving, so the best resource for learning the material is still likely the notes.pdf files in the `lectures` folder in the GitHub site (https://github.com/dallasLab/biol4253). I will make a concerted effort to also upload these to Moodle for folks who prefer Moodle. See below statement concerning the structure of the syllabus as well. 
 
 
-Updated in-person lecture recordings will be made available on YouTube as well at: 
-
-<https://www.youtube.com/playlist?list=PLGKQe3NU_VU1rGupJx_H4aIiM024NiW9c>
+Updated in-person lecture recordings will be recorded via Zoom, with recording links emailed to students.
 
 
 I will do my best to make sure that everything students in-person see will also be in the recorded lectures. 
