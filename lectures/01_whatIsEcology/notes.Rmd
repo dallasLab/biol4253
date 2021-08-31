@@ -28,7 +28,7 @@ library(knitr)
 opts_chunk$set(fig.align='center', cache = FALSE, warning = FALSE,
         message = FALSE, echo = FALSE, out.width = '95%')
 options(digits = 3, width = 88)
-if(!require(bookdown)) install.packages("bookdown")
+if(!require(bookdown)) install.packages("bookdown", repo="http://cran.us.r-project.org")
 ```
 
 

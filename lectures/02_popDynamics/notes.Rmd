@@ -12,8 +12,6 @@ output:
 fontsize: 12pt
 linestretch: 1.5
 mainfont: Arial
-urlcolor: blue
-linkcolor: orange
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
