@@ -28,9 +28,16 @@ knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
 class: left, center, inverse
 
 .font300[Announcements]  
-+ 
-+ 
-+ 
+
++ .font200[Hope everyone is safe after hurricane Ida. LSU has folks to help if you need it.] 
+
+<br/>
+
++ .font200[Still looking for a notetaker. Contact me as soon as possible to help a fellow classmate. ]
+
+<br/>
+
++ .font200[Ida messed with scheduling, so here's the new breakdown. ]
 
 
 
@@ -67,6 +74,17 @@ knitr::include_graphics('figs/logo.jpg')
 ```{r out.width='100%'}
 knitr::include_graphics('figs/humans.png')
 ```
+
+
+---
+
+```{r out.width='100%'}
+knitr::include_graphics('figs/allee.png')
+```
+
+
+
+
 
 
 

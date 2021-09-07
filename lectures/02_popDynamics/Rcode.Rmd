@@ -450,7 +450,10 @@ plot(1:stps,
 
 ## Matrix model
 
+((give this as an example problem to let the students work through it))
+
 First, build a simple projection matrix
+
 
 ```{r}
 
