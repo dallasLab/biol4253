@@ -230,7 +230,7 @@ I will not take attendance. However, much of the material presented will not be 
 
 **How does individual behavior influence population processes?**
 
-\textcolor{blue}{\Large Exam 1 \ \ \normalsize September 14}
+\textcolor{blue}{\Large Exam 1 \ \ \normalsize September 16}
 
 
 ---
