@@ -350,6 +350,14 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
+sapply(seq(1,25,by=1), function(x){
+ lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='firebrick')
+})
+
+sapply(seq(35,100,by=5), function(x){
+ lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='dodgerblue')
+})
+
 
 ```
 

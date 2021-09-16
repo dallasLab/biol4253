@@ -180,7 +180,7 @@ In the discrete model, we see that the population still grows at rate $\lambda$,
 
 
 \begin{equation}
-N_{t+1} = N_{t} + \lambda N_{t} (1 - \frac{N_t}{K})
+N_{t+1} = N_{t} + (ln(\lambda) * N_{t} * (1 - \frac{N_t}{K}))
 \end{equation}
 
 
