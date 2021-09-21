@@ -224,6 +224,7 @@ Apart from adaptation to new environments, species niches can change in response
 
 
 \clearpage
+
 ## Competition
 
 Competition is the interaction between species which serves to reduce the survival or fecundity of individuals of both species. For example, plant species may compete for soil nutrients, light availability, and space. Meanwhile, animal communities may compete for prey resources or nesting habitat. Here, it's important to make a distinction between competition which occurs between individuals of different species (_interspecific competition_) from when a single species competes with itself (_intraspecific competition_). We discussed intraspecific competition earlier as a form of population regulation that can lead to stabilizing population dynamics. 
