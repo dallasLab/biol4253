@@ -290,7 +290,6 @@ Recall the logistic model
 
 \[ \frac{dN}{dt} = rN\left(1-\frac{N}{K} \right) \]
 
-
 Let's add competition to it through direct interactions and extend it to 2 species. This model is called the Lotka-Volterra model.
 
 \[ \frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right) \]
@@ -306,18 +305,46 @@ Let's look at the long-run outcomes of Lotka-Volterra competition, of which ther
 
 
 
+### Orienting yourself to the state space
+
 ```{r fig2, out.width = '100%'}
-knitr::include_graphics("figs/lv.png")
+knitr::include_graphics("figs/lv1.png")
 ```
 
 
 
-\bigskip
+### Exclusion of species 2
+
+```{r fig3, out.width = '75%'}
+knitr::include_graphics("figs/lv2.png")
+```
 
 
----
-# ((know how the state-space of N1 by N2 looks, and the 4 different scenarios we went over in class))
----
+
+
+### Exclusion of species 1
+
+```{r fig4, out.width = '75%'}
+knitr::include_graphics("figs/lv3.png")
+```
+
+
+
+### Unstable equilibrium
+
+```{r fig5, out.width = '75%'}
+knitr::include_graphics("figs/lv4.png")
+```
+
+
+
+### Stable equilibrium
+
+```{r fig6, out.width = '75%'}
+knitr::include_graphics("figs/lv5.png")
+```
+
+
 
 
 
@@ -325,5 +352,5 @@ So this is a form of competition that does not require a limiting resource, and 
 
 
 
-
+> The Lotka-Volterra model predicts that stable coexistence of two species is possible only when intraspecific competition has a greater effect than interspecific competition. Why would this be the case? 
 
