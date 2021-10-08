@@ -30,7 +30,7 @@ output: pdf_document
 
 **Office**: LSA 343 Life Sciences (Tad)
 
-**Office hours**: T 3:00 - 4:30pm (virtual; Zoom link will be given in class and sent out on Moodle)
+**Office hours**: M 10:00am-11:20am (virtual; Zoom link will be given in class and sent out on Moodle)
 
 
 
