@@ -44,7 +44,7 @@ We've been reading peer-reviewed literature in class, and we now want to see if 
 
 ## Write up (10 points)
 
-The presentation is mostly what we'll grade you on, but we would also like something tangible as well. A pdf of the slides may be sufficient, but a short written document containing the main take-home points of your project, with associated references would really help us in grading.
+The presentation is mostly what we'll grade you on, but we would also like something tangible as well. A pdf of the slides is not really sufficient. Ideally, this document would be a short write-up (1-2 pages) containing the main take-home points of your project with associated references. Show me that you understand the material and can weave different scientific papers/ideas together.
 
 
 
