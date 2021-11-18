@@ -55,10 +55,12 @@ The goal of the field of _macroecology_ is to explain variation in species abund
 A simple example is in the scaling between a local to macro scale comparison of the relationship between precipitation and productivity. This is the idea that areas that receive more precipitation, on average, have higher productivity (more green biomass, essentially). But this is a bit site-specific, right? We can imagine that productivity could go up with precipitation if plants require more water, but the opposite relationship could be observed as nutrients are washed away from the soil and plants are exposed to too much water. While the local context would suggest no clear relationship, plotting a series of these local relationships yields a general macroecological relationship between precipitation and productivity. 
 
 
-<!-- Jensen's inequality -->
-
 
 Macroecological relationships allow scientists to undercover generalized _laws_ about how biodiversity is distributed. That is, at some spatial scale, the influence of many small scale ecological processes will become relatively unimportant, and global (or macro) scale patterns will emerge. We'll go over some examples of macroecological laws here, and be sure to read to the McGill paper for more information on the historical and conceptual history of macroecology.
+
+
+
+
  
 
 **The dimensionality of macroecology** The scope of macroecology is perhaps best depicted in terms of spatial, temporal, and taxonomic scales of study. How many of these do you think would need to be incorporated to qualify as "macroecology"?
@@ -67,6 +69,10 @@ Macroecological relationships allow scientists to undercover generalized _laws_ 
 ```{r fig1, out.width = '100%', fig.cap = "Figure taken from McGill (2019) https://doi.org/10.1111/geb.12855."}
 knitr::include_graphics("figs/macro.jpg")
 ```
+
+
+
+
 
 # Latitudinal scaling
 
@@ -79,12 +85,17 @@ _species-energy hypothesis_: the amount of energy sets limits to the species ric
 _climatic stability hypothesis_: Fluctuating environments tend to cause species extinctions. Environmental conditions tend to fluctuate more at higher latitudes.
 
 
+
+
+
 **The mid-domain effect** The inherent constraints on latitude and shifting species ranges causes species richness to peak at middle latitudes. That is, assuming the random placement of a species with some fixed latitudinal range, there will still be more species near the equator. 
 
 
 ---
 # ((draw this out)) 
 ---
+
+
 
 
 The mid-domain effect doesn't mean that we shouldn't look for latitudinal diversity relationships, but we should recognize that they could be the result of randomness. Teasing the randomness from the pattern sometimes requires the use of a _null model_. In the case of the mid-domain effect, a null model would correspond to shuffling species ranges around and measuring the strength and variation in the resulting latitudinal diversity relationship. We also talked about null models a bit when we discussed ecological networks (specifically the importance of a single node to a property of the entire network). 
@@ -94,6 +105,7 @@ The mid-domain effect doesn't mean that we shouldn't look for latitudinal divers
 
 **Bergmann's rule** A final latitudinal scaling rule we'll talk about is the scaling of species body sizes with latitude. Bergmann's rule argues that the average body mass of species increases moving away from the equator (so species body size is smallest at the equator and largest near the poles). The support for this comes in the form of two different ways to examine this. 
 
+
 First, the rule can be examined within a single species across its latitudinal range. This is perhaps the clearest support for the relationship.
 
 Second, the rule can be examined considering all species in a given area, where the mean body size for all organisms within the same trophic level or taxa is tracked across latitude.
@@ -101,20 +113,28 @@ Second, the rule can be examined considering all species in a given area, where 
 These two approaches tend to yield the same results, and oftentimes it's really tough to get data to address the first way, but fairly straightforward to get data to test the second. 
 
 
+
+
+
+
 # Species abundance distributions
 
 Species abundance distributions are common ways to describe the structure of ecological communities, and can be compared across spatial gradients. For a given area, the species abundance distribution is really similar to the rank abundance distribution, which we went over previously. Here, the x-axis is species counts (abundances) and the y-axis is the frequency that a species is found with that abundance (so the number of species which fall into a given abundance class). The shape of the relationship is important, because different proposed mechanisms will lead to different shapes. We won't go over the details about the different models for explaining the shape of the species abundance distribution, but you should know that pretty much every ecological community species abundance distribution has a _hollow curve_ shape with many rare species and just a few common species. 
+
+
+---
+# ((sketch this to clarify)) 
+---
+
+
 
 **Abundant-center hypothesis** The abundant center hypothesis is a classic distance-abundance relationship, where we relate some measure of distance of a population to an aspect of the species entire range to species abundance at that particular site. Specifically, the abundant center hypothesis states that species density should be highest in the center of species range. 
 
 
 
 ---
-# ((sketch this in notes to clarify)) 
+# ((sketch this to clarify)) 
 ---
-
-
-
 
 This makes a number of assumptions, some of which are:
 
@@ -127,6 +147,103 @@ So how do we operationalize this relationship? We measure species density across
 
 
 
+
+
+
+**Occupancy -- abundance relationships **
+
+Perhaps one of the best supported macroecological relationships posits that more widespread species are also more locally abundant. That is, species that are found to occupy a larger number of sampled sites are expected to also be quite abundant, calculated as the mean abundance across all occupied sites. From our own work, we have found evidence for this relationship in a wide diversity of taxa from zooplankton to mammals, but the relationships are quite weak. Some have proposed that these relationships can be used to predict abundance from occupancy (which you only need presence-absence data for). This is probably a bad idea though, since the weak explanatory power of the relationship suggests that other factors are important. 
+
+
+Related to occupancy-abundance relationships are a more general class of relationships called 'distribution-abundance' relationships, of which occupancy-abundance relationships are one instance of. However, instead of sampling individual sites and estimating occupancy-abundance relationships, some researchers have argued that another relationship exists without having to sample extensively across a species range. That is, much like Rapoport's rule, there is a general relationship between species geographic range size and mean local abundance. Keep in mind how many of these relationships relate to one another. 
+
+
+---
+# ((sketch this to clarify)) 
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Why do spatial patterns get more attention that spatiotemporal processes? 
+
+Macroecology is a developing field, and much of the focus of macroecology has been on large scale _spatial_ processes related to the distribution of diversity and abundance. However, McGill emphasizes that the `scale` of the study which makes it `macro` is not necessarily spatial, but some combination of spatial, temporal, and taxonomic scales. Here, we'll go over a couple of macroecological relationships which consider temporal dimensions of biodiversity. 
+
+
+
+
++ **Temporal variability at range margins**
+
+Recall back to our discussion of demographic stochasticity, where we would expect smaller populations to be more sensitive to stochatic extinction. Couple this with the idea that species should have higher abundance toward the center of the species geographic range or climatic niche, and this creates an expectation that marginal populations (those far from the geographic range or climatic niche center) will be smaller. Demographic stochasticity exerts stronger forces on small populations and demographic rates are likely variable across a species range. This creates an expectation that marginal populations should be more variable over time. Think about why and why not this would consitute a macroecological relationship. You should find yourself thinking back to McGill's three-dimensional space and his composite definition of macroecology. 
+
+
+
+
+
+
+
++ **Stability and species richness**
+
+Related to this idea of temporal variability is the idea of richness-stability relationships. Ecological stability is a fuzzy concept, but one measure of stability is temporal variability (described above). Researchers have often found that more diverse (here meaning higher species richness) communities tend to also be more stable (here defined as the temporal variability of the composite community abundance). 
+
+
+
+
+---
+# ((sketch this to clarify)) 
+---
+
+
+
+
+
+
+
+
+### Metabolic theory of ecology 
+
+This is related to macroecology, in that it attempts to large-scale taxonomic patterns of body size and other life history traits as a function of metabolic rate. This is often not by looking at metabolic pathways, but by calculating metabolic rate as the amount of oxygen consumed per unit time. 
+
+
+$$ B = B_0 * M^{\frac{3}{4}}$$
+
+where B0 is some mass-independent constant in units of watts per kilogram (or power per weight). This means that B is in units of power (e.g., watts) and M is in units of mass (e.g., kg). 
+
+
+There are some clear issues with metabolic scaling theory. Perhaps the most clear is that the lack of true mechanistic basis. Though often presented as mechanistic, confounding or synergistic factors likely explain body size distributions. e.g., temperature is related to metabolic rate of organisms, making it difficult to parse apart the role of temperature and metabolic rate. 
+
+
+
+
+
+
+
+
+
+
+### How do we study spatial and temporal macroecological patterns in concert?
+
++ Study spatial pattern for some slices of time and see how it changes
+
++ Adapt the spatial process to a temporal process (spatial occupancy to temporal occupancy)
 
 
 
